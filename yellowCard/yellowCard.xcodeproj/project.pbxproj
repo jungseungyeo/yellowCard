@@ -12,6 +12,7 @@
 		2F06A67121C13AC600387DED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F06A66F21C13AC600387DED /* Main.storyboard */; };
 		2F06A67321C13AC700387DED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F06A67221C13AC700387DED /* Assets.xcassets */; };
 		2F06A67621C13AC700387DED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F06A67421C13AC700387DED /* LaunchScreen.storyboard */; };
+		F41D89703EDE829F7260B39D /* Pods_yellowCard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE69F388968FF3517F91AF0D /* Pods_yellowCard.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		2F06A67221C13AC700387DED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2F06A67521C13AC700387DED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2F06A67721C13AC700387DED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		31006B01FE8D46B61F44E8CB /* Pods-yellowCard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yellowCard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-yellowCard/Pods-yellowCard.debug.xcconfig"; sourceTree = "<group>"; };
+		741B174ED33A3C00E75CA17F /* Pods-yellowCard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yellowCard.release.xcconfig"; path = "Pods/Target Support Files/Pods-yellowCard/Pods-yellowCard.release.xcconfig"; sourceTree = "<group>"; };
+		CE69F388968FF3517F91AF0D /* Pods_yellowCard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_yellowCard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F41D89703EDE829F7260B39D /* Pods_yellowCard.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,8 @@
 			children = (
 				2F06A66A21C13AC600387DED /* yellowCard */,
 				2F06A66921C13AC600387DED /* Products */,
+				8559801CC7D813709E887A69 /* Pods */,
+				711EC130F22AE87F04732371 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +71,23 @@
 			path = yellowCard;
 			sourceTree = "<group>";
 		};
+		711EC130F22AE87F04732371 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CE69F388968FF3517F91AF0D /* Pods_yellowCard.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8559801CC7D813709E887A69 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				31006B01FE8D46B61F44E8CB /* Pods-yellowCard.debug.xcconfig */,
+				741B174ED33A3C00E75CA17F /* Pods-yellowCard.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,6 +95,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2F06A67A21C13AC700387DED /* Build configuration list for PBXNativeTarget "yellowCard" */;
 			buildPhases = (
+				975D9016E4578150BBD5D8A5 /* [CP] Check Pods Manifest.lock */,
 				2F06A66421C13AC600387DED /* Sources */,
 				2F06A66521C13AC600387DED /* Frameworks */,
 				2F06A66621C13AC600387DED /* Resources */,
@@ -129,6 +154,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		975D9016E4578150BBD5D8A5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-yellowCard-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2F06A66421C13AC600387DED /* Sources */ = {
@@ -280,11 +330,13 @@
 		};
 		2F06A67B21C13AC700387DED /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 31006B01FE8D46B61F44E8CB /* Pods-yellowCard.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 524TVTU6B9;
 				INFOPLIST_FILE = yellowCard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -292,17 +344,19 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.linsaeng.yellowCard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		2F06A67C21C13AC700387DED /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 741B174ED33A3C00E75CA17F /* Pods-yellowCard.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 524TVTU6B9;
 				INFOPLIST_FILE = yellowCard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -310,7 +364,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.linsaeng.yellowCard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
