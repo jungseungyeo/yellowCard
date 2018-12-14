@@ -18,7 +18,7 @@
 		2F58C09E21C38313001DCC40 /* SpoqaHanSansRegular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F58C09A21C38312001DCC40 /* SpoqaHanSansRegular.ttf */; };
 		2F58C09F21C38313001DCC40 /* SpoqaHanSansThin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F58C09B21C38313001DCC40 /* SpoqaHanSansThin.ttf */; };
 		2F58C0A321C3873A001DCC40 /* FontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F58C0A221C3873A001DCC40 /* FontExtension.swift */; };
-		2F58C0A521C38F37001DCC40 /* UserInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F58C0A421C38F37001DCC40 /* UserInfoViewModel.swift */; };
+		2F58C0A721C38FD2001DCC40 /* UserInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F58C0A621C38FD2001DCC40 /* UserInfoViewModel.swift */; };
 		2FFADCC721C13D36000CB3B0 /* KakaoOpenSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FFADCC621C13D36000CB3B0 /* KakaoOpenSDK.framework */; };
 		2FFADCCD21C146F4000CB3B0 /* credentials.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2FFADCCC21C146F4000CB3B0 /* credentials.plist */; };
 		F41D89703EDE829F7260B39D /* Pods_yellowCard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE69F388968FF3517F91AF0D /* Pods_yellowCard.framework */; };
@@ -38,7 +38,7 @@
 		2F58C09A21C38312001DCC40 /* SpoqaHanSansRegular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SpoqaHanSansRegular.ttf; sourceTree = "<group>"; };
 		2F58C09B21C38313001DCC40 /* SpoqaHanSansThin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SpoqaHanSansThin.ttf; sourceTree = "<group>"; };
 		2F58C0A221C3873A001DCC40 /* FontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontExtension.swift; sourceTree = "<group>"; };
-		2F58C0A421C38F37001DCC40 /* UserInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewModel.swift; sourceTree = "<group>"; };
+		2F58C0A621C38FD2001DCC40 /* UserInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewModel.swift; sourceTree = "<group>"; };
 		2FFADCC621C13D36000CB3B0 /* KakaoOpenSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KakaoOpenSDK.framework; sourceTree = "<group>"; };
 		2FFADCC821C13E2B000CB3B0 /* yellowCard-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "yellowCard-Bridging-Header.h"; sourceTree = "<group>"; };
 		2FFADCCC21C146F4000CB3B0 /* credentials.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = credentials.plist; sourceTree = "<group>"; };
@@ -104,7 +104,7 @@
 		2F58C08721C35795001DCC40 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				2F58C0A421C38F37001DCC40 /* UserInfoViewModel.swift */,
+				2F58C0A621C38FD2001DCC40 /* UserInfoViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -351,7 +351,7 @@
 			files = (
 				2F58C0A321C3873A001DCC40 /* FontExtension.swift in Sources */,
 				2F06A66E21C13AC600387DED /* ViewController.swift in Sources */,
-				2F58C0A521C38F37001DCC40 /* UserInfoViewModel.swift in Sources */,
+				2F58C0A721C38FD2001DCC40 /* UserInfoViewModel.swift in Sources */,
 				2F06A66C21C13AC600387DED /* AppDelegate.swift in Sources */,
 				2F58C08D21C36731001DCC40 /* UserInfoModel.swift in Sources */,
 			);
