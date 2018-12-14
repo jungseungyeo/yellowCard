@@ -19,6 +19,14 @@
 		2F58C09F21C38313001DCC40 /* SpoqaHanSansThin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F58C09B21C38313001DCC40 /* SpoqaHanSansThin.ttf */; };
 		2F58C0A321C3873A001DCC40 /* FontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F58C0A221C3873A001DCC40 /* FontExtension.swift */; };
 		2F58C0A721C38FD2001DCC40 /* UserInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F58C0A621C38FD2001DCC40 /* UserInfoViewModel.swift */; };
+		2F58C0A921C39184001DCC40 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F58C0A821C39184001DCC40 /* InfoViewController.swift */; };
+		2F58C0AB21C39344001DCC40 /* Info.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F58C0AA21C39344001DCC40 /* Info.storyboard */; };
+		2F58C0AD21C39412001DCC40 /* NSObjectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F58C0AC21C39412001DCC40 /* NSObjectExtension.swift */; };
+		2F58C0B021C3959C001DCC40 /* swiftkey-logo.json in Resources */ = {isa = PBXBuildFile; fileRef = 2F58C0AF21C3959C001DCC40 /* swiftkey-logo.json */; };
+		2F58C0B221C3971C001DCC40 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F58C0B121C3971C001DCC40 /* LoginViewController.swift */; };
+		2F58C0B421C39726001DCC40 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F58C0B321C39726001DCC40 /* Login.storyboard */; };
+		2F58C0B821C3A20D001DCC40 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F58C0B721C3A20D001DCC40 /* LoginView.swift */; };
+		2F58C0BA21C3A22C001DCC40 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F58C0B921C3A22C001DCC40 /* UIViewExtension.swift */; };
 		2FFADCC721C13D36000CB3B0 /* KakaoOpenSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FFADCC621C13D36000CB3B0 /* KakaoOpenSDK.framework */; };
 		2FFADCCD21C146F4000CB3B0 /* credentials.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2FFADCCC21C146F4000CB3B0 /* credentials.plist */; };
 		F41D89703EDE829F7260B39D /* Pods_yellowCard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE69F388968FF3517F91AF0D /* Pods_yellowCard.framework */; };
@@ -39,6 +47,14 @@
 		2F58C09B21C38313001DCC40 /* SpoqaHanSansThin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SpoqaHanSansThin.ttf; sourceTree = "<group>"; };
 		2F58C0A221C3873A001DCC40 /* FontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontExtension.swift; sourceTree = "<group>"; };
 		2F58C0A621C38FD2001DCC40 /* UserInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewModel.swift; sourceTree = "<group>"; };
+		2F58C0A821C39184001DCC40 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		2F58C0AA21C39344001DCC40 /* Info.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Info.storyboard; sourceTree = "<group>"; };
+		2F58C0AC21C39412001DCC40 /* NSObjectExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObjectExtension.swift; sourceTree = "<group>"; };
+		2F58C0AF21C3959C001DCC40 /* swiftkey-logo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "swiftkey-logo.json"; sourceTree = "<group>"; };
+		2F58C0B121C3971C001DCC40 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		2F58C0B321C39726001DCC40 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		2F58C0B721C3A20D001DCC40 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		2F58C0B921C3A22C001DCC40 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		2FFADCC621C13D36000CB3B0 /* KakaoOpenSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KakaoOpenSDK.framework; sourceTree = "<group>"; };
 		2FFADCC821C13E2B000CB3B0 /* yellowCard-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "yellowCard-Bridging-Header.h"; sourceTree = "<group>"; };
 		2FFADCCC21C146F4000CB3B0 /* credentials.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = credentials.plist; sourceTree = "<group>"; };
@@ -96,7 +112,9 @@
 		2F58C08621C3578D001DCC40 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2F58C0B621C3A1ED001DCC40 /* Login */,
 				2F06A66D21C13AC600387DED /* ViewController.swift */,
+				2F58C0A821C39184001DCC40 /* InfoViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -122,6 +140,8 @@
 			children = (
 				2F06A66F21C13AC600387DED /* Main.storyboard */,
 				2F06A67421C13AC700387DED /* LaunchScreen.storyboard */,
+				2F58C0AA21C39344001DCC40 /* Info.storyboard */,
+				2F58C0B321C39726001DCC40 /* Login.storyboard */,
 			);
 			path = StoryBoard;
 			sourceTree = "<group>";
@@ -149,13 +169,33 @@
 			isa = PBXGroup;
 			children = (
 				2F58C0A221C3873A001DCC40 /* FontExtension.swift */,
+				2F58C0AC21C39412001DCC40 /* NSObjectExtension.swift */,
+				2F58C0B921C3A22C001DCC40 /* UIViewExtension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		2F58C0AE21C39590001DCC40 /* LottieFile */ = {
+			isa = PBXGroup;
+			children = (
+				2F58C0AF21C3959C001DCC40 /* swiftkey-logo.json */,
+			);
+			path = LottieFile;
+			sourceTree = "<group>";
+		};
+		2F58C0B621C3A1ED001DCC40 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				2F58C0B121C3971C001DCC40 /* LoginViewController.swift */,
+				2F58C0B721C3A20D001DCC40 /* LoginView.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 		2FFADCCB21C146E1000CB3B0 /* Supporfile */ = {
 			isa = PBXGroup;
 			children = (
+				2F58C0AE21C39590001DCC40 /* LottieFile */,
 				2F58C09721C382FB001DCC40 /* Font */,
 				2F06A67221C13AC700387DED /* Assets.xcassets */,
 				2F06A67721C13AC700387DED /* Info.plist */,
@@ -244,14 +284,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F58C0AB21C39344001DCC40 /* Info.storyboard in Resources */,
 				2F06A67621C13AC700387DED /* LaunchScreen.storyboard in Resources */,
 				2F58C09E21C38313001DCC40 /* SpoqaHanSansRegular.ttf in Resources */,
 				2F58C09D21C38313001DCC40 /* SpoqaHanSansLight.ttf in Resources */,
 				2F58C09F21C38313001DCC40 /* SpoqaHanSansThin.ttf in Resources */,
 				2FFADCCD21C146F4000CB3B0 /* credentials.plist in Resources */,
+				2F58C0B021C3959C001DCC40 /* swiftkey-logo.json in Resources */,
 				2F06A67321C13AC700387DED /* Assets.xcassets in Resources */,
 				2F06A67121C13AC600387DED /* Main.storyboard in Resources */,
 				2F58C09C21C38313001DCC40 /* SpoqaHanSansBold.ttf in Resources */,
+				2F58C0B421C39726001DCC40 /* Login.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,6 +342,7 @@
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Then/Then.framework",
+				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -314,6 +358,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Then.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -349,10 +394,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F58C0BA21C3A22C001DCC40 /* UIViewExtension.swift in Sources */,
+				2F58C0AD21C39412001DCC40 /* NSObjectExtension.swift in Sources */,
 				2F58C0A321C3873A001DCC40 /* FontExtension.swift in Sources */,
 				2F06A66E21C13AC600387DED /* ViewController.swift in Sources */,
+				2F58C0B821C3A20D001DCC40 /* LoginView.swift in Sources */,
 				2F58C0A721C38FD2001DCC40 /* UserInfoViewModel.swift in Sources */,
+				2F58C0B221C3971C001DCC40 /* LoginViewController.swift in Sources */,
 				2F06A66C21C13AC600387DED /* AppDelegate.swift in Sources */,
+				2F58C0A921C39184001DCC40 /* InfoViewController.swift in Sources */,
 				2F58C08D21C36731001DCC40 /* UserInfoModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

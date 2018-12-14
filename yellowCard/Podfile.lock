@@ -14,6 +14,7 @@ PODS:
   - "GoogleToolboxForMac/NSString+URLArguments (2.2.0)"
   - GTMSessionFetcher/Core (1.2.1)
   - Kingfisher (4.10.1)
+  - lottie-ios (2.5.2)
   - ObjectMapper (3.4.1)
   - RxAtomic (4.4.0)
   - RxCocoa (4.4.0):
@@ -27,6 +28,7 @@ DEPENDENCIES:
   - Alamofire (~> 5.0.0.beta.1)
   - GoogleSignIn
   - Kingfisher (= 4.10.1)
+  - lottie-ios
   - ObjectMapper (~> 3.4)
   - RxCocoa (~> 4.0)
   - RxSwift (~> 4.0)
@@ -40,6 +42,7 @@ SPEC REPOS:
     - GoogleToolboxForMac
     - GTMSessionFetcher
     - Kingfisher
+    - lottie-ios
     - ObjectMapper
     - RxAtomic
     - RxCocoa
@@ -53,6 +56,7 @@ SPEC CHECKSUMS:
   GoogleToolboxForMac: ff31605b7d66400dcec09bed5861689aebadda4d
   GTMSessionFetcher: 32aeca0aa144acea523e1c8e053089dec2cb98ca
   Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
+  lottie-ios: 3fef45d3fabe63e3c7c2eb603dd64ddfffc73062
   ObjectMapper: 5311bd50ca732930959e7ca1a2de43ab823a5ced
   RxAtomic: eacf60db868c96bfd63320e28619fe29c179656f
   RxCocoa: df63ebf7b9a70d6b4eeea407ed5dd4efc8979749
@@ -60,6 +64,6 @@ SPEC CHECKSUMS:
   SnapKit: 0de968a9fec17499afa29683b05d0c775b6d1c29
   Then: 71866660c7af35a7343831f7668e7cd2b62ee0f2
 
-PODFILE CHECKSUM: 67957159ecec9a4014e896794db5b878e86f1ec2
+PODFILE CHECKSUM: ec7915bfe0af2aa74870d597abd78ef87537746c
 
 COCOAPODS: 1.5.3
