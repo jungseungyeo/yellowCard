@@ -29,8 +29,7 @@ class UserInfoViewModel {
                     return
                 }
                 let imageData = try! Data(contentsOf: userInfo.profileImageURL!)
-                self.userInfo?.profile = UIImage(data: imageData)
-                self.userInfo?.name = userInfo.nickname
+                self.userInfo = UserInfo(JSON: ["name": userInfo.nickname, "profile": UIImage(data: imageData)])
                 complete(true)
             })
         })
