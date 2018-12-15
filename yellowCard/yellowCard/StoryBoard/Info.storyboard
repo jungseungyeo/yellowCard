@@ -19,10 +19,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6JZ-xt-K7r" customClass="LOTAnimationView">
-                                <rect key="frame" x="0.0" y="146" width="375" height="375"/>
+                                <rect key="frame" x="0.0" y="240" width="375" height="187"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="6JZ-xt-K7r" secondAttribute="height" multiplier="1:1" id="X5S-MV-4TR"/>
+                                    <constraint firstAttribute="width" secondItem="6JZ-xt-K7r" secondAttribute="height" multiplier="375:187" id="dsP-aL-QAx"/>
                                 </constraints>
                             </view>
                         </subviews>
