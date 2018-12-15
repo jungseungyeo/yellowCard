@@ -17,7 +17,18 @@
                     <view key="view" contentMode="scaleToFill" id="B7k-Y3-ZCP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="splash" translatesAutoresizingMaskIntoConstraints="NO" id="k8h-aq-4NK">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="k8h-aq-4NK" firstAttribute="top" secondItem="B7k-Y3-ZCP" secondAttribute="top" id="1h1-lp-xXh"/>
+                            <constraint firstItem="k8h-aq-4NK" firstAttribute="trailing" secondItem="uiB-W3-Gu4" secondAttribute="trailing" id="bWQ-Md-wUf"/>
+                            <constraint firstItem="k8h-aq-4NK" firstAttribute="leading" secondItem="uiB-W3-Gu4" secondAttribute="leading" id="mgV-cU-Xz9"/>
+                            <constraint firstAttribute="bottom" secondItem="k8h-aq-4NK" secondAttribute="bottom" id="vOW-Pf-ahw"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="uiB-W3-Gu4"/>
                     </view>
                 </viewController>
@@ -26,4 +37,7 @@
             <point key="canvasLocation" x="240.80000000000001" y="158.77061469265368"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="splash" width="375.1199951171875" height="700.32000732421875"/>
+    </resources>
 </document>

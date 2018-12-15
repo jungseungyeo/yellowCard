@@ -27,7 +27,6 @@
 		2F58C0B821C3A20D001DCC40 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F58C0B721C3A20D001DCC40 /* LoginView.swift */; };
 		2F58C0BA21C3A22C001DCC40 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F58C0B921C3A22C001DCC40 /* UIViewExtension.swift */; };
 		2FFADCC721C13D36000CB3B0 /* KakaoOpenSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FFADCC621C13D36000CB3B0 /* KakaoOpenSDK.framework */; };
-		2FFADCCD21C146F4000CB3B0 /* credentials.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2FFADCCC21C146F4000CB3B0 /* credentials.plist */; };
 		F41D89703EDE829F7260B39D /* Pods_yellowCard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE69F388968FF3517F91AF0D /* Pods_yellowCard.framework */; };
 /* End PBXBuildFile section */
 
@@ -55,7 +54,6 @@
 		2F58C0B921C3A22C001DCC40 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		2FFADCC621C13D36000CB3B0 /* KakaoOpenSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KakaoOpenSDK.framework; sourceTree = "<group>"; };
 		2FFADCC821C13E2B000CB3B0 /* yellowCard-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "yellowCard-Bridging-Header.h"; sourceTree = "<group>"; };
-		2FFADCCC21C146F4000CB3B0 /* credentials.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = credentials.plist; sourceTree = "<group>"; };
 		31006B01FE8D46B61F44E8CB /* Pods-yellowCard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yellowCard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-yellowCard/Pods-yellowCard.debug.xcconfig"; sourceTree = "<group>"; };
 		741B174ED33A3C00E75CA17F /* Pods-yellowCard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yellowCard.release.xcconfig"; path = "Pods/Target Support Files/Pods-yellowCard/Pods-yellowCard.release.xcconfig"; sourceTree = "<group>"; };
 		CE69F388968FF3517F91AF0D /* Pods_yellowCard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_yellowCard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -188,7 +186,6 @@
 				2F58C09721C382FB001DCC40 /* Font */,
 				2F06A67221C13AC700387DED /* Assets.xcassets */,
 				2F06A67721C13AC700387DED /* Info.plist */,
-				2FFADCCC21C146F4000CB3B0 /* credentials.plist */,
 			);
 			path = Supporfile;
 			sourceTree = "<group>";
@@ -278,7 +275,6 @@
 				2F58C09E21C38313001DCC40 /* SpoqaHanSansRegular.ttf in Resources */,
 				2F58C09D21C38313001DCC40 /* SpoqaHanSansLight.ttf in Resources */,
 				2F58C09F21C38313001DCC40 /* SpoqaHanSansThin.ttf in Resources */,
-				2FFADCCD21C146F4000CB3B0 /* credentials.plist in Resources */,
 				2F06A67321C13AC700387DED /* Assets.xcassets in Resources */,
 				2F06A67121C13AC600387DED /* Main.storyboard in Resources */,
 				2F58C09C21C38313001DCC40 /* SpoqaHanSansBold.ttf in Resources */,
