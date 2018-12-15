@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import GoogleSignIn
 import SnapKit
 import Then
 
@@ -26,7 +25,6 @@ class LoginView: UIView {
     }
 
     let kakaoLoginButton = KOLoginButton()
-    let googleLoginButton = GIDSignInButton()
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -41,20 +39,13 @@ class LoginView: UIView {
     private func uiSetup() {
         self.backgroundColor = .white
 
-        addSubViews(kakaoLoginButton, googleLoginButton)
+        addSubViews(kakaoLoginButton)
 
         kakaoLoginButton.snp.makeConstraints { make -> Void in
             make.left.equalToSuperview().offset(30)
             make.right.equalToSuperview().offset(-30)
             make.height.equalTo(45)
             make.bottom.equalToSuperview().offset(-60)
-        }
-
-        googleLoginButton.snp.makeConstraints { make -> Void in
-            make.left.equalToSuperview().offset(30)
-            make.right.equalToSuperview().offset(-30)
-            make.height.equalTo(45)
-            make.bottom.equalTo(kakaoLoginButton.snp.top).offset(-15)
         }
 
         tapSetup()

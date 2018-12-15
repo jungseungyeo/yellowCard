@@ -17,26 +17,9 @@
                     <view key="view" contentMode="scaleToFill" id="B7k-Y3-ZCP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6JZ-xt-K7r" customClass="LOTAnimationView">
-                                <rect key="frame" x="0.0" y="240" width="375" height="187"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" secondItem="6JZ-xt-K7r" secondAttribute="height" multiplier="375:187" id="dsP-aL-QAx"/>
-                                </constraints>
-                            </view>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="6JZ-xt-K7r" firstAttribute="centerY" secondItem="B7k-Y3-ZCP" secondAttribute="centerY" id="Cdk-eA-Jib"/>
-                            <constraint firstItem="6JZ-xt-K7r" firstAttribute="leading" secondItem="B7k-Y3-ZCP" secondAttribute="leading" id="Kvd-Nd-hJH"/>
-                            <constraint firstItem="6JZ-xt-K7r" firstAttribute="centerX" secondItem="B7k-Y3-ZCP" secondAttribute="centerX" id="OZe-Up-ifz"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="uiB-W3-Gu4"/>
                     </view>
-                    <connections>
-                        <outlet property="loadingView" destination="6JZ-xt-K7r" id="Lig-YD-eAo"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AZc-7O-f7r" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
