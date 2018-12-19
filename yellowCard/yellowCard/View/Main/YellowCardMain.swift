@@ -22,6 +22,7 @@ class YellowCardVC: UIViewController {
         yellowCardView.mainDetailCardView.register(YellowCardDetailCell.self, forCellWithReuseIdentifier: "YellowCardDetailCell")
         yellowCardView.mainDetailCardView.delegate = self
         yellowCardView.mainDetailCardView.dataSource = self
+        yellowCardView.delegate = self
     }
 }
 
@@ -45,3 +46,19 @@ extension YellowCardVC: UICollectionViewDataSource, UICollectionViewDelegateFlow
     }
 }
 
+extension YellowCardVC: YellowCardViewDelegate {
+    func alcolRegistrationButtonTapped() {
+        print("주량등록 클릭")
+        DispatchQueue.main.async {
+            self.present(AlcolRegisterViewController.instance()!, animated: true, completion: nil)
+        }
+    }
+
+    func calendarButtonTapped() {
+        print("캘린더 클릭")
+    }
+
+    func encyclopediaButtonTapped() {
+        print("백과사전 클릭")
+    }
+}

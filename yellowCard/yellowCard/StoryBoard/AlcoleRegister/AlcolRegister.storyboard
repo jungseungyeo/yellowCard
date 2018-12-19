@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina4_0" orientation="portrait">
+    <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -10,20 +10,20 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Yellow CardVC-->
-        <scene sceneID="TrF-d8-abp">
+        <!--Alcol Register View Controller-->
+        <scene sceneID="phR-QF-rkO">
             <objects>
-                <viewController storyboardIdentifier="YellowCardVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="hn6-0x-a4l" customClass="YellowCardVC" customModule="yellowCard" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="JVj-0n-emy">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                <viewController storyboardIdentifier="AlcolRegisterViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="5ge-4D-Mba" customClass="AlcolRegisterViewController" customModule="yellowCard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PJv-Fz-cHV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="5f8-RY-Xj9"/>
+                        <viewLayoutGuide key="safeArea" id="Hhd-yJ-1Wh"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8ZF-0Z-Zr9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KQk-mB-Vvg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7.5" y="174.29577464788733"/>
+            <point key="canvasLocation" x="106" y="197"/>
         </scene>
     </scenes>
 </document>
