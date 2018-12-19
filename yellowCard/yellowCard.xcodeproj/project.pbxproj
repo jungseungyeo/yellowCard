@@ -12,17 +12,30 @@
 		2F06A67121C13AC600387DED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F06A66F21C13AC600387DED /* Main.storyboard */; };
 		2F06A67321C13AC700387DED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F06A67221C13AC700387DED /* Assets.xcassets */; };
 		2F06A67621C13AC700387DED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F06A67421C13AC700387DED /* LaunchScreen.storyboard */; };
-		2F58C08B21C36724001DCC40 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F58C08A21C36724001DCC40 /* LoginViewModel.swift */; };
 		2F58C08D21C36731001DCC40 /* UserInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F58C08C21C36731001DCC40 /* UserInfoModel.swift */; };
-		2F58C08F21C3674A001DCC40 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F58C08E21C3674A001DCC40 /* NetworkService.swift */; };
-		2F58C09121C3675F001DCC40 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F58C09021C3675F001DCC40 /* UserViewModel.swift */; };
 		2F58C09C21C38313001DCC40 /* SpoqaHanSansBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F58C09821C38310001DCC40 /* SpoqaHanSansBold.ttf */; };
 		2F58C09D21C38313001DCC40 /* SpoqaHanSansLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F58C09921C38311001DCC40 /* SpoqaHanSansLight.ttf */; };
 		2F58C09E21C38313001DCC40 /* SpoqaHanSansRegular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F58C09A21C38312001DCC40 /* SpoqaHanSansRegular.ttf */; };
 		2F58C09F21C38313001DCC40 /* SpoqaHanSansThin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F58C09B21C38313001DCC40 /* SpoqaHanSansThin.ttf */; };
 		2F58C0A321C3873A001DCC40 /* FontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F58C0A221C3873A001DCC40 /* FontExtension.swift */; };
+		2F58C0A721C38FD2001DCC40 /* UserInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F58C0A621C38FD2001DCC40 /* UserInfoViewModel.swift */; };
+		2F58C0A921C39184001DCC40 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F58C0A821C39184001DCC40 /* InfoViewController.swift */; };
+		2F58C0AB21C39344001DCC40 /* Info.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F58C0AA21C39344001DCC40 /* Info.storyboard */; };
+		2F58C0AD21C39412001DCC40 /* NSObjectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F58C0AC21C39412001DCC40 /* NSObjectExtension.swift */; };
+		2F58C0B221C3971C001DCC40 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F58C0B121C3971C001DCC40 /* LoginViewController.swift */; };
+		2F58C0B421C39726001DCC40 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F58C0B321C39726001DCC40 /* Login.storyboard */; };
+		2F58C0B821C3A20D001DCC40 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F58C0B721C3A20D001DCC40 /* LoginView.swift */; };
+		2F58C0BA21C3A22C001DCC40 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F58C0B921C3A22C001DCC40 /* UIViewExtension.swift */; };
+		2F8FD61D21CA690A0038BF7E /* AlcolRegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8FD61C21CA690A0038BF7E /* AlcolRegisterVC.swift */; };
+		2F8FD62021CA693F0038BF7E /* AlcolRegister.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F8FD61F21CA693F0038BF7E /* AlcolRegister.storyboard */; };
+		2F8FD62221CA69EE0038BF7E /* AlcoRegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8FD62121CA69EE0038BF7E /* AlcoRegisterView.swift */; };
+		2FAFA19121C6130B00A5EAC0 /* YellowCardDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAFA19021C6130B00A5EAC0 /* YellowCardDetailCell.swift */; };
+		2FF9690021C5FF1C002FA884 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF968FF21C5FF1C002FA884 /* Logger.swift */; };
+		2FF9690221C5FFC2002FA884 /* YellowCardMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FF9690121C5FFC2002FA884 /* YellowCardMain.storyboard */; };
+		2FF9690521C5FFEE002FA884 /* YellowCardMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF9690421C5FFEE002FA884 /* YellowCardMain.swift */; };
+		2FF9690721C6008E002FA884 /* YellowCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF9690621C6008E002FA884 /* YellowCardView.swift */; };
+		2FF9690921C60BE8002FA884 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF9690821C60BE8002FA884 /* UIColorExtension.swift */; };
 		2FFADCC721C13D36000CB3B0 /* KakaoOpenSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FFADCC621C13D36000CB3B0 /* KakaoOpenSDK.framework */; };
-		2FFADCCD21C146F4000CB3B0 /* credentials.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2FFADCCC21C146F4000CB3B0 /* credentials.plist */; };
 		F41D89703EDE829F7260B39D /* Pods_yellowCard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE69F388968FF3517F91AF0D /* Pods_yellowCard.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,18 +47,31 @@
 		2F06A67221C13AC700387DED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2F06A67521C13AC700387DED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2F06A67721C13AC700387DED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2F58C08A21C36724001DCC40 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		2F58C08C21C36731001DCC40 /* UserInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoModel.swift; sourceTree = "<group>"; };
-		2F58C08E21C3674A001DCC40 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
-		2F58C09021C3675F001DCC40 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		2F58C09821C38310001DCC40 /* SpoqaHanSansBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SpoqaHanSansBold.ttf; sourceTree = "<group>"; };
 		2F58C09921C38311001DCC40 /* SpoqaHanSansLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SpoqaHanSansLight.ttf; sourceTree = "<group>"; };
 		2F58C09A21C38312001DCC40 /* SpoqaHanSansRegular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SpoqaHanSansRegular.ttf; sourceTree = "<group>"; };
 		2F58C09B21C38313001DCC40 /* SpoqaHanSansThin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SpoqaHanSansThin.ttf; sourceTree = "<group>"; };
 		2F58C0A221C3873A001DCC40 /* FontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontExtension.swift; sourceTree = "<group>"; };
+		2F58C0A621C38FD2001DCC40 /* UserInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewModel.swift; sourceTree = "<group>"; };
+		2F58C0A821C39184001DCC40 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		2F58C0AA21C39344001DCC40 /* Info.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Info.storyboard; sourceTree = "<group>"; };
+		2F58C0AC21C39412001DCC40 /* NSObjectExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObjectExtension.swift; sourceTree = "<group>"; };
+		2F58C0B121C3971C001DCC40 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		2F58C0B321C39726001DCC40 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		2F58C0B721C3A20D001DCC40 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		2F58C0B921C3A22C001DCC40 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		2F8FD61C21CA690A0038BF7E /* AlcolRegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlcolRegisterVC.swift; sourceTree = "<group>"; };
+		2F8FD61F21CA693F0038BF7E /* AlcolRegister.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AlcolRegister.storyboard; sourceTree = "<group>"; };
+		2F8FD62121CA69EE0038BF7E /* AlcoRegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlcoRegisterView.swift; sourceTree = "<group>"; };
+		2FAFA19021C6130B00A5EAC0 /* YellowCardDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowCardDetailCell.swift; sourceTree = "<group>"; };
+		2FF968FF21C5FF1C002FA884 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		2FF9690121C5FFC2002FA884 /* YellowCardMain.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = YellowCardMain.storyboard; sourceTree = "<group>"; };
+		2FF9690421C5FFEE002FA884 /* YellowCardMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowCardMain.swift; sourceTree = "<group>"; };
+		2FF9690621C6008E002FA884 /* YellowCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowCardView.swift; sourceTree = "<group>"; };
+		2FF9690821C60BE8002FA884 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		2FFADCC621C13D36000CB3B0 /* KakaoOpenSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KakaoOpenSDK.framework; sourceTree = "<group>"; };
 		2FFADCC821C13E2B000CB3B0 /* yellowCard-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "yellowCard-Bridging-Header.h"; sourceTree = "<group>"; };
-		2FFADCCC21C146F4000CB3B0 /* credentials.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = credentials.plist; sourceTree = "<group>"; };
 		31006B01FE8D46B61F44E8CB /* Pods-yellowCard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yellowCard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-yellowCard/Pods-yellowCard.debug.xcconfig"; sourceTree = "<group>"; };
 		741B174ED33A3C00E75CA17F /* Pods-yellowCard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yellowCard.release.xcconfig"; path = "Pods/Target Support Files/Pods-yellowCard/Pods-yellowCard.release.xcconfig"; sourceTree = "<group>"; };
 		CE69F388968FF3517F91AF0D /* Pods_yellowCard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_yellowCard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				2F06A66B21C13AC600387DED /* AppDelegate.swift */,
+				2FF968FF21C5FF1C002FA884 /* Logger.swift */,
 				2F58C08921C357AF001DCC40 /* StoryBoard */,
 				2F58C08821C3579E001DCC40 /* Model */,
 				2F58C08621C3578D001DCC40 /* View */,
@@ -100,7 +127,11 @@
 		2F58C08621C3578D001DCC40 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2F8FD61B21CA68DC0038BF7E /* AlcolRegister */,
+				2FF9690321C5FFE1002FA884 /* Main */,
+				2F58C0B621C3A1ED001DCC40 /* Login */,
 				2F06A66D21C13AC600387DED /* ViewController.swift */,
+				2F58C0A821C39184001DCC40 /* InfoViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -108,9 +139,7 @@
 		2F58C08721C35795001DCC40 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				2F58C09421C37F9B001DCC40 /* Login */,
-				2F58C08E21C3674A001DCC40 /* NetworkService.swift */,
-				2F58C09021C3675F001DCC40 /* UserViewModel.swift */,
+				2F58C0A621C38FD2001DCC40 /* UserInfoViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -126,18 +155,14 @@
 		2F58C08921C357AF001DCC40 /* StoryBoard */ = {
 			isa = PBXGroup;
 			children = (
+				2F8FD61E21CA69250038BF7E /* AlcoleRegister */,
+				2FF968FD21C5FE9B002FA884 /* Main */,
 				2F06A66F21C13AC600387DED /* Main.storyboard */,
 				2F06A67421C13AC700387DED /* LaunchScreen.storyboard */,
+				2F58C0AA21C39344001DCC40 /* Info.storyboard */,
+				2F58C0B321C39726001DCC40 /* Login.storyboard */,
 			);
 			path = StoryBoard;
-			sourceTree = "<group>";
-		};
-		2F58C09421C37F9B001DCC40 /* Login */ = {
-			isa = PBXGroup;
-			children = (
-				2F58C08A21C36724001DCC40 /* LoginViewModel.swift */,
-			);
-			path = Login;
 			sourceTree = "<group>";
 		};
 		2F58C09721C382FB001DCC40 /* Font */ = {
@@ -163,8 +188,55 @@
 			isa = PBXGroup;
 			children = (
 				2F58C0A221C3873A001DCC40 /* FontExtension.swift */,
+				2F58C0AC21C39412001DCC40 /* NSObjectExtension.swift */,
+				2F58C0B921C3A22C001DCC40 /* UIViewExtension.swift */,
+				2FF9690821C60BE8002FA884 /* UIColorExtension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		2F58C0B621C3A1ED001DCC40 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				2F58C0B121C3971C001DCC40 /* LoginViewController.swift */,
+				2F58C0B721C3A20D001DCC40 /* LoginView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		2F8FD61B21CA68DC0038BF7E /* AlcolRegister */ = {
+			isa = PBXGroup;
+			children = (
+				2F8FD61C21CA690A0038BF7E /* AlcolRegisterVC.swift */,
+				2F8FD62121CA69EE0038BF7E /* AlcoRegisterView.swift */,
+			);
+			path = AlcolRegister;
+			sourceTree = "<group>";
+		};
+		2F8FD61E21CA69250038BF7E /* AlcoleRegister */ = {
+			isa = PBXGroup;
+			children = (
+				2F8FD61F21CA693F0038BF7E /* AlcolRegister.storyboard */,
+			);
+			path = AlcoleRegister;
+			sourceTree = "<group>";
+		};
+		2FF968FD21C5FE9B002FA884 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				2FF9690121C5FFC2002FA884 /* YellowCardMain.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		2FF9690321C5FFE1002FA884 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				2FF9690421C5FFEE002FA884 /* YellowCardMain.swift */,
+				2FF9690621C6008E002FA884 /* YellowCardView.swift */,
+				2FAFA19021C6130B00A5EAC0 /* YellowCardDetailCell.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 		2FFADCCB21C146E1000CB3B0 /* Supporfile */ = {
@@ -173,7 +245,6 @@
 				2F58C09721C382FB001DCC40 /* Font */,
 				2F06A67221C13AC700387DED /* Assets.xcassets */,
 				2F06A67721C13AC700387DED /* Info.plist */,
-				2FFADCCC21C146F4000CB3B0 /* credentials.plist */,
 			);
 			path = Supporfile;
 			sourceTree = "<group>";
@@ -208,7 +279,7 @@
 				2F06A66521C13AC600387DED /* Frameworks */,
 				2F06A66621C13AC600387DED /* Resources */,
 				6AE03B65D5A2AD9F319DF8EF /* [CP] Embed Pods Frameworks */,
-				140E1DD2EE1F3A70258855F4 /* [CP] Copy Pods Resources */,
+				FF04F1AC82AD5EC92435F108 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -258,42 +329,23 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F58C0AB21C39344001DCC40 /* Info.storyboard in Resources */,
 				2F06A67621C13AC700387DED /* LaunchScreen.storyboard in Resources */,
 				2F58C09E21C38313001DCC40 /* SpoqaHanSansRegular.ttf in Resources */,
 				2F58C09D21C38313001DCC40 /* SpoqaHanSansLight.ttf in Resources */,
 				2F58C09F21C38313001DCC40 /* SpoqaHanSansThin.ttf in Resources */,
-				2FFADCCD21C146F4000CB3B0 /* credentials.plist in Resources */,
 				2F06A67321C13AC700387DED /* Assets.xcassets in Resources */,
 				2F06A67121C13AC600387DED /* Main.storyboard in Resources */,
+				2F8FD62021CA693F0038BF7E /* AlcolRegister.storyboard in Resources */,
+				2FF9690221C5FFC2002FA884 /* YellowCardMain.storyboard in Resources */,
 				2F58C09C21C38313001DCC40 /* SpoqaHanSansBold.ttf in Resources */,
+				2F58C0B421C39726001DCC40 /* Login.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		140E1DD2EE1F3A70258855F4 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-yellowCard/Pods-yellowCard-resources.sh",
-				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-yellowCard/Pods-yellowCard-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		6AE03B65D5A2AD9F319DF8EF /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -312,6 +364,7 @@
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyBeaver/SwiftyBeaver.framework",
 				"${BUILT_PRODUCTS_DIR}/Then/Then.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -327,6 +380,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyBeaver.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Then.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -356,6 +410,28 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		FF04F1AC82AD5EC92435F108 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-yellowCard/Pods-yellowCard-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-yellowCard/Pods-yellowCard-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -363,13 +439,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F58C08F21C3674A001DCC40 /* NetworkService.swift in Sources */,
-				2F58C09121C3675F001DCC40 /* UserViewModel.swift in Sources */,
+				2FF9690021C5FF1C002FA884 /* Logger.swift in Sources */,
+				2FF9690921C60BE8002FA884 /* UIColorExtension.swift in Sources */,
+				2F58C0BA21C3A22C001DCC40 /* UIViewExtension.swift in Sources */,
+				2FF9690521C5FFEE002FA884 /* YellowCardMain.swift in Sources */,
+				2F8FD62221CA69EE0038BF7E /* AlcoRegisterView.swift in Sources */,
+				2FAFA19121C6130B00A5EAC0 /* YellowCardDetailCell.swift in Sources */,
+				2F58C0AD21C39412001DCC40 /* NSObjectExtension.swift in Sources */,
 				2F58C0A321C3873A001DCC40 /* FontExtension.swift in Sources */,
 				2F06A66E21C13AC600387DED /* ViewController.swift in Sources */,
+				2F58C0B821C3A20D001DCC40 /* LoginView.swift in Sources */,
+				2F8FD61D21CA690A0038BF7E /* AlcolRegisterVC.swift in Sources */,
+				2F58C0A721C38FD2001DCC40 /* UserInfoViewModel.swift in Sources */,
+				2F58C0B221C3971C001DCC40 /* LoginViewController.swift in Sources */,
 				2F06A66C21C13AC600387DED /* AppDelegate.swift in Sources */,
+				2F58C0A921C39184001DCC40 /* InfoViewController.swift in Sources */,
+				2FF9690721C6008E002FA884 /* YellowCardView.swift in Sources */,
 				2F58C08D21C36731001DCC40 /* UserInfoModel.swift in Sources */,
-				2F58C08B21C36724001DCC40 /* LoginViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -524,7 +610,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/yellowCard/Supporfile/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -552,7 +638,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "$(SRCROOT)/yellowCard/Supporfile/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

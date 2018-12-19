@@ -8,12 +8,14 @@
 import ObjectMapper
 
 class UserInfo: Mappable {
+    var userId: NSNumber?
     var name: String?
     var profile: UIImage?
 
     required init?(map: Map) { }
 
     func mapping(map: Map) {
+        self.userId     <- map["userId"]
         self.name       <- map["name"]
         self.profile    <- map["profile"]
     }
