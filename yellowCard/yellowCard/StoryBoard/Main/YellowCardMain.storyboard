@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SpoqaHanSansBold.ttf">
+            <string>SpoqaHanSans-Bold</string>
+        </array>
+        <array key="SpoqaHanSansLight.ttf">
+            <string>SpoqaHanSans-Light</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Yellow CardVC-->
+        <scene sceneID="TrF-d8-abp">
+            <objects>
+                <viewController storyboardIdentifier="YellowCardVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="hn6-0x-a4l" customClass="YellowCardVC" customModule="yellowCard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JVj-0n-emy">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yellow Card" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7X1-zd-ZZf">
+                                <rect key="frame" x="32" y="47" width="116" height="30"/>
+                                <fontDescription key="fontDescription" name="SpoqaHanSans-Bold" family="SpoqaHanSans" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FXt-ws-m9a">
+                                <rect key="frame" x="231" y="54" width="47" height="30"/>
+                                <fontDescription key="fontDescription" name="SpoqaHanSans-Light" family="SpoqaHanSans" pointSize="12"/>
+                                <state key="normal" title="환경 설정">
+                                    <color key="titleColor" red="0.066666666669999999" green="0.066666666669999999" blue="0.066666666669999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="5f8-RY-Xj9" firstAttribute="trailing" secondItem="FXt-ws-m9a" secondAttribute="trailing" constant="42" id="9iG-aN-UzS"/>
+                            <constraint firstItem="FXt-ws-m9a" firstAttribute="top" secondItem="5f8-RY-Xj9" secondAttribute="top" constant="34" id="G41-Th-qfb"/>
+                            <constraint firstItem="7X1-zd-ZZf" firstAttribute="leading" secondItem="5f8-RY-Xj9" secondAttribute="leading" constant="32" id="HFX-W8-F9q"/>
+                            <constraint firstItem="7X1-zd-ZZf" firstAttribute="top" secondItem="5f8-RY-Xj9" secondAttribute="top" constant="27" id="fMM-uK-Ydk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5f8-RY-Xj9"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8ZF-0Z-Zr9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7.5" y="174.29577464788733"/>
+        </scene>
+    </scenes>
+</document>

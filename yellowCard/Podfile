@@ -13,9 +13,7 @@ target 'yellowCard' do
   pod 'SnapKit',        '~> 4.0.0'
   pod 'Alamofire',      '~> 5.0.0.beta.1'
   pod 'Then'
-
-  pod 'lottie-ios'
-  pod 'PopupDialog', '~> 0.9'
+  pod 'SwiftyBeaver'
 
   # login SDK
   pod 'GoogleSignIn'

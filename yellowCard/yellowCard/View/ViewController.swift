@@ -12,7 +12,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         DispatchQueue.main.async {
-            self.moveInfo()
+            self.moveYellowCardMain()
         }
     }
 
@@ -25,6 +25,12 @@ class ViewController: UIViewController {
     private func moveLogin() {
         if let loginView = LoginViewController.instance() {
             present(loginView, animated: true, completion: nil)
+        }
+    }
+
+    private func moveYellowCardMain() {
+        if let mainVC = YellowCardVC.instance() {
+            present(mainVC, animated: true, completion: nil)
         }
     }
 }

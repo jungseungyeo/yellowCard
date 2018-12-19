@@ -17,9 +17,25 @@ class UserInfoViewModel {
 
     func kakaoLogin(session: KOSession, complete: @escaping (Bool) -> Void) {
         session.open(completionHandler: { error in
+            var imageURL: URL?
+            var name: String?
             guard error == nil else {
                 complete(false)
                 return
+            }
+
+            func sendNetwork() {
+                KOSessionTask.accessTokenInfoTask(completionHandler: { accessToken, error in
+                    guard error == nil else {
+                        complete(false)
+                        return
+                    }
+                    // 서버로 보내줘야 하는 토큰값
+                    let tokenId = accessToken?.id
+                    let imageData = try! Data(contentsOf: imageURL!)
+                    self.userInfo = UserInfo(JSON: ["userId": tokenId!, "name": name!, "profile": UIImage(data: imageData)!])
+                    complete(true)
+                })
             }
 
             KOSessionTask.userMeTask(completion: { error, userInfo in
@@ -28,9 +44,12 @@ class UserInfoViewModel {
                     complete(false)
                     return
                 }
-                let imageData = try! Data(contentsOf: userInfo.profileImageURL!)
-                self.userInfo = UserInfo(JSON: ["name": userInfo.nickname, "profile": UIImage(data: imageData)])
-                complete(true)
+//                let imageData = try! Data(contentsOf: userInfo.profileImageURL!)
+//                self.userInfo = UserInfo(JSON: ["name": userInfo.nickname, "profile": UIImage(data: imageData)])
+                name = userInfo.nickname!
+                imageURL = userInfo.profileImageURL!
+
+                sendNetwork()
             })
         })
     }

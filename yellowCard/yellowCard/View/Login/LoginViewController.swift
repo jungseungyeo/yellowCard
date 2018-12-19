@@ -40,16 +40,14 @@ extension LoginViewController: LoginButtonDelegate {
                 return
             }
             // 성공
-            print("카카오 로그인 성공")
+            log.debug("카카오 로그인 성공")
+            self.next()
         })
-
     }
+}
 
-    func logoutKakao(session: KOSession) {
-        session.logoutAndClose(completionHandler: { success, error in
-            if success {
-                session.close()
-            }
-        })
+extension LoginViewController {
+    private func next() {
+        present(YellowCardVC.instance()!, animated: true, completion: nil)
     }
 }

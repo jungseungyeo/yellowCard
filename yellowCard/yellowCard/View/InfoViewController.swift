@@ -10,12 +10,19 @@ import UIKit
 
 class InfoViewController: UIViewController {
 
+    private var timer = Timer()
+    lazy private var autoSearchTimer = Timer()
     static func instance() -> InfoViewController? {
         return UIStoryboard(name: "Info", bundle: nil).instantiateViewController(withIdentifier: classNameToString) as? InfoViewController
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        next()
+    }
+
+    private func next() {
+        UIApplication.shared.keyWindow?.rootViewController = LoginViewController.instance()
     }
     
 }
