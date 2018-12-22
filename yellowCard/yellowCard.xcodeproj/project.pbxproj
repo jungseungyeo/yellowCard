@@ -22,6 +22,15 @@
 		2F817E9E21CE5DD800574F08 /* Info.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F817E9D21CE5DD800574F08 /* Info.storyboard */; };
 		2F817EA021CE5EF200574F08 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F817E9F21CE5EF200574F08 /* InfoView.swift */; };
 		2F817EA221CE603900574F08 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F817EA121CE603900574F08 /* UIViewExtension.swift */; };
+		2F817EA421CE65AE00574F08 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F817EA321CE65AE00574F08 /* LoginView.swift */; };
+		2F817EAA21CE662100574F08 /* SpoqaHanSansLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F817EA621CE661E00574F08 /* SpoqaHanSansLight.ttf */; };
+		2F817EAB21CE662100574F08 /* SpoqaHanSansBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F817EA721CE661F00574F08 /* SpoqaHanSansBold.ttf */; };
+		2F817EAC21CE662100574F08 /* SpoqaHanSansRegular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F817EA821CE662000574F08 /* SpoqaHanSansRegular.ttf */; };
+		2F817EAD21CE662100574F08 /* SpoqaHanSansThin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F817EA921CE662100574F08 /* SpoqaHanSansThin.ttf */; };
+		2F817EAF21CE66E300574F08 /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F817EAE21CE66E300574F08 /* UIFontExtension.swift */; };
+		2F817EB121CE671300574F08 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F817EB021CE671300574F08 /* UIColorExtension.swift */; };
+		2FC5519321CE8CEA0091547B /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC5519221CE8CEA0091547B /* LoginViewModel.swift */; };
+		2FC5519521CE8F0C0091547B /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC5519421CE8F0C0091547B /* UserViewModel.swift */; };
 		FF498DCC8D8F575AA7F6430B /* Pods_yellowCard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 590F4C23ADE71A623F083DFA /* Pods_yellowCard.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,6 +53,15 @@
 		2F817E9D21CE5DD800574F08 /* Info.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Info.storyboard; sourceTree = "<group>"; };
 		2F817E9F21CE5EF200574F08 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 		2F817EA121CE603900574F08 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		2F817EA321CE65AE00574F08 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		2F817EA621CE661E00574F08 /* SpoqaHanSansLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SpoqaHanSansLight.ttf; sourceTree = "<group>"; };
+		2F817EA721CE661F00574F08 /* SpoqaHanSansBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SpoqaHanSansBold.ttf; sourceTree = "<group>"; };
+		2F817EA821CE662000574F08 /* SpoqaHanSansRegular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SpoqaHanSansRegular.ttf; sourceTree = "<group>"; };
+		2F817EA921CE662100574F08 /* SpoqaHanSansThin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SpoqaHanSansThin.ttf; sourceTree = "<group>"; };
+		2F817EAE21CE66E300574F08 /* UIFontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontExtension.swift; sourceTree = "<group>"; };
+		2F817EB021CE671300574F08 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		2FC5519221CE8CEA0091547B /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		2FC5519421CE8F0C0091547B /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		590F4C23ADE71A623F083DFA /* Pods_yellowCard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_yellowCard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A675AEF7F0E681A668FE205 /* Pods-yellowCard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yellowCard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-yellowCard/Pods-yellowCard.debug.xcconfig"; sourceTree = "<group>"; };
 		B850B149F4E2FCE42F457BC3 /* Pods-yellowCard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yellowCard.release.xcconfig"; path = "Pods/Target Support Files/Pods-yellowCard/Pods-yellowCard.release.xcconfig"; sourceTree = "<group>"; };
@@ -95,6 +113,7 @@
 		2F817E8521CE543600574F08 /* SupportFile */ = {
 			isa = PBXGroup;
 			children = (
+				2F817EA521CE660E00574F08 /* Font */,
 				2F0B8F3B21CE4BA800FD07F3 /* Assets.xcassets */,
 				2F0B8F4021CE4BA800FD07F3 /* Info.plist */,
 			);
@@ -109,6 +128,7 @@
 				2F817E8B21CE589D00574F08 /* Root */,
 				2F817E9521CE5C8400574F08 /* Common */,
 				2F0B8F3621CE4BA700FD07F3 /* ViewController.swift */,
+				2FC5519421CE8F0C0091547B /* UserViewModel.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -128,6 +148,8 @@
 			isa = PBXGroup;
 			children = (
 				2F817E8921CE57D600574F08 /* LoginViewController.swift */,
+				2F817EA321CE65AE00574F08 /* LoginView.swift */,
+				2FC5519221CE8CEA0091547B /* LoginViewModel.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -162,6 +184,8 @@
 			children = (
 				2F817E9721CE5C9E00574F08 /* NSObjectExtension.swift */,
 				2F817EA121CE603900574F08 /* UIViewExtension.swift */,
+				2F817EAE21CE66E300574F08 /* UIFontExtension.swift */,
+				2F817EB021CE671300574F08 /* UIColorExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -181,6 +205,17 @@
 				2F817E9D21CE5DD800574F08 /* Info.storyboard */,
 			);
 			path = Info;
+			sourceTree = "<group>";
+		};
+		2F817EA521CE660E00574F08 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				2F817EA721CE661F00574F08 /* SpoqaHanSansBold.ttf */,
+				2F817EA621CE661E00574F08 /* SpoqaHanSansLight.ttf */,
+				2F817EA821CE662000574F08 /* SpoqaHanSansRegular.ttf */,
+				2F817EA921CE662100574F08 /* SpoqaHanSansThin.ttf */,
+			);
+			path = Font;
 			sourceTree = "<group>";
 		};
 		6C726979703917AD6D7546CA /* Pods */ = {
@@ -263,8 +298,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F817E9421CE5C2B00574F08 /* Login.storyboard in Resources */,
+				2F817EAB21CE662100574F08 /* SpoqaHanSansBold.ttf in Resources */,
+				2F817EAA21CE662100574F08 /* SpoqaHanSansLight.ttf in Resources */,
 				2F0B8F3F21CE4BA800FD07F3 /* LaunchScreen.storyboard in Resources */,
 				2F0B8F3C21CE4BA800FD07F3 /* Assets.xcassets in Resources */,
+				2F817EAD21CE662100574F08 /* SpoqaHanSansThin.ttf in Resources */,
+				2F817EAC21CE662100574F08 /* SpoqaHanSansRegular.ttf in Resources */,
 				2F817E9E21CE5DD800574F08 /* Info.storyboard in Resources */,
 				2F0B8F3A21CE4BA700FD07F3 /* Main.storyboard in Resources */,
 			);
@@ -346,7 +385,12 @@
 				2F817E8D21CE58B300574F08 /* RootViewController.swift in Sources */,
 				2F817EA221CE603900574F08 /* UIViewExtension.swift in Sources */,
 				2F0B8F3521CE4BA700FD07F3 /* AppDelegate.swift in Sources */,
+				2FC5519321CE8CEA0091547B /* LoginViewModel.swift in Sources */,
+				2FC5519521CE8F0C0091547B /* UserViewModel.swift in Sources */,
+				2F817EA421CE65AE00574F08 /* LoginView.swift in Sources */,
 				2F817E8F21CE5B7D00574F08 /* RootView.swift in Sources */,
+				2F817EAF21CE66E300574F08 /* UIFontExtension.swift in Sources */,
+				2F817EB121CE671300574F08 /* UIColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

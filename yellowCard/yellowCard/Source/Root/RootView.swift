@@ -13,14 +13,26 @@ class RootView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         setup()
+        setupUI()
+        setupTapped()
     }
 
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setup()
+        setupUI()
+        setupTapped()
     }
 
     func setup() {
         self.backgroundColor = .white
+    }
+
+    func setupUI() {
+
+    }
+
+    func setupTapped() {
+
     }
 }

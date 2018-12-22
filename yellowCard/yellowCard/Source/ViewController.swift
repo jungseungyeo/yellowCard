@@ -13,7 +13,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 
         DispatchQueue.main.async {
-            self.moveInfo()
+//            self.moveInfo()
+            self.moveLogin()
         }
     }
 }
@@ -24,6 +25,12 @@ extension ViewController {
     private func moveInfo() {
         if let infoViewController = InfoViewController.instance() {
             present(infoViewController, animated: true, completion: nil)
+        }
+    }
+
+    private func moveLogin() {
+        if let loginViewController = LoginViewController.instance() {
+            present(loginViewController, animated: true, completion: nil)
         }
     }
 }
