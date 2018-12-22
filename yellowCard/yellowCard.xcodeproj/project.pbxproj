@@ -29,6 +29,8 @@
 		2F8FD61D21CA690A0038BF7E /* AlcolRegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8FD61C21CA690A0038BF7E /* AlcolRegisterVC.swift */; };
 		2F8FD62021CA693F0038BF7E /* AlcolRegister.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F8FD61F21CA693F0038BF7E /* AlcolRegister.storyboard */; };
 		2F8FD62221CA69EE0038BF7E /* AlcoRegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8FD62121CA69EE0038BF7E /* AlcoRegisterView.swift */; };
+		2FA54EE221CD3F6800A00CDE /* DateModelPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FA54EE121CD3F6800A00CDE /* DateModelPicker.swift */; };
+		2FAF272421CCCB0F00899D7B /* AlcolRegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAF272321CCCB0F00899D7B /* AlcolRegisterViewModel.swift */; };
 		2FAFA19121C6130B00A5EAC0 /* YellowCardDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAFA19021C6130B00A5EAC0 /* YellowCardDetailCell.swift */; };
 		2FF9690021C5FF1C002FA884 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF968FF21C5FF1C002FA884 /* Logger.swift */; };
 		2FF9690221C5FFC2002FA884 /* YellowCardMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FF9690121C5FFC2002FA884 /* YellowCardMain.storyboard */; };
@@ -64,6 +66,8 @@
 		2F8FD61C21CA690A0038BF7E /* AlcolRegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlcolRegisterVC.swift; sourceTree = "<group>"; };
 		2F8FD61F21CA693F0038BF7E /* AlcolRegister.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AlcolRegister.storyboard; sourceTree = "<group>"; };
 		2F8FD62121CA69EE0038BF7E /* AlcoRegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlcoRegisterView.swift; sourceTree = "<group>"; };
+		2FA54EE121CD3F6800A00CDE /* DateModelPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateModelPicker.swift; sourceTree = "<group>"; };
+		2FAF272321CCCB0F00899D7B /* AlcolRegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlcolRegisterViewModel.swift; sourceTree = "<group>"; };
 		2FAFA19021C6130B00A5EAC0 /* YellowCardDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowCardDetailCell.swift; sourceTree = "<group>"; };
 		2FF968FF21C5FF1C002FA884 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		2FF9690121C5FFC2002FA884 /* YellowCardMain.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = YellowCardMain.storyboard; sourceTree = "<group>"; };
@@ -209,6 +213,8 @@
 			children = (
 				2F8FD61C21CA690A0038BF7E /* AlcolRegisterVC.swift */,
 				2F8FD62121CA69EE0038BF7E /* AlcoRegisterView.swift */,
+				2FAF272321CCCB0F00899D7B /* AlcolRegisterViewModel.swift */,
+				2FA54EE121CD3F6800A00CDE /* DateModelPicker.swift */,
 			);
 			path = AlcolRegister;
 			sourceTree = "<group>";
@@ -453,9 +459,11 @@
 				2F58C0A721C38FD2001DCC40 /* UserInfoViewModel.swift in Sources */,
 				2F58C0B221C3971C001DCC40 /* LoginViewController.swift in Sources */,
 				2F06A66C21C13AC600387DED /* AppDelegate.swift in Sources */,
+				2FA54EE221CD3F6800A00CDE /* DateModelPicker.swift in Sources */,
 				2F58C0A921C39184001DCC40 /* InfoViewController.swift in Sources */,
 				2FF9690721C6008E002FA884 /* YellowCardView.swift in Sources */,
 				2F58C08D21C36731001DCC40 /* UserInfoModel.swift in Sources */,
+				2FAF272421CCCB0F00899D7B /* AlcolRegisterViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

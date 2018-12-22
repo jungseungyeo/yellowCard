@@ -17,6 +17,8 @@ enum alcolType {
 
 class YellowCardDetailCell: UICollectionViewCell {
 
+    static let registerID = "YellowCardDetailCell"
+
     private let title = UILabel(frame: .zero).then {
         $0.text = "내가 가장 좋아하는 %@"
         $0.font = .spoqaFont(ofSize: 20, weight: .Light)

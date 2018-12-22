@@ -19,7 +19,7 @@ class YellowCardVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view = yellowCardView
-        yellowCardView.mainDetailCardView.register(YellowCardDetailCell.self, forCellWithReuseIdentifier: "YellowCardDetailCell")
+        yellowCardView.mainDetailCardView.register(YellowCardDetailCell.self, forCellWithReuseIdentifier: YellowCardDetailCell.registerID)
         yellowCardView.mainDetailCardView.delegate = self
         yellowCardView.mainDetailCardView.dataSource = self
         yellowCardView.delegate = self
@@ -37,7 +37,7 @@ extension YellowCardVC: UICollectionViewDataSource, UICollectionViewDelegateFlow
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "YellowCardDetailCell", for: indexPath) as! YellowCardDetailCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: YellowCardDetailCell.registerID, for: indexPath) as! YellowCardDetailCell
         return cell
     }
 
@@ -49,9 +49,7 @@ extension YellowCardVC: UICollectionViewDataSource, UICollectionViewDelegateFlow
 extension YellowCardVC: YellowCardViewDelegate {
     func alcolRegistrationButtonTapped() {
         print("주량등록 클릭")
-        DispatchQueue.main.async {
-            self.present(AlcolRegisterViewController.instance()!, animated: true, completion: nil)
-        }
+        self.present(AlcolRegisterViewController.instance()!, animated: true, completion: nil)
     }
 
     func calendarButtonTapped() {

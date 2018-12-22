@@ -12,7 +12,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         DispatchQueue.main.async {
-            self.moveYellowCardMain()
+            self.moveInfo()
+//            self.moveYellowCardMain()
+//            self.moveAlcolRegister()
         }
     }
 
@@ -31,6 +33,12 @@ class ViewController: UIViewController {
     private func moveYellowCardMain() {
         if let mainVC = YellowCardVC.instance() {
             present(mainVC, animated: true, completion: nil)
+        }
+    }
+
+    private func moveAlcolRegister() {
+        if let alcolview = AlcolRegisterViewController.instance() {
+            present(alcolview, animated: true, completion: nil)
         }
     }
 }

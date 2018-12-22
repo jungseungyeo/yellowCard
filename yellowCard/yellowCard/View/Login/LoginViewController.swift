@@ -51,3 +51,7 @@ extension LoginViewController {
         present(YellowCardVC.instance()!, animated: true, completion: nil)
     }
 }
+
+extension LoginViewController: UINavigationControllerDelegate {
+    
+}
