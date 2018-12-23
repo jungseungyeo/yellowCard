@@ -26,10 +26,10 @@
             </objects>
             <point key="canvasLocation" x="-524" y="163"/>
         </scene>
-        <!--View Controller-->
+        <!--Yellow Card Main View Controller-->
         <scene sceneID="uku-NO-p7q">
             <objects>
-                <viewController id="p9a-BS-hqp" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="YellowCardMainViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="p9a-BS-hqp" customClass="YellowCardMainViewController" customModule="yellowCard" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Wy9-dS-xmd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

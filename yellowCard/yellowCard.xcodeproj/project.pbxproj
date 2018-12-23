@@ -33,6 +33,12 @@
 		2FAAF22221CF1946005DFABC /* RootNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAAF22121CF1946005DFABC /* RootNavigationController.swift */; };
 		2FAAF22421CF1998005DFABC /* YellowCardNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAAF22321CF1998005DFABC /* YellowCardNavigationController.swift */; };
 		2FAAF22621CF1A61005DFABC /* YellowCardMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAAF22521CF1A61005DFABC /* YellowCardMainViewController.swift */; };
+		2FAF6CE521CF275D00341E90 /* YellowCardMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAF6CE421CF275D00341E90 /* YellowCardMainView.swift */; };
+		2FAF6CE721CF298F00341E90 /* YellowCardDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAF6CE621CF298F00341E90 /* YellowCardDetailCell.swift */; };
+		2FAF6CE921CF545F00341E90 /* RootCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAF6CE821CF545F00341E90 /* RootCollectionViewCell.swift */; };
+		2FAF6CEC21CF838E00341E90 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAF6CEB21CF838E00341E90 /* SettingViewController.swift */; };
+		2FAF6CEF21CF83B100341E90 /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FAF6CEE21CF83B100341E90 /* Setting.storyboard */; };
+		2FAF6CF121CF84C800341E90 /* SettingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAF6CF021CF84C800341E90 /* SettingViewModel.swift */; };
 		2FC5519321CE8CEA0091547B /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC5519221CE8CEA0091547B /* LoginViewModel.swift */; };
 		2FC5519521CE8F0C0091547B /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC5519421CE8F0C0091547B /* UserViewModel.swift */; };
 		FF498DCC8D8F575AA7F6430B /* Pods_yellowCard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 590F4C23ADE71A623F083DFA /* Pods_yellowCard.framework */; };
@@ -68,6 +74,12 @@
 		2FAAF22121CF1946005DFABC /* RootNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootNavigationController.swift; sourceTree = "<group>"; };
 		2FAAF22321CF1998005DFABC /* YellowCardNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowCardNavigationController.swift; sourceTree = "<group>"; };
 		2FAAF22521CF1A61005DFABC /* YellowCardMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowCardMainViewController.swift; sourceTree = "<group>"; };
+		2FAF6CE421CF275D00341E90 /* YellowCardMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowCardMainView.swift; sourceTree = "<group>"; };
+		2FAF6CE621CF298F00341E90 /* YellowCardDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowCardDetailCell.swift; sourceTree = "<group>"; };
+		2FAF6CE821CF545F00341E90 /* RootCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootCollectionViewCell.swift; sourceTree = "<group>"; };
+		2FAF6CEB21CF838E00341E90 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		2FAF6CEE21CF83B100341E90 /* Setting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
+		2FAF6CF021CF84C800341E90 /* SettingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewModel.swift; sourceTree = "<group>"; };
 		2FC5519221CE8CEA0091547B /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		2FC5519421CE8F0C0091547B /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		590F4C23ADE71A623F083DFA /* Pods_yellowCard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_yellowCard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -131,6 +143,7 @@
 		2F817E8621CE544600574F08 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				2FAF6CEA21CF837B00341E90 /* Setting */,
 				2FAAF21C21CF17BE005DFABC /* ViewModel */,
 				2F817E9921CE5DBF00574F08 /* Info */,
 				2F817E8821CE57C800574F08 /* Login */,
@@ -145,6 +158,7 @@
 		2F817E8721CE545000574F08 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
+				2FAF6CED21CF83A300341E90 /* Setting */,
 				2FAAF21E21CF18D3005DFABC /* Main */,
 				2F817E9C21CE5DD100574F08 /* Info */,
 				2F817E9021CE5C1300574F08 /* Login */,
@@ -170,6 +184,7 @@
 				2F817E8C21CE58B300574F08 /* RootViewController.swift */,
 				2F817E8E21CE5B7D00574F08 /* RootView.swift */,
 				2FAAF22121CF1946005DFABC /* RootNavigationController.swift */,
+				2FAF6CE821CF545F00341E90 /* RootCollectionViewCell.swift */,
 			);
 			path = Root;
 			sourceTree = "<group>";
@@ -242,6 +257,8 @@
 			children = (
 				2FAAF22321CF1998005DFABC /* YellowCardNavigationController.swift */,
 				2FAAF22521CF1A61005DFABC /* YellowCardMainViewController.swift */,
+				2FAF6CE421CF275D00341E90 /* YellowCardMainView.swift */,
+				2FAF6CE621CF298F00341E90 /* YellowCardDetailCell.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -252,6 +269,23 @@
 				2FAAF21F21CF18E3005DFABC /* YellowCardMain.storyboard */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		2FAF6CEA21CF837B00341E90 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				2FAF6CEB21CF838E00341E90 /* SettingViewController.swift */,
+				2FAF6CF021CF84C800341E90 /* SettingViewModel.swift */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		2FAF6CED21CF83A300341E90 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				2FAF6CEE21CF83B100341E90 /* Setting.storyboard */,
+			);
+			path = Setting;
 			sourceTree = "<group>";
 		};
 		6C726979703917AD6D7546CA /* Pods */ = {
@@ -342,6 +376,7 @@
 				2F817EAC21CE662100574F08 /* SpoqaHanSansRegular.ttf in Resources */,
 				2FAAF22021CF18E3005DFABC /* YellowCardMain.storyboard in Resources */,
 				2F817E9E21CE5DD800574F08 /* Info.storyboard in Resources */,
+				2FAF6CEF21CF83B100341E90 /* Setting.storyboard in Resources */,
 				2F0B8F3A21CE4BA700FD07F3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -415,20 +450,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F817EA021CE5EF200574F08 /* InfoView.swift in Sources */,
+				2FAF6CE521CF275D00341E90 /* YellowCardMainView.swift in Sources */,
 				2FAAF22621CF1A61005DFABC /* YellowCardMainViewController.swift in Sources */,
 				2F817E8A21CE57D600574F08 /* LoginViewController.swift in Sources */,
 				2F817E9821CE5C9E00574F08 /* NSObjectExtension.swift in Sources */,
+				2FAF6CEC21CF838E00341E90 /* SettingViewController.swift in Sources */,
 				2F0B8F3721CE4BA700FD07F3 /* ViewController.swift in Sources */,
 				2F817E9B21CE5DCC00574F08 /* InfoViewController.swift in Sources */,
+				2FAF6CE721CF298F00341E90 /* YellowCardDetailCell.swift in Sources */,
 				2F817E8D21CE58B300574F08 /* RootViewController.swift in Sources */,
 				2F817EA221CE603900574F08 /* UIViewExtension.swift in Sources */,
 				2F0B8F3521CE4BA700FD07F3 /* AppDelegate.swift in Sources */,
 				2FAAF22221CF1946005DFABC /* RootNavigationController.swift in Sources */,
 				2FAAF22421CF1998005DFABC /* YellowCardNavigationController.swift in Sources */,
 				2FC5519321CE8CEA0091547B /* LoginViewModel.swift in Sources */,
+				2FAF6CE921CF545F00341E90 /* RootCollectionViewCell.swift in Sources */,
 				2FC5519521CE8F0C0091547B /* UserViewModel.swift in Sources */,
 				2F817EA421CE65AE00574F08 /* LoginView.swift in Sources */,
 				2F817E8F21CE5B7D00574F08 /* RootView.swift in Sources */,
+				2FAF6CF121CF84C800341E90 /* SettingViewModel.swift in Sources */,
 				2F817EAF21CE66E300574F08 /* UIFontExtension.swift in Sources */,
 				2F817EB121CE671300574F08 /* UIColorExtension.swift in Sources */,
 			);

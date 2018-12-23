@@ -16,7 +16,6 @@ class YellowCardNavigationController: RootNavigationController {
 
     override func setup() {
         super.setup()
-        self.navigationBar.isHidden = true
     }
 
     override func viewDidLoad() {

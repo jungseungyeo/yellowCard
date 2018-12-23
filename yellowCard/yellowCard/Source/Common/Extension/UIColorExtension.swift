@@ -12,7 +12,7 @@ extension UIColor {
         self.init(red: r/255, green: g/255, blue: b/255, alpha: a)
     }
 
-    struct YellowCardInfo {
-        static let black = UIColor(r: 0, g: 0, b: 0)
-    }
+    static let YellowCardBlack = UIColor(r: 0, g: 0, b: 0)
+    static let YellowCardYellow = UIColor(r: 255, g: 228, b: 33)
+    static let YellowCardBorderColor = UIColor(r: 17, g: 17, b: 17)
 }

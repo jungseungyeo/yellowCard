@@ -18,21 +18,21 @@ class LoginView: RootView {
 
     private let firstTitle = UILabel(frame: .zero).then {
         $0.text = "건강한 음주문화를 위한"
-        $0.textColor = UIColor.YellowCardInfo.black
+        $0.textColor = UIColor.YellowCardBlack
         $0.textAlignment = .center
         $0.font = .spoqaFont(ofSize: 18, weight: .Light)
     }
 
     private let secondTitle = UILabel(frame: .zero).then {
         $0.text = "신개념 주량명함"
-        $0.textColor = UIColor.YellowCardInfo.black
+        $0.textColor = UIColor.YellowCardBlack
         $0.textAlignment = .center
         $0.font = .spoqaFont(ofSize: 18, weight: .Bold)
     }
 
     private let thirdTitle = UILabel(frame: .zero).then {
         $0.text = "Yellow Card"
-        $0.textColor = UIColor.YellowCardInfo.black
+        $0.textColor = UIColor.YellowCardBlack
         $0.textAlignment = .center
         $0.font = .spoqaFont(ofSize: 36, weight: .Bold)
     }
@@ -52,7 +52,7 @@ class LoginView: RootView {
 
     private let kakaoTitle = UILabel(frame: .zero).then {
         $0.text = "카카오톡"
-        $0.textColor = UIColor.YellowCardInfo.black
+        $0.textColor = UIColor.YellowCardBlack
         $0.textAlignment = .center
         $0.font = .spoqaFont(ofSize: 14, weight: .Light)
     }
