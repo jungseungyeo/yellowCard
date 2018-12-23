@@ -15,20 +15,33 @@ class LoginViewController: RootVC {
 
     private let viewModel = LoginViewModel()
 
-    private let isLogin: Bool = false
-
     static func instance() -> LoginViewController? {
         return UIStoryboard(name: "Login", bundle: nil).instantiateViewController(withIdentifier: classNameToString) as? LoginViewController
     }
 
     override func setup() {
         super.setup()
-        loginView.delegate = viewModel
+        loginView.delegate = self
         self.view = loginView
+        
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
     }
 
+    private func moveMain() {
+        present(YellowCardNavigationController.instance()!, animated: true, completion: nil)
+    }
+
+}
+
+extension LoginViewController: LoginViewdelegate {
+    func kakaoButtonTapped(sender: UITapGestureRecognizer) {
+        viewModel.isKakaoLogin(success: { [weak self] in
+            self?.moveMain()
+        }, failure: { error in
+            //로그인 에러
+        })
+    }
 }

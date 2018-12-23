@@ -29,6 +29,10 @@
 		2F817EAD21CE662100574F08 /* SpoqaHanSansThin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F817EA921CE662100574F08 /* SpoqaHanSansThin.ttf */; };
 		2F817EAF21CE66E300574F08 /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F817EAE21CE66E300574F08 /* UIFontExtension.swift */; };
 		2F817EB121CE671300574F08 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F817EB021CE671300574F08 /* UIColorExtension.swift */; };
+		2FAAF22021CF18E3005DFABC /* YellowCardMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FAAF21F21CF18E3005DFABC /* YellowCardMain.storyboard */; };
+		2FAAF22221CF1946005DFABC /* RootNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAAF22121CF1946005DFABC /* RootNavigationController.swift */; };
+		2FAAF22421CF1998005DFABC /* YellowCardNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAAF22321CF1998005DFABC /* YellowCardNavigationController.swift */; };
+		2FAAF22621CF1A61005DFABC /* YellowCardMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAAF22521CF1A61005DFABC /* YellowCardMainViewController.swift */; };
 		2FC5519321CE8CEA0091547B /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC5519221CE8CEA0091547B /* LoginViewModel.swift */; };
 		2FC5519521CE8F0C0091547B /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC5519421CE8F0C0091547B /* UserViewModel.swift */; };
 		FF498DCC8D8F575AA7F6430B /* Pods_yellowCard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 590F4C23ADE71A623F083DFA /* Pods_yellowCard.framework */; };
@@ -60,6 +64,10 @@
 		2F817EA921CE662100574F08 /* SpoqaHanSansThin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SpoqaHanSansThin.ttf; sourceTree = "<group>"; };
 		2F817EAE21CE66E300574F08 /* UIFontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontExtension.swift; sourceTree = "<group>"; };
 		2F817EB021CE671300574F08 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		2FAAF21F21CF18E3005DFABC /* YellowCardMain.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = YellowCardMain.storyboard; sourceTree = "<group>"; };
+		2FAAF22121CF1946005DFABC /* RootNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootNavigationController.swift; sourceTree = "<group>"; };
+		2FAAF22321CF1998005DFABC /* YellowCardNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowCardNavigationController.swift; sourceTree = "<group>"; };
+		2FAAF22521CF1A61005DFABC /* YellowCardMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowCardMainViewController.swift; sourceTree = "<group>"; };
 		2FC5519221CE8CEA0091547B /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		2FC5519421CE8F0C0091547B /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		590F4C23ADE71A623F083DFA /* Pods_yellowCard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_yellowCard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -101,11 +109,11 @@
 		2F0B8F3321CE4BA700FD07F3 /* yellowCard */ = {
 			isa = PBXGroup;
 			children = (
+				2F817E8221CE4EEA00574F08 /* yellowCard-Bridging-Header.h */,
 				2F0B8F3421CE4BA700FD07F3 /* AppDelegate.swift */,
 				2F817E8721CE545000574F08 /* Storyboard */,
 				2F817E8621CE544600574F08 /* Source */,
 				2F817E8521CE543600574F08 /* SupportFile */,
-				2F817E8221CE4EEA00574F08 /* yellowCard-Bridging-Header.h */,
 			);
 			path = yellowCard;
 			sourceTree = "<group>";
@@ -123,12 +131,13 @@
 		2F817E8621CE544600574F08 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				2FAAF21C21CF17BE005DFABC /* ViewModel */,
 				2F817E9921CE5DBF00574F08 /* Info */,
 				2F817E8821CE57C800574F08 /* Login */,
+				2FAAF21D21CF18B1005DFABC /* Main */,
 				2F817E8B21CE589D00574F08 /* Root */,
 				2F817E9521CE5C8400574F08 /* Common */,
 				2F0B8F3621CE4BA700FD07F3 /* ViewController.swift */,
-				2FC5519421CE8F0C0091547B /* UserViewModel.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -136,6 +145,7 @@
 		2F817E8721CE545000574F08 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
+				2FAAF21E21CF18D3005DFABC /* Main */,
 				2F817E9C21CE5DD100574F08 /* Info */,
 				2F817E9021CE5C1300574F08 /* Login */,
 				2F0B8F3821CE4BA700FD07F3 /* Main.storyboard */,
@@ -159,6 +169,7 @@
 			children = (
 				2F817E8C21CE58B300574F08 /* RootViewController.swift */,
 				2F817E8E21CE5B7D00574F08 /* RootView.swift */,
+				2FAAF22121CF1946005DFABC /* RootNavigationController.swift */,
 			);
 			path = Root;
 			sourceTree = "<group>";
@@ -216,6 +227,31 @@
 				2F817EA921CE662100574F08 /* SpoqaHanSansThin.ttf */,
 			);
 			path = Font;
+			sourceTree = "<group>";
+		};
+		2FAAF21C21CF17BE005DFABC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2FC5519421CE8F0C0091547B /* UserViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		2FAAF21D21CF18B1005DFABC /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				2FAAF22321CF1998005DFABC /* YellowCardNavigationController.swift */,
+				2FAAF22521CF1A61005DFABC /* YellowCardMainViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		2FAAF21E21CF18D3005DFABC /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				2FAAF21F21CF18E3005DFABC /* YellowCardMain.storyboard */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 		6C726979703917AD6D7546CA /* Pods */ = {
@@ -304,6 +340,7 @@
 				2F0B8F3C21CE4BA800FD07F3 /* Assets.xcassets in Resources */,
 				2F817EAD21CE662100574F08 /* SpoqaHanSansThin.ttf in Resources */,
 				2F817EAC21CE662100574F08 /* SpoqaHanSansRegular.ttf in Resources */,
+				2FAAF22021CF18E3005DFABC /* YellowCardMain.storyboard in Resources */,
 				2F817E9E21CE5DD800574F08 /* Info.storyboard in Resources */,
 				2F0B8F3A21CE4BA700FD07F3 /* Main.storyboard in Resources */,
 			);
@@ -378,6 +415,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F817EA021CE5EF200574F08 /* InfoView.swift in Sources */,
+				2FAAF22621CF1A61005DFABC /* YellowCardMainViewController.swift in Sources */,
 				2F817E8A21CE57D600574F08 /* LoginViewController.swift in Sources */,
 				2F817E9821CE5C9E00574F08 /* NSObjectExtension.swift in Sources */,
 				2F0B8F3721CE4BA700FD07F3 /* ViewController.swift in Sources */,
@@ -385,6 +423,8 @@
 				2F817E8D21CE58B300574F08 /* RootViewController.swift in Sources */,
 				2F817EA221CE603900574F08 /* UIViewExtension.swift in Sources */,
 				2F0B8F3521CE4BA700FD07F3 /* AppDelegate.swift in Sources */,
+				2FAAF22221CF1946005DFABC /* RootNavigationController.swift in Sources */,
+				2FAAF22421CF1998005DFABC /* YellowCardNavigationController.swift in Sources */,
 				2FC5519321CE8CEA0091547B /* LoginViewModel.swift in Sources */,
 				2FC5519521CE8F0C0091547B /* UserViewModel.swift in Sources */,
 				2F817EA421CE65AE00574F08 /* LoginView.swift in Sources */,

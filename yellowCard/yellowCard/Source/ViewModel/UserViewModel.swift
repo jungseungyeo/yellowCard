@@ -8,10 +8,12 @@
 
 import UIKit
 import ObjectMapper
+import RxSwift
+import RxCocoa
 
 class UserInfo: Mappable {
 
-    var tokenId: String?
+    var tokenId: Int?
     var name: String?
     var imageUrl: URL?
 
@@ -22,6 +24,11 @@ class UserInfo: Mappable {
         self.name       <- map["name"]
         self.imageUrl   <- map["imageUrl"]
     }
+}
+
+class testInfo {
+    var name = Variable<String>("")
+    var token = Variable<String>("")
 }
 
 class UserViewModel {

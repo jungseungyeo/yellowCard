@@ -10,40 +10,46 @@ import RxSwift
 import RxCocoa
 
 class LoginViewModel {
-
-    var isToken = Variable<Bool>(false)
-    var isName = Variable<Bool>(false)
-    var isImageUrl = Variable<Bool>(false)
-
-
-    var isLoginFlag: Observable<Bool> {
-        return Observable.combineLatest( isToken.asObservable(), isName.asObservable(), isImageUrl.asObservable()) { isToken, isName, isImageUrl in
-            isToken && isName && isImageUrl
-        }
-    }
-
+    typealias isSuccess = () -> Void
+    typealias isFailure = (Error?) -> Void
 }
 
-extension LoginViewModel: LoginViewdelegate {
-    func kakaoButtonTapped(sender: UITapGestureRecognizer) {
+extension LoginViewModel {
+    func isKakaoLogin(success: @escaping isSuccess, failure: @escaping isFailure) {
         guard let session = KOSession.shared() else {
+            failure(nil)
             return
         }
         guard !session.isOpen() else {
             session.close()
+            failure(nil)
             return
         }
         session.open(completionHandler: { error in
             guard error == nil else {
+                failure(nil)
                 return
+            }
+
+            func requestTokeId(userInfo: KOUserMe) {
+                KOSessionTask.accessTokenInfoTask(completionHandler: { accessToken, error in
+                    guard error == nil else {
+                        failure(nil)
+                        return
+                    }
+                    // 서버로 보내줘야 하는 토큰값
+                    UserViewModel.shared.userInfo = UserInfo(JSON: ["tokenId": accessToken!.id!, "name": userInfo.nickname!, "imageUrl": userInfo.profileImageURL!])
+                    success()
+                })
             }
 
             KOSessionTask.userMeTask(completion: { error, userInfo in
                 guard error == nil, let userInfo = userInfo else {
                     print("kakao Login error : \(String(describing: error))")
+                    failure(nil)
                     return
                 }
-//                UserViewModel.shared.userInfo = UserInfo(JSON: ["name": userInfo.nickname!, "imageUrl": userInfo.profileImageURL!])
+                requestTokeId(userInfo: userInfo)
             })
         })
     }
