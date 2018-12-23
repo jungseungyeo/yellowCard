@@ -14,30 +14,6 @@ protocol YellowCarMainViewDelegate {
 
 class YellowCardMianView: RootView {
 
-//    private let title = UILabel().then {
-//        $0.text = "YellowCard"
-//        $0.font = .spoqaFont(ofSize: 20, weight: .Bold)
-//        $0.textColor = .black
-//    }
-//
-//    private let settingBtn = UIButton().then {
-//        $0.setTitle("환경설정", for: .normal)
-//        $0.titleLabel?.font = .spoqaFont(ofSize: 12, weight: .Light)
-//        $0.setTitleColor(UIColor.YellowCardBorderColor, for: .normal)
-//    }
-//
-//    var mainDetailCardView: UICollectionView = {
-//        let layout = UICollectionViewFlowLayout()
-//        layout.minimumLineSpacing = 0
-//        layout.minimumInteritemSpacing = 0
-//        layout.scrollDirection = .horizontal
-//        let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
-//        collectionView.isPagingEnabled = true
-//        collectionView.backgroundColor = .white
-//        collectionView.showsHorizontalScrollIndicator = false
-//        return collectionView
-//    }()
-
     var delegate: YellowCarMainViewDelegate?
 
     private let title = UILabel(frame: .zero).then {
@@ -75,7 +51,7 @@ class YellowCardMianView: RootView {
         pc.currentPage = 0
         pc.numberOfPages = 4
         pc.currentPageIndicatorTintColor = UIColor.YellowPageCountSelectColor
-        pc.pageIndicatorTintColor = UIColor(patternImage: UIImage(named: "combinedShapeCopy.png")!)
+        pc.pageIndicatorTintColor = UIColor(patternImage: UIImage(named: "oval6.png")!)
         return pc
     }()
 
@@ -130,6 +106,16 @@ class YellowCardMianView: RootView {
         super.setupTapped()
 
         settingTitle.addTarget(self, action: #selector(settingTapped), for: .touchUpInside)
+    }
+
+    public func bind(cardModel: [CardModel]?) {
+        guard let cardModel = cardModel else {
+            self.pageCount.isHidden = true
+            return
+        }
+
+        self.pageCount.numberOfPages = cardModel.count
+        
     }
 }
 

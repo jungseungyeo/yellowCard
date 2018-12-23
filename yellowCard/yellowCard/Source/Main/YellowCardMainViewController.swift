@@ -18,10 +18,16 @@ class YellowCardMainViewController: RootVC {
 
     override func setup() {
         super.setup()
+
+        // DemoData
+        UserViewModel.shared.userInfo = DemoModelGet.getUserInfoModel
+
         self.yellowCardMainView.delegate = self
         self.yellowCardMainView.cardView.dataSource = self
         self.yellowCardMainView.cardView.delegate = self
         self.yellowCardMainView.cardView.register(YellowCardDetailCell.self, forCellWithReuseIdentifier: YellowCardDetailCell.registerId)
+
+        self.yellowCardMainView.bind(cardModel: UserViewModel.shared.userInfo?.cardModel )
         self.view = yellowCardMainView
     }
 
@@ -47,7 +53,7 @@ extension YellowCardMainViewController: UICollectionViewDataSource, UICollection
     }
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 4
+        return UserViewModel.shared.userInfo?.cardModel?.count ?? 1
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {

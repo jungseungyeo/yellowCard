@@ -7,6 +7,24 @@
 //
 
 import UIKit
+//alcolType: nonalcoholic, beer, soju, wine, makgeolli
+enum alcolType: String {
+    case nonAlcol = "nonalcoholic"
+    case beer = "beer"
+    case soju = "soju"
+    case wine = "wine"
+    case makgeolli = "makgeolli"
+
+    var alcolName: String {
+        switch self {
+        case .nonAlcol: return "무 알콜"
+        case .beer: return "맥주"
+        case .soju: return "소주"
+        case .wine: return "와인"
+        case .makgeolli: return "막걸리"
+        }
+    }
+}
 
 class YellowCardDetailCell: RootCollectionViewCell {
 
@@ -80,5 +98,30 @@ class YellowCardDetailCell: RootCollectionViewCell {
         }
     }
 
-    
+    public func bind(cardModel: CardModel) {
+        guard let alcoltype = alcolType(rawValue: cardModel.alcolType!) else {
+            setWelcome()
+            return
+        }
+
+        switch alcoltype {
+        case .nonAlcol:
+            print()
+        case .beer:
+            print()
+        case .soju:
+            print()
+        case .wine:
+            print()
+        case .makgeolli:
+            print()
+        }
+    }
+}
+
+extension YellowCardDetailCell {
+
+    private func setWelcome() {
+
+    }
 }
