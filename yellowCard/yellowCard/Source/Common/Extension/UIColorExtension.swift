@@ -15,4 +15,6 @@ extension UIColor {
     static let YellowCardBlack = UIColor(r: 0, g: 0, b: 0)
     static let YellowCardYellow = UIColor(r: 255, g: 228, b: 33)
     static let YellowCardBorderColor = UIColor(r: 17, g: 17, b: 17)
+    static let YellowPageCountSelectColor = UIColor(r: 102, g: 102, b: 102)
+//    static let YellowPageCountNotSelectorColor = UI
 }

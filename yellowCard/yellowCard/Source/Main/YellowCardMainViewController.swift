@@ -19,6 +19,9 @@ class YellowCardMainViewController: RootVC {
     override func setup() {
         super.setup()
         self.yellowCardMainView.delegate = self
+        self.yellowCardMainView.cardView.dataSource = self
+        self.yellowCardMainView.cardView.delegate = self
+        self.yellowCardMainView.cardView.register(YellowCardDetailCell.self, forCellWithReuseIdentifier: YellowCardDetailCell.registerId)
         self.view = yellowCardMainView
     }
 
@@ -36,4 +39,33 @@ extension YellowCardMainViewController: YellowCarMainViewDelegate {
     func settingTapped() {
         self.navigationController?.pushViewController(SettingViewController.instance()!, animated: true)
     }
+}
+
+extension YellowCardMainViewController: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 1
+    }
+
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 4
+    }
+
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: YellowCardDetailCell.registerId, for: indexPath) as! YellowCardDetailCell
+        return cell
+    }
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: collectionView.frame.width, height: collectionView.frame.height)
+    }
+
+    func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
+        let x = targetContentOffset.pointee.x
+
+        UIView.animate(withDuration: 0.3, animations: {
+            self.yellowCardMainView.pageCount.currentPage = Int(x / self.view.frame.width)
+            self.yellowCardMainView.layoutIfNeeded()
+        })
+    }
+
 }

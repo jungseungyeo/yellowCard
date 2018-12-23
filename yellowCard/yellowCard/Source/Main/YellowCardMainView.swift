@@ -58,12 +58,36 @@ class YellowCardMianView: RootView {
         $0.titleLabel?.font = .spoqaFont(ofSize: 12, weight: .Light)
     }
 
+    public var cardView: UICollectionView = {
+        let layout = UICollectionViewFlowLayout()
+        layout.minimumLineSpacing = 0
+        layout.minimumInteritemSpacing = 0
+        layout.scrollDirection = .horizontal
+        let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        collectionView.isPagingEnabled = true
+        collectionView.backgroundColor = .white
+        collectionView.showsHorizontalScrollIndicator = false
+        return collectionView
+    }()
+
+    public var pageCount: UIPageControl = {
+        let pc = UIPageControl()
+        pc.currentPage = 0
+        pc.numberOfPages = 4
+        pc.currentPageIndicatorTintColor = UIColor.YellowPageCountSelectColor
+        pc.pageIndicatorTintColor = UIColor(patternImage: UIImage(named: "combinedShapeCopy.png")!)
+        return pc
+    }()
+
+
     override func setup() {
         super.setup()
 
         addSubviews(title,
                     settingImg,
-                    settingTitle)
+                    settingTitle,
+                    cardView,
+                    pageCount)
     }
 
     override func setupUI() {
@@ -85,6 +109,20 @@ class YellowCardMianView: RootView {
             make.centerY.equalTo(settingTitle.snp.centerY).offset(0)
             make.right.equalTo(settingTitle.snp.left).offset(-4)
             make.size.equalTo(14)
+        }
+
+        cardView.snp.makeConstraints { make -> Void in
+            make.top.equalTo(settingTitle.snp.bottom).offset(12)
+            make.left.equalToSuperview().offset(0)
+            make.right.equalToSuperview().offset(0)
+            make.height.equalTo(cardView.snp.width).offset(-40)
+        }
+
+        pageCount.snp.makeConstraints { make -> Void in
+            make.top.equalTo(cardView.snp.bottom).offset(12)
+            make.right.equalToSuperview().offset(-32)
+            make.height.equalTo(8)
+            make.width.equalTo(36)
         }
     }
 

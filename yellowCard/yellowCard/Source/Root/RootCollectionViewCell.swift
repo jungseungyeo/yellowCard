@@ -13,14 +13,20 @@ class RootCollectionViewCell: UICollectionViewCell {
     override init(frame: CGRect) {
         super.init(frame: frame)
         setup()
+        setupUI()
     }
 
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setup()
+        setupUI()
     }
 
     func setup() {
+
+    }
+
+    func setupUI() {
 
     }
 }
