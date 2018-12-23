@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  yellowCard
 //
-//  Created by 여정승 on 12/12/2018.
+//  Created by 여정승 on 22/12/2018.
 //  Copyright © 2018 linsaeng. All rights reserved.
 //
 
@@ -34,9 +34,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
     }
 
-    func application(_ app: UIApplication, open url: URL, options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+    func application(_ application: UIApplication, open url: URL, sourceApplication: String?, annotation: Any) -> Bool {
         if KOSession.isKakaoAccountLoginCallback(url) {
-            return  KOSession.handleOpen(url)
+            return KOSession.handleOpen(url)
         }
         return true
     }

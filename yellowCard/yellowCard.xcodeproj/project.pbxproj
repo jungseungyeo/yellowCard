@@ -7,279 +7,317 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2F06A66C21C13AC600387DED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F06A66B21C13AC600387DED /* AppDelegate.swift */; };
-		2F06A66E21C13AC600387DED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F06A66D21C13AC600387DED /* ViewController.swift */; };
-		2F06A67121C13AC600387DED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F06A66F21C13AC600387DED /* Main.storyboard */; };
-		2F06A67321C13AC700387DED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F06A67221C13AC700387DED /* Assets.xcassets */; };
-		2F06A67621C13AC700387DED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F06A67421C13AC700387DED /* LaunchScreen.storyboard */; };
-		2F58C08D21C36731001DCC40 /* UserInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F58C08C21C36731001DCC40 /* UserInfoModel.swift */; };
-		2F58C09C21C38313001DCC40 /* SpoqaHanSansBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F58C09821C38310001DCC40 /* SpoqaHanSansBold.ttf */; };
-		2F58C09D21C38313001DCC40 /* SpoqaHanSansLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F58C09921C38311001DCC40 /* SpoqaHanSansLight.ttf */; };
-		2F58C09E21C38313001DCC40 /* SpoqaHanSansRegular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F58C09A21C38312001DCC40 /* SpoqaHanSansRegular.ttf */; };
-		2F58C09F21C38313001DCC40 /* SpoqaHanSansThin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F58C09B21C38313001DCC40 /* SpoqaHanSansThin.ttf */; };
-		2F58C0A321C3873A001DCC40 /* FontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F58C0A221C3873A001DCC40 /* FontExtension.swift */; };
-		2F58C0A721C38FD2001DCC40 /* UserInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F58C0A621C38FD2001DCC40 /* UserInfoViewModel.swift */; };
-		2F58C0A921C39184001DCC40 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F58C0A821C39184001DCC40 /* InfoViewController.swift */; };
-		2F58C0AB21C39344001DCC40 /* Info.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F58C0AA21C39344001DCC40 /* Info.storyboard */; };
-		2F58C0AD21C39412001DCC40 /* NSObjectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F58C0AC21C39412001DCC40 /* NSObjectExtension.swift */; };
-		2F58C0B221C3971C001DCC40 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F58C0B121C3971C001DCC40 /* LoginViewController.swift */; };
-		2F58C0B421C39726001DCC40 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F58C0B321C39726001DCC40 /* Login.storyboard */; };
-		2F58C0B821C3A20D001DCC40 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F58C0B721C3A20D001DCC40 /* LoginView.swift */; };
-		2F58C0BA21C3A22C001DCC40 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F58C0B921C3A22C001DCC40 /* UIViewExtension.swift */; };
-		2F8FD61D21CA690A0038BF7E /* AlcolRegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8FD61C21CA690A0038BF7E /* AlcolRegisterVC.swift */; };
-		2F8FD62021CA693F0038BF7E /* AlcolRegister.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F8FD61F21CA693F0038BF7E /* AlcolRegister.storyboard */; };
-		2F8FD62221CA69EE0038BF7E /* AlcoRegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8FD62121CA69EE0038BF7E /* AlcoRegisterView.swift */; };
-		2FAFA19121C6130B00A5EAC0 /* YellowCardDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAFA19021C6130B00A5EAC0 /* YellowCardDetailCell.swift */; };
-		2FF9690021C5FF1C002FA884 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF968FF21C5FF1C002FA884 /* Logger.swift */; };
-		2FF9690221C5FFC2002FA884 /* YellowCardMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FF9690121C5FFC2002FA884 /* YellowCardMain.storyboard */; };
-		2FF9690521C5FFEE002FA884 /* YellowCardMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF9690421C5FFEE002FA884 /* YellowCardMain.swift */; };
-		2FF9690721C6008E002FA884 /* YellowCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF9690621C6008E002FA884 /* YellowCardView.swift */; };
-		2FF9690921C60BE8002FA884 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF9690821C60BE8002FA884 /* UIColorExtension.swift */; };
-		2FFADCC721C13D36000CB3B0 /* KakaoOpenSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FFADCC621C13D36000CB3B0 /* KakaoOpenSDK.framework */; };
-		F41D89703EDE829F7260B39D /* Pods_yellowCard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE69F388968FF3517F91AF0D /* Pods_yellowCard.framework */; };
+		2F0B8F3521CE4BA700FD07F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0B8F3421CE4BA700FD07F3 /* AppDelegate.swift */; };
+		2F0B8F3721CE4BA700FD07F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0B8F3621CE4BA700FD07F3 /* ViewController.swift */; };
+		2F0B8F3A21CE4BA700FD07F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F0B8F3821CE4BA700FD07F3 /* Main.storyboard */; };
+		2F0B8F3C21CE4BA800FD07F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F0B8F3B21CE4BA800FD07F3 /* Assets.xcassets */; };
+		2F0B8F3F21CE4BA800FD07F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F0B8F3D21CE4BA800FD07F3 /* LaunchScreen.storyboard */; };
+		2F817E8121CE4D8200574F08 /* KakaoOpenSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F817E8021CE4D8200574F08 /* KakaoOpenSDK.framework */; };
+		2F817E8A21CE57D600574F08 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F817E8921CE57D600574F08 /* LoginViewController.swift */; };
+		2F817E8D21CE58B300574F08 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F817E8C21CE58B300574F08 /* RootViewController.swift */; };
+		2F817E8F21CE5B7D00574F08 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F817E8E21CE5B7D00574F08 /* RootView.swift */; };
+		2F817E9421CE5C2B00574F08 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F817E9321CE5C2B00574F08 /* Login.storyboard */; };
+		2F817E9821CE5C9E00574F08 /* NSObjectExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F817E9721CE5C9E00574F08 /* NSObjectExtension.swift */; };
+		2F817E9B21CE5DCC00574F08 /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F817E9A21CE5DCC00574F08 /* InfoViewController.swift */; };
+		2F817E9E21CE5DD800574F08 /* Info.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F817E9D21CE5DD800574F08 /* Info.storyboard */; };
+		2F817EA021CE5EF200574F08 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F817E9F21CE5EF200574F08 /* InfoView.swift */; };
+		2F817EA221CE603900574F08 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F817EA121CE603900574F08 /* UIViewExtension.swift */; };
+		2F817EA421CE65AE00574F08 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F817EA321CE65AE00574F08 /* LoginView.swift */; };
+		2F817EAA21CE662100574F08 /* SpoqaHanSansLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F817EA621CE661E00574F08 /* SpoqaHanSansLight.ttf */; };
+		2F817EAB21CE662100574F08 /* SpoqaHanSansBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F817EA721CE661F00574F08 /* SpoqaHanSansBold.ttf */; };
+		2F817EAC21CE662100574F08 /* SpoqaHanSansRegular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F817EA821CE662000574F08 /* SpoqaHanSansRegular.ttf */; };
+		2F817EAD21CE662100574F08 /* SpoqaHanSansThin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F817EA921CE662100574F08 /* SpoqaHanSansThin.ttf */; };
+		2F817EAF21CE66E300574F08 /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F817EAE21CE66E300574F08 /* UIFontExtension.swift */; };
+		2F817EB121CE671300574F08 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F817EB021CE671300574F08 /* UIColorExtension.swift */; };
+		2FAAF22021CF18E3005DFABC /* YellowCardMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FAAF21F21CF18E3005DFABC /* YellowCardMain.storyboard */; };
+		2FAAF22221CF1946005DFABC /* RootNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAAF22121CF1946005DFABC /* RootNavigationController.swift */; };
+		2FAAF22421CF1998005DFABC /* YellowCardNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAAF22321CF1998005DFABC /* YellowCardNavigationController.swift */; };
+		2FAAF22621CF1A61005DFABC /* YellowCardMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAAF22521CF1A61005DFABC /* YellowCardMainViewController.swift */; };
+		2FAF6CE521CF275D00341E90 /* YellowCardMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAF6CE421CF275D00341E90 /* YellowCardMainView.swift */; };
+		2FAF6CE721CF298F00341E90 /* YellowCardDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAF6CE621CF298F00341E90 /* YellowCardDetailCell.swift */; };
+		2FAF6CE921CF545F00341E90 /* RootCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAF6CE821CF545F00341E90 /* RootCollectionViewCell.swift */; };
+		2FAF6CEC21CF838E00341E90 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAF6CEB21CF838E00341E90 /* SettingViewController.swift */; };
+		2FAF6CEF21CF83B100341E90 /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FAF6CEE21CF83B100341E90 /* Setting.storyboard */; };
+		2FAF6CF121CF84C800341E90 /* SettingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAF6CF021CF84C800341E90 /* SettingViewModel.swift */; };
+		2FC5519321CE8CEA0091547B /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC5519221CE8CEA0091547B /* LoginViewModel.swift */; };
+		2FC5519521CE8F0C0091547B /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC5519421CE8F0C0091547B /* UserViewModel.swift */; };
+		FF498DCC8D8F575AA7F6430B /* Pods_yellowCard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 590F4C23ADE71A623F083DFA /* Pods_yellowCard.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2F06A66821C13AC600387DED /* yellowCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = yellowCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		2F06A66B21C13AC600387DED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2F06A66D21C13AC600387DED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		2F06A67021C13AC600387DED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		2F06A67221C13AC700387DED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		2F06A67521C13AC700387DED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		2F06A67721C13AC700387DED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2F58C08C21C36731001DCC40 /* UserInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoModel.swift; sourceTree = "<group>"; };
-		2F58C09821C38310001DCC40 /* SpoqaHanSansBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SpoqaHanSansBold.ttf; sourceTree = "<group>"; };
-		2F58C09921C38311001DCC40 /* SpoqaHanSansLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SpoqaHanSansLight.ttf; sourceTree = "<group>"; };
-		2F58C09A21C38312001DCC40 /* SpoqaHanSansRegular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SpoqaHanSansRegular.ttf; sourceTree = "<group>"; };
-		2F58C09B21C38313001DCC40 /* SpoqaHanSansThin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SpoqaHanSansThin.ttf; sourceTree = "<group>"; };
-		2F58C0A221C3873A001DCC40 /* FontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontExtension.swift; sourceTree = "<group>"; };
-		2F58C0A621C38FD2001DCC40 /* UserInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewModel.swift; sourceTree = "<group>"; };
-		2F58C0A821C39184001DCC40 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
-		2F58C0AA21C39344001DCC40 /* Info.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Info.storyboard; sourceTree = "<group>"; };
-		2F58C0AC21C39412001DCC40 /* NSObjectExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObjectExtension.swift; sourceTree = "<group>"; };
-		2F58C0B121C3971C001DCC40 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		2F58C0B321C39726001DCC40 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
-		2F58C0B721C3A20D001DCC40 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
-		2F58C0B921C3A22C001DCC40 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
-		2F8FD61C21CA690A0038BF7E /* AlcolRegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlcolRegisterVC.swift; sourceTree = "<group>"; };
-		2F8FD61F21CA693F0038BF7E /* AlcolRegister.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AlcolRegister.storyboard; sourceTree = "<group>"; };
-		2F8FD62121CA69EE0038BF7E /* AlcoRegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlcoRegisterView.swift; sourceTree = "<group>"; };
-		2FAFA19021C6130B00A5EAC0 /* YellowCardDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowCardDetailCell.swift; sourceTree = "<group>"; };
-		2FF968FF21C5FF1C002FA884 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
-		2FF9690121C5FFC2002FA884 /* YellowCardMain.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = YellowCardMain.storyboard; sourceTree = "<group>"; };
-		2FF9690421C5FFEE002FA884 /* YellowCardMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowCardMain.swift; sourceTree = "<group>"; };
-		2FF9690621C6008E002FA884 /* YellowCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowCardView.swift; sourceTree = "<group>"; };
-		2FF9690821C60BE8002FA884 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
-		2FFADCC621C13D36000CB3B0 /* KakaoOpenSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KakaoOpenSDK.framework; sourceTree = "<group>"; };
-		2FFADCC821C13E2B000CB3B0 /* yellowCard-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "yellowCard-Bridging-Header.h"; sourceTree = "<group>"; };
-		31006B01FE8D46B61F44E8CB /* Pods-yellowCard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yellowCard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-yellowCard/Pods-yellowCard.debug.xcconfig"; sourceTree = "<group>"; };
-		741B174ED33A3C00E75CA17F /* Pods-yellowCard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yellowCard.release.xcconfig"; path = "Pods/Target Support Files/Pods-yellowCard/Pods-yellowCard.release.xcconfig"; sourceTree = "<group>"; };
-		CE69F388968FF3517F91AF0D /* Pods_yellowCard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_yellowCard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F0B8F3121CE4BA700FD07F3 /* yellowCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = yellowCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2F0B8F3421CE4BA700FD07F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2F0B8F3621CE4BA700FD07F3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2F0B8F3921CE4BA700FD07F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2F0B8F3B21CE4BA800FD07F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2F0B8F3E21CE4BA800FD07F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2F0B8F4021CE4BA800FD07F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F817E8021CE4D8200574F08 /* KakaoOpenSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KakaoOpenSDK.framework; sourceTree = "<group>"; };
+		2F817E8221CE4EEA00574F08 /* yellowCard-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "yellowCard-Bridging-Header.h"; sourceTree = "<group>"; };
+		2F817E8921CE57D600574F08 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		2F817E8C21CE58B300574F08 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		2F817E8E21CE5B7D00574F08 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		2F817E9321CE5C2B00574F08 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		2F817E9721CE5C9E00574F08 /* NSObjectExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObjectExtension.swift; sourceTree = "<group>"; };
+		2F817E9A21CE5DCC00574F08 /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		2F817E9D21CE5DD800574F08 /* Info.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Info.storyboard; sourceTree = "<group>"; };
+		2F817E9F21CE5EF200574F08 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		2F817EA121CE603900574F08 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		2F817EA321CE65AE00574F08 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		2F817EA621CE661E00574F08 /* SpoqaHanSansLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SpoqaHanSansLight.ttf; sourceTree = "<group>"; };
+		2F817EA721CE661F00574F08 /* SpoqaHanSansBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SpoqaHanSansBold.ttf; sourceTree = "<group>"; };
+		2F817EA821CE662000574F08 /* SpoqaHanSansRegular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SpoqaHanSansRegular.ttf; sourceTree = "<group>"; };
+		2F817EA921CE662100574F08 /* SpoqaHanSansThin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SpoqaHanSansThin.ttf; sourceTree = "<group>"; };
+		2F817EAE21CE66E300574F08 /* UIFontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontExtension.swift; sourceTree = "<group>"; };
+		2F817EB021CE671300574F08 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		2FAAF21F21CF18E3005DFABC /* YellowCardMain.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = YellowCardMain.storyboard; sourceTree = "<group>"; };
+		2FAAF22121CF1946005DFABC /* RootNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootNavigationController.swift; sourceTree = "<group>"; };
+		2FAAF22321CF1998005DFABC /* YellowCardNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowCardNavigationController.swift; sourceTree = "<group>"; };
+		2FAAF22521CF1A61005DFABC /* YellowCardMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowCardMainViewController.swift; sourceTree = "<group>"; };
+		2FAF6CE421CF275D00341E90 /* YellowCardMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowCardMainView.swift; sourceTree = "<group>"; };
+		2FAF6CE621CF298F00341E90 /* YellowCardDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowCardDetailCell.swift; sourceTree = "<group>"; };
+		2FAF6CE821CF545F00341E90 /* RootCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootCollectionViewCell.swift; sourceTree = "<group>"; };
+		2FAF6CEB21CF838E00341E90 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		2FAF6CEE21CF83B100341E90 /* Setting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
+		2FAF6CF021CF84C800341E90 /* SettingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewModel.swift; sourceTree = "<group>"; };
+		2FC5519221CE8CEA0091547B /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		2FC5519421CE8F0C0091547B /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		590F4C23ADE71A623F083DFA /* Pods_yellowCard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_yellowCard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A675AEF7F0E681A668FE205 /* Pods-yellowCard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yellowCard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-yellowCard/Pods-yellowCard.debug.xcconfig"; sourceTree = "<group>"; };
+		B850B149F4E2FCE42F457BC3 /* Pods-yellowCard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yellowCard.release.xcconfig"; path = "Pods/Target Support Files/Pods-yellowCard/Pods-yellowCard.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		2F06A66521C13AC600387DED /* Frameworks */ = {
+		2F0B8F2E21CE4BA700FD07F3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F41D89703EDE829F7260B39D /* Pods_yellowCard.framework in Frameworks */,
-				2FFADCC721C13D36000CB3B0 /* KakaoOpenSDK.framework in Frameworks */,
+				FF498DCC8D8F575AA7F6430B /* Pods_yellowCard.framework in Frameworks */,
+				2F817E8121CE4D8200574F08 /* KakaoOpenSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2F06A65F21C13AC600387DED = {
+		2F0B8F2821CE4BA700FD07F3 = {
 			isa = PBXGroup;
 			children = (
-				2F06A66A21C13AC600387DED /* yellowCard */,
-				2F06A66921C13AC600387DED /* Products */,
-				8559801CC7D813709E887A69 /* Pods */,
-				711EC130F22AE87F04732371 /* Frameworks */,
+				2F0B8F3321CE4BA700FD07F3 /* yellowCard */,
+				2F0B8F3221CE4BA700FD07F3 /* Products */,
+				6C726979703917AD6D7546CA /* Pods */,
+				A4C463A8F675692D041C5940 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		2F06A66921C13AC600387DED /* Products */ = {
+		2F0B8F3221CE4BA700FD07F3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2F06A66821C13AC600387DED /* yellowCard.app */,
+				2F0B8F3121CE4BA700FD07F3 /* yellowCard.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2F06A66A21C13AC600387DED /* yellowCard */ = {
+		2F0B8F3321CE4BA700FD07F3 /* yellowCard */ = {
 			isa = PBXGroup;
 			children = (
-				2F06A66B21C13AC600387DED /* AppDelegate.swift */,
-				2FF968FF21C5FF1C002FA884 /* Logger.swift */,
-				2F58C08921C357AF001DCC40 /* StoryBoard */,
-				2F58C08821C3579E001DCC40 /* Model */,
-				2F58C08621C3578D001DCC40 /* View */,
-				2F58C08721C35795001DCC40 /* ViewModel */,
-				2F58C0A021C38712001DCC40 /* Coomon */,
-				2FFADCCB21C146E1000CB3B0 /* Supporfile */,
-				2FFADCC821C13E2B000CB3B0 /* yellowCard-Bridging-Header.h */,
+				2F817E8221CE4EEA00574F08 /* yellowCard-Bridging-Header.h */,
+				2F0B8F3421CE4BA700FD07F3 /* AppDelegate.swift */,
+				2F817E8721CE545000574F08 /* Storyboard */,
+				2F817E8621CE544600574F08 /* Source */,
+				2F817E8521CE543600574F08 /* SupportFile */,
 			);
 			path = yellowCard;
 			sourceTree = "<group>";
 		};
-		2F58C08621C3578D001DCC40 /* View */ = {
+		2F817E8521CE543600574F08 /* SupportFile */ = {
 			isa = PBXGroup;
 			children = (
-				2F8FD61B21CA68DC0038BF7E /* AlcolRegister */,
-				2FF9690321C5FFE1002FA884 /* Main */,
-				2F58C0B621C3A1ED001DCC40 /* Login */,
-				2F06A66D21C13AC600387DED /* ViewController.swift */,
-				2F58C0A821C39184001DCC40 /* InfoViewController.swift */,
+				2F817EA521CE660E00574F08 /* Font */,
+				2F0B8F3B21CE4BA800FD07F3 /* Assets.xcassets */,
+				2F0B8F4021CE4BA800FD07F3 /* Info.plist */,
 			);
-			path = View;
+			path = SupportFile;
 			sourceTree = "<group>";
 		};
-		2F58C08721C35795001DCC40 /* ViewModel */ = {
+		2F817E8621CE544600574F08 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				2F58C0A621C38FD2001DCC40 /* UserInfoViewModel.swift */,
+				2FAF6CEA21CF837B00341E90 /* Setting */,
+				2FAAF21C21CF17BE005DFABC /* ViewModel */,
+				2F817E9921CE5DBF00574F08 /* Info */,
+				2F817E8821CE57C800574F08 /* Login */,
+				2FAAF21D21CF18B1005DFABC /* Main */,
+				2F817E8B21CE589D00574F08 /* Root */,
+				2F817E9521CE5C8400574F08 /* Common */,
+				2F0B8F3621CE4BA700FD07F3 /* ViewController.swift */,
 			);
-			path = ViewModel;
+			path = Source;
 			sourceTree = "<group>";
 		};
-		2F58C08821C3579E001DCC40 /* Model */ = {
+		2F817E8721CE545000574F08 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
-				2F58C08C21C36731001DCC40 /* UserInfoModel.swift */,
+				2FAF6CED21CF83A300341E90 /* Setting */,
+				2FAAF21E21CF18D3005DFABC /* Main */,
+				2F817E9C21CE5DD100574F08 /* Info */,
+				2F817E9021CE5C1300574F08 /* Login */,
+				2F0B8F3821CE4BA700FD07F3 /* Main.storyboard */,
+				2F0B8F3D21CE4BA800FD07F3 /* LaunchScreen.storyboard */,
 			);
-			path = Model;
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
-		2F58C08921C357AF001DCC40 /* StoryBoard */ = {
+		2F817E8821CE57C800574F08 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				2F8FD61E21CA69250038BF7E /* AlcoleRegister */,
-				2FF968FD21C5FE9B002FA884 /* Main */,
-				2F06A66F21C13AC600387DED /* Main.storyboard */,
-				2F06A67421C13AC700387DED /* LaunchScreen.storyboard */,
-				2F58C0AA21C39344001DCC40 /* Info.storyboard */,
-				2F58C0B321C39726001DCC40 /* Login.storyboard */,
-			);
-			path = StoryBoard;
-			sourceTree = "<group>";
-		};
-		2F58C09721C382FB001DCC40 /* Font */ = {
-			isa = PBXGroup;
-			children = (
-				2F58C09821C38310001DCC40 /* SpoqaHanSansBold.ttf */,
-				2F58C09921C38311001DCC40 /* SpoqaHanSansLight.ttf */,
-				2F58C09A21C38312001DCC40 /* SpoqaHanSansRegular.ttf */,
-				2F58C09B21C38313001DCC40 /* SpoqaHanSansThin.ttf */,
-			);
-			path = Font;
-			sourceTree = "<group>";
-		};
-		2F58C0A021C38712001DCC40 /* Coomon */ = {
-			isa = PBXGroup;
-			children = (
-				2F58C0A121C38724001DCC40 /* Extension */,
-			);
-			path = Coomon;
-			sourceTree = "<group>";
-		};
-		2F58C0A121C38724001DCC40 /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-				2F58C0A221C3873A001DCC40 /* FontExtension.swift */,
-				2F58C0AC21C39412001DCC40 /* NSObjectExtension.swift */,
-				2F58C0B921C3A22C001DCC40 /* UIViewExtension.swift */,
-				2FF9690821C60BE8002FA884 /* UIColorExtension.swift */,
-			);
-			path = Extension;
-			sourceTree = "<group>";
-		};
-		2F58C0B621C3A1ED001DCC40 /* Login */ = {
-			isa = PBXGroup;
-			children = (
-				2F58C0B121C3971C001DCC40 /* LoginViewController.swift */,
-				2F58C0B721C3A20D001DCC40 /* LoginView.swift */,
+				2F817E8921CE57D600574F08 /* LoginViewController.swift */,
+				2F817EA321CE65AE00574F08 /* LoginView.swift */,
+				2FC5519221CE8CEA0091547B /* LoginViewModel.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
 		};
-		2F8FD61B21CA68DC0038BF7E /* AlcolRegister */ = {
+		2F817E8B21CE589D00574F08 /* Root */ = {
 			isa = PBXGroup;
 			children = (
-				2F8FD61C21CA690A0038BF7E /* AlcolRegisterVC.swift */,
-				2F8FD62121CA69EE0038BF7E /* AlcoRegisterView.swift */,
+				2F817E8C21CE58B300574F08 /* RootViewController.swift */,
+				2F817E8E21CE5B7D00574F08 /* RootView.swift */,
+				2FAAF22121CF1946005DFABC /* RootNavigationController.swift */,
+				2FAF6CE821CF545F00341E90 /* RootCollectionViewCell.swift */,
 			);
-			path = AlcolRegister;
+			path = Root;
 			sourceTree = "<group>";
 		};
-		2F8FD61E21CA69250038BF7E /* AlcoleRegister */ = {
+		2F817E9021CE5C1300574F08 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				2F8FD61F21CA693F0038BF7E /* AlcolRegister.storyboard */,
+				2F817E9321CE5C2B00574F08 /* Login.storyboard */,
 			);
-			path = AlcoleRegister;
+			path = Login;
 			sourceTree = "<group>";
 		};
-		2FF968FD21C5FE9B002FA884 /* Main */ = {
+		2F817E9521CE5C8400574F08 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				2FF9690121C5FFC2002FA884 /* YellowCardMain.storyboard */,
+				2F817E9621CE5C8C00574F08 /* Extension */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		2F817E9621CE5C8C00574F08 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				2F817E9721CE5C9E00574F08 /* NSObjectExtension.swift */,
+				2F817EA121CE603900574F08 /* UIViewExtension.swift */,
+				2F817EAE21CE66E300574F08 /* UIFontExtension.swift */,
+				2F817EB021CE671300574F08 /* UIColorExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		2F817E9921CE5DBF00574F08 /* Info */ = {
+			isa = PBXGroup;
+			children = (
+				2F817E9A21CE5DCC00574F08 /* InfoViewController.swift */,
+				2F817E9F21CE5EF200574F08 /* InfoView.swift */,
+			);
+			path = Info;
+			sourceTree = "<group>";
+		};
+		2F817E9C21CE5DD100574F08 /* Info */ = {
+			isa = PBXGroup;
+			children = (
+				2F817E9D21CE5DD800574F08 /* Info.storyboard */,
+			);
+			path = Info;
+			sourceTree = "<group>";
+		};
+		2F817EA521CE660E00574F08 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				2F817EA721CE661F00574F08 /* SpoqaHanSansBold.ttf */,
+				2F817EA621CE661E00574F08 /* SpoqaHanSansLight.ttf */,
+				2F817EA821CE662000574F08 /* SpoqaHanSansRegular.ttf */,
+				2F817EA921CE662100574F08 /* SpoqaHanSansThin.ttf */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		2FAAF21C21CF17BE005DFABC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2FC5519421CE8F0C0091547B /* UserViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		2FAAF21D21CF18B1005DFABC /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				2FAAF22321CF1998005DFABC /* YellowCardNavigationController.swift */,
+				2FAAF22521CF1A61005DFABC /* YellowCardMainViewController.swift */,
+				2FAF6CE421CF275D00341E90 /* YellowCardMainView.swift */,
+				2FAF6CE621CF298F00341E90 /* YellowCardDetailCell.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
 		};
-		2FF9690321C5FFE1002FA884 /* Main */ = {
+		2FAAF21E21CF18D3005DFABC /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				2FF9690421C5FFEE002FA884 /* YellowCardMain.swift */,
-				2FF9690621C6008E002FA884 /* YellowCardView.swift */,
-				2FAFA19021C6130B00A5EAC0 /* YellowCardDetailCell.swift */,
+				2FAAF21F21CF18E3005DFABC /* YellowCardMain.storyboard */,
 			);
 			path = Main;
 			sourceTree = "<group>";
 		};
-		2FFADCCB21C146E1000CB3B0 /* Supporfile */ = {
+		2FAF6CEA21CF837B00341E90 /* Setting */ = {
 			isa = PBXGroup;
 			children = (
-				2F58C09721C382FB001DCC40 /* Font */,
-				2F06A67221C13AC700387DED /* Assets.xcassets */,
-				2F06A67721C13AC700387DED /* Info.plist */,
+				2FAF6CEB21CF838E00341E90 /* SettingViewController.swift */,
+				2FAF6CF021CF84C800341E90 /* SettingViewModel.swift */,
 			);
-			path = Supporfile;
+			path = Setting;
 			sourceTree = "<group>";
 		};
-		711EC130F22AE87F04732371 /* Frameworks */ = {
+		2FAF6CED21CF83A300341E90 /* Setting */ = {
 			isa = PBXGroup;
 			children = (
-				2FFADCC621C13D36000CB3B0 /* KakaoOpenSDK.framework */,
-				CE69F388968FF3517F91AF0D /* Pods_yellowCard.framework */,
+				2FAF6CEE21CF83B100341E90 /* Setting.storyboard */,
 			);
-			name = Frameworks;
+			path = Setting;
 			sourceTree = "<group>";
 		};
-		8559801CC7D813709E887A69 /* Pods */ = {
+		6C726979703917AD6D7546CA /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				31006B01FE8D46B61F44E8CB /* Pods-yellowCard.debug.xcconfig */,
-				741B174ED33A3C00E75CA17F /* Pods-yellowCard.release.xcconfig */,
+				6A675AEF7F0E681A668FE205 /* Pods-yellowCard.debug.xcconfig */,
+				B850B149F4E2FCE42F457BC3 /* Pods-yellowCard.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		A4C463A8F675692D041C5940 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2F817E8021CE4D8200574F08 /* KakaoOpenSDK.framework */,
+				590F4C23ADE71A623F083DFA /* Pods_yellowCard.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2F06A66721C13AC600387DED /* yellowCard */ = {
+		2F0B8F3021CE4BA700FD07F3 /* yellowCard */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2F06A67A21C13AC700387DED /* Build configuration list for PBXNativeTarget "yellowCard" */;
+			buildConfigurationList = 2F0B8F4321CE4BA800FD07F3 /* Build configuration list for PBXNativeTarget "yellowCard" */;
 			buildPhases = (
-				975D9016E4578150BBD5D8A5 /* [CP] Check Pods Manifest.lock */,
-				2F06A66421C13AC600387DED /* Sources */,
-				2F06A66521C13AC600387DED /* Frameworks */,
-				2F06A66621C13AC600387DED /* Resources */,
-				6AE03B65D5A2AD9F319DF8EF /* [CP] Embed Pods Frameworks */,
-				FF04F1AC82AD5EC92435F108 /* [CP] Copy Pods Resources */,
+				98B1F94B9AE975DC8790AAAB /* [CP] Check Pods Manifest.lock */,
+				2F0B8F2D21CE4BA700FD07F3 /* Sources */,
+				2F0B8F2E21CE4BA700FD07F3 /* Frameworks */,
+				2F0B8F2F21CE4BA700FD07F3 /* Resources */,
+				DFB81E0802EA3FB139EC4197 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -287,26 +325,26 @@
 			);
 			name = yellowCard;
 			productName = yellowCard;
-			productReference = 2F06A66821C13AC600387DED /* yellowCard.app */;
+			productReference = 2F0B8F3121CE4BA700FD07F3 /* yellowCard.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		2F06A66021C13AC600387DED /* Project object */ = {
+		2F0B8F2921CE4BA700FD07F3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1010;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = linsaeng;
 				TargetAttributes = {
-					2F06A66721C13AC600387DED = {
+					2F0B8F3021CE4BA700FD07F3 = {
 						CreatedOnToolsVersion = 10.1;
 						LastSwiftMigration = 1010;
 					};
 				};
 			};
-			buildConfigurationList = 2F06A66321C13AC600387DED /* Build configuration list for PBXProject "yellowCard" */;
+			buildConfigurationList = 2F0B8F2C21CE4BA700FD07F3 /* Build configuration list for PBXProject "yellowCard" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -314,81 +352,39 @@
 				en,
 				Base,
 			);
-			mainGroup = 2F06A65F21C13AC600387DED;
-			productRefGroup = 2F06A66921C13AC600387DED /* Products */;
+			mainGroup = 2F0B8F2821CE4BA700FD07F3;
+			productRefGroup = 2F0B8F3221CE4BA700FD07F3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2F06A66721C13AC600387DED /* yellowCard */,
+				2F0B8F3021CE4BA700FD07F3 /* yellowCard */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		2F06A66621C13AC600387DED /* Resources */ = {
+		2F0B8F2F21CE4BA700FD07F3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2F58C0AB21C39344001DCC40 /* Info.storyboard in Resources */,
-				2F06A67621C13AC700387DED /* LaunchScreen.storyboard in Resources */,
-				2F58C09E21C38313001DCC40 /* SpoqaHanSansRegular.ttf in Resources */,
-				2F58C09D21C38313001DCC40 /* SpoqaHanSansLight.ttf in Resources */,
-				2F58C09F21C38313001DCC40 /* SpoqaHanSansThin.ttf in Resources */,
-				2F06A67321C13AC700387DED /* Assets.xcassets in Resources */,
-				2F06A67121C13AC600387DED /* Main.storyboard in Resources */,
-				2F8FD62021CA693F0038BF7E /* AlcolRegister.storyboard in Resources */,
-				2FF9690221C5FFC2002FA884 /* YellowCardMain.storyboard in Resources */,
-				2F58C09C21C38313001DCC40 /* SpoqaHanSansBold.ttf in Resources */,
-				2F58C0B421C39726001DCC40 /* Login.storyboard in Resources */,
+				2F817E9421CE5C2B00574F08 /* Login.storyboard in Resources */,
+				2F817EAB21CE662100574F08 /* SpoqaHanSansBold.ttf in Resources */,
+				2F817EAA21CE662100574F08 /* SpoqaHanSansLight.ttf in Resources */,
+				2F0B8F3F21CE4BA800FD07F3 /* LaunchScreen.storyboard in Resources */,
+				2F0B8F3C21CE4BA800FD07F3 /* Assets.xcassets in Resources */,
+				2F817EAD21CE662100574F08 /* SpoqaHanSansThin.ttf in Resources */,
+				2F817EAC21CE662100574F08 /* SpoqaHanSansRegular.ttf in Resources */,
+				2FAAF22021CF18E3005DFABC /* YellowCardMain.storyboard in Resources */,
+				2F817E9E21CE5DD800574F08 /* Info.storyboard in Resources */,
+				2FAF6CEF21CF83B100341E90 /* Setting.storyboard in Resources */,
+				2F0B8F3A21CE4BA700FD07F3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		6AE03B65D5A2AD9F319DF8EF /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-yellowCard/Pods-yellowCard-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
-				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
-				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
-				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
-				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
-				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
-				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
-				"${BUILT_PRODUCTS_DIR}/SwiftyBeaver/SwiftyBeaver.framework",
-				"${BUILT_PRODUCTS_DIR}/Then/Then.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyBeaver.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Then.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-yellowCard/Pods-yellowCard-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		975D9016E4578150BBD5D8A5 /* [CP] Check Pods Manifest.lock */ = {
+		98B1F94B9AE975DC8790AAAB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -410,7 +406,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		FF04F1AC82AD5EC92435F108 /* [CP] Copy Pods Resources */ = {
+		DFB81E0802EA3FB139EC4197 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -418,62 +414,81 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-yellowCard/Pods-yellowCard-resources.sh",
-				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+				"${SRCROOT}/Pods/Target Support Files/Pods-yellowCard/Pods-yellowCard-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Then/Then.framework",
 			);
-			name = "[CP] Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Then.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-yellowCard/Pods-yellowCard-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-yellowCard/Pods-yellowCard-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2F06A66421C13AC600387DED /* Sources */ = {
+		2F0B8F2D21CE4BA700FD07F3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2FF9690021C5FF1C002FA884 /* Logger.swift in Sources */,
-				2FF9690921C60BE8002FA884 /* UIColorExtension.swift in Sources */,
-				2F58C0BA21C3A22C001DCC40 /* UIViewExtension.swift in Sources */,
-				2FF9690521C5FFEE002FA884 /* YellowCardMain.swift in Sources */,
-				2F8FD62221CA69EE0038BF7E /* AlcoRegisterView.swift in Sources */,
-				2FAFA19121C6130B00A5EAC0 /* YellowCardDetailCell.swift in Sources */,
-				2F58C0AD21C39412001DCC40 /* NSObjectExtension.swift in Sources */,
-				2F58C0A321C3873A001DCC40 /* FontExtension.swift in Sources */,
-				2F06A66E21C13AC600387DED /* ViewController.swift in Sources */,
-				2F58C0B821C3A20D001DCC40 /* LoginView.swift in Sources */,
-				2F8FD61D21CA690A0038BF7E /* AlcolRegisterVC.swift in Sources */,
-				2F58C0A721C38FD2001DCC40 /* UserInfoViewModel.swift in Sources */,
-				2F58C0B221C3971C001DCC40 /* LoginViewController.swift in Sources */,
-				2F06A66C21C13AC600387DED /* AppDelegate.swift in Sources */,
-				2F58C0A921C39184001DCC40 /* InfoViewController.swift in Sources */,
-				2FF9690721C6008E002FA884 /* YellowCardView.swift in Sources */,
-				2F58C08D21C36731001DCC40 /* UserInfoModel.swift in Sources */,
+				2F817EA021CE5EF200574F08 /* InfoView.swift in Sources */,
+				2FAF6CE521CF275D00341E90 /* YellowCardMainView.swift in Sources */,
+				2FAAF22621CF1A61005DFABC /* YellowCardMainViewController.swift in Sources */,
+				2F817E8A21CE57D600574F08 /* LoginViewController.swift in Sources */,
+				2F817E9821CE5C9E00574F08 /* NSObjectExtension.swift in Sources */,
+				2FAF6CEC21CF838E00341E90 /* SettingViewController.swift in Sources */,
+				2F0B8F3721CE4BA700FD07F3 /* ViewController.swift in Sources */,
+				2F817E9B21CE5DCC00574F08 /* InfoViewController.swift in Sources */,
+				2FAF6CE721CF298F00341E90 /* YellowCardDetailCell.swift in Sources */,
+				2F817E8D21CE58B300574F08 /* RootViewController.swift in Sources */,
+				2F817EA221CE603900574F08 /* UIViewExtension.swift in Sources */,
+				2F0B8F3521CE4BA700FD07F3 /* AppDelegate.swift in Sources */,
+				2FAAF22221CF1946005DFABC /* RootNavigationController.swift in Sources */,
+				2FAAF22421CF1998005DFABC /* YellowCardNavigationController.swift in Sources */,
+				2FC5519321CE8CEA0091547B /* LoginViewModel.swift in Sources */,
+				2FAF6CE921CF545F00341E90 /* RootCollectionViewCell.swift in Sources */,
+				2FC5519521CE8F0C0091547B /* UserViewModel.swift in Sources */,
+				2F817EA421CE65AE00574F08 /* LoginView.swift in Sources */,
+				2F817E8F21CE5B7D00574F08 /* RootView.swift in Sources */,
+				2FAF6CF121CF84C800341E90 /* SettingViewModel.swift in Sources */,
+				2F817EAF21CE66E300574F08 /* UIFontExtension.swift in Sources */,
+				2F817EB121CE671300574F08 /* UIColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		2F06A66F21C13AC600387DED /* Main.storyboard */ = {
+		2F0B8F3821CE4BA700FD07F3 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				2F06A67021C13AC600387DED /* Base */,
+				2F0B8F3921CE4BA700FD07F3 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		2F06A67421C13AC700387DED /* LaunchScreen.storyboard */ = {
+		2F0B8F3D21CE4BA800FD07F3 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				2F06A67521C13AC700387DED /* Base */,
+				2F0B8F3E21CE4BA800FD07F3 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -481,7 +496,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		2F06A67821C13AC700387DED /* Debug */ = {
+		2F0B8F4121CE4BA800FD07F3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -542,7 +557,7 @@
 			};
 			name = Debug;
 		};
-		2F06A67921C13AC700387DED /* Release */ = {
+		2F0B8F4221CE4BA800FD07F3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -597,9 +612,9 @@
 			};
 			name = Release;
 		};
-		2F06A67B21C13AC700387DED /* Debug */ = {
+		2F0B8F4421CE4BA800FD07F3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 31006B01FE8D46B61F44E8CB /* Pods-yellowCard.debug.xcconfig */;
+			baseConfigurationReference = 6A675AEF7F0E681A668FE205 /* Pods-yellowCard.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -609,25 +624,25 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/yellowCard/Supporfile/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/yellowCard/SupportFile/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = com.linsaeng.yellowCard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "yellowCard/yellowCard-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		2F06A67C21C13AC700387DED /* Release */ = {
+		2F0B8F4521CE4BA800FD07F3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 741B174ED33A3C00E75CA17F /* Pods-yellowCard.release.xcconfig */;
+			baseConfigurationReference = B850B149F4E2FCE42F457BC3 /* Pods-yellowCard.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -637,43 +652,43 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				INFOPLIST_FILE = "$(SRCROOT)/yellowCard/Supporfile/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/yellowCard/SupportFile/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				OTHER_LDFLAGS = "$(inherited)";
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = com.linsaeng.yellowCard;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "yellowCard/yellowCard-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2F06A66321C13AC600387DED /* Build configuration list for PBXProject "yellowCard" */ = {
+		2F0B8F2C21CE4BA700FD07F3 /* Build configuration list for PBXProject "yellowCard" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2F06A67821C13AC700387DED /* Debug */,
-				2F06A67921C13AC700387DED /* Release */,
+				2F0B8F4121CE4BA800FD07F3 /* Debug */,
+				2F0B8F4221CE4BA800FD07F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2F06A67A21C13AC700387DED /* Build configuration list for PBXNativeTarget "yellowCard" */ = {
+		2F0B8F4321CE4BA800FD07F3 /* Build configuration list for PBXNativeTarget "yellowCard" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2F06A67B21C13AC700387DED /* Debug */,
-				2F06A67C21C13AC700387DED /* Release */,
+				2F0B8F4421CE4BA800FD07F3 /* Debug */,
+				2F0B8F4521CE4BA800FD07F3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 2F06A66021C13AC600387DED /* Project object */;
+	rootObject = 2F0B8F2921CE4BA700FD07F3 /* Project object */;
 }
