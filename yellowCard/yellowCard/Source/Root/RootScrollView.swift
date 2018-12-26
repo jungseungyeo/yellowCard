@@ -14,6 +14,7 @@ class RootScrollView: UIScrollView {
         super.init(frame: frame)
         setup()
         setupUI()
+        setupTapped()
     }
 
     required init?(coder aDecoder: NSCoder) {

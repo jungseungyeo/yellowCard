@@ -10,6 +10,7 @@ import UIKit
 
 protocol AlcolRegisterViewDelegate {
     func selectedWhereTitleTapped(sender: UITapGestureRecognizer)
+    func datePickerStop(datePicker: UIDatePicker)
     func minusTapped(numberOfPeple: String?)
     func plusTapped(numberOfPele: String?)
 }
@@ -33,12 +34,14 @@ class AlcolRegisterView: RootScrollView {
         $0.font = .spoqaFont(ofSize: 14, weight: .Bold)
     }
 
-    private let selectedWhereTitle = UITextField(frame: .zero).then {
+    private let selectedWhereTitle = UILabel(frame: .zero).then {
         $0.text = "2018년 12월 24일"
         $0.textColor = UIColor.YellowCardBorderColor
         $0.textAlignment = .center
         $0.font = .spoqaFont(ofSize: 14, weight: .Bold)
     }
+
+    public let datePickerView = UIDatePicker(frame: .zero)
 
     private let whereLine = UIView(frame: .zero).then {
         $0.backgroundColor = UIColor.YellowCardBorderColor
@@ -113,6 +116,7 @@ class AlcolRegisterView: RootScrollView {
         addSubviews(title,
                     whereTitle,
                     selectedWhereTitle,
+                    datePickerView,
                     whereLine,
                     whoTitle,
                     minusButton,
@@ -196,6 +200,13 @@ class AlcolRegisterView: RootScrollView {
             make.top.equalTo(howDrinkingTitle.snp.bottom).offset(23)
             make.centerX.equalTo(selectedWhereTitle.snp.centerX).offset(0)
         }
+
+        datePickerView.snp.makeConstraints { make -> Void in
+            make.height.equalTo(40)
+            make.top.equalTo(self.snp.bottom)
+            make.left.equalToSuperview().offset(0)
+            make.right.equalToSuperview().offset(0)
+        }
     }
 
     override func setupTapped() {
@@ -207,6 +218,7 @@ class AlcolRegisterView: RootScrollView {
 
         minusButton.addTarget(self, action: #selector(minusTapped), for: .touchUpInside)
         plusButton.addTarget(self, action: #selector(plusTapped), for: .touchUpInside)
+        self.datePickerView.addTarget(self, action: #selector(datePicker(datePicker:)), for: .valueChanged)
     }
 }
 
@@ -215,6 +227,11 @@ extension AlcolRegisterView {
     @objc
     private func selectedWhereTitleTapped(sender: UITapGestureRecognizer) {
         alcolDelegate?.selectedWhereTitleTapped(sender: sender)
+    }
+
+    @objc
+    private func datePicker(datePicker: UIDatePicker) {
+        alcolDelegate?.datePickerStop(datePicker: datePicker)
     }
 
     @objc

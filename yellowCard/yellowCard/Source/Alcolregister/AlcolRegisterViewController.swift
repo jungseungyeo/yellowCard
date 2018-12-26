@@ -22,6 +22,7 @@ class AlcolRegisterViewController: RootVC {
 
         alcolView = AlcolRegisterView(frame: self.view.frame)
         self.view = alcolView
+        alcolView?.alcolDelegate = self
     }
 
     private func setupNavibar() {
@@ -48,4 +49,27 @@ class AlcolRegisterViewController: RootVC {
     private func cancelBarButtonItemTapped() {
         navigationController?.popViewController(animated: true)
     }
+}
+
+extension AlcolRegisterViewController: AlcolRegisterViewDelegate {
+    func selectedWhereTitleTapped(sender: UITapGestureRecognizer) {
+        UIView.animate(withDuration: 0.3, animations: {
+            self.alcolView?.datePickerView.center.y += -300
+            self.view.layoutIfNeeded()
+        })
+    }
+
+    func datePickerStop(datePicker: UIDatePicker) {
+
+    }
+
+    func minusTapped(numberOfPeple: String?) {
+
+    }
+
+    func plusTapped(numberOfPele: String?) {
+
+    }
+
+
 }
