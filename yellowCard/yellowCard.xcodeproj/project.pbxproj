@@ -12,6 +12,7 @@
 		2F0B8F3A21CE4BA700FD07F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F0B8F3821CE4BA700FD07F3 /* Main.storyboard */; };
 		2F0B8F3C21CE4BA800FD07F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F0B8F3B21CE4BA800FD07F3 /* Assets.xcassets */; };
 		2F0B8F3F21CE4BA800FD07F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F0B8F3D21CE4BA800FD07F3 /* LaunchScreen.storyboard */; };
+		2F4DF23D21D1D9300089A085 /* RootScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4DF23C21D1D9300089A085 /* RootScrollView.swift */; };
 		2F817E8121CE4D8200574F08 /* KakaoOpenSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F817E8021CE4D8200574F08 /* KakaoOpenSDK.framework */; };
 		2F817E8A21CE57D600574F08 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F817E8921CE57D600574F08 /* LoginViewController.swift */; };
 		2F817E8D21CE58B300574F08 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F817E8C21CE58B300574F08 /* RootViewController.swift */; };
@@ -41,6 +42,10 @@
 		2FAF6CF121CF84C800341E90 /* SettingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAF6CF021CF84C800341E90 /* SettingViewModel.swift */; };
 		2FC5519321CE8CEA0091547B /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC5519221CE8CEA0091547B /* LoginViewModel.swift */; };
 		2FC5519521CE8F0C0091547B /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC5519421CE8F0C0091547B /* UserViewModel.swift */; };
+		2FD6BD1321D0A008001B6C4B /* AlcolRegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD6BD1221D0A008001B6C4B /* AlcolRegisterView.swift */; };
+		2FE4D3AA21D0674A00FDDCC6 /* YellowCardMainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE4D3A921D0674A00FDDCC6 /* YellowCardMainViewModel.swift */; };
+		2FE4D3AD21D06DBA00FDDCC6 /* AlcolRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE4D3AC21D06DBA00FDDCC6 /* AlcolRegisterViewController.swift */; };
+		2FE4D3B021D06DD100FDDCC6 /* AlcolRegister.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FE4D3AF21D06DD100FDDCC6 /* AlcolRegister.storyboard */; };
 		4CF738C121CFC84400244690 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF738C021CFC84400244690 /* StringExtension.swift */; };
 		FF498DCC8D8F575AA7F6430B /* Pods_yellowCard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 590F4C23ADE71A623F083DFA /* Pods_yellowCard.framework */; };
 /* End PBXBuildFile section */
@@ -53,6 +58,7 @@
 		2F0B8F3B21CE4BA800FD07F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2F0B8F3E21CE4BA800FD07F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2F0B8F4021CE4BA800FD07F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F4DF23C21D1D9300089A085 /* RootScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootScrollView.swift; sourceTree = "<group>"; };
 		2F817E8021CE4D8200574F08 /* KakaoOpenSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KakaoOpenSDK.framework; sourceTree = "<group>"; };
 		2F817E8221CE4EEA00574F08 /* yellowCard-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "yellowCard-Bridging-Header.h"; sourceTree = "<group>"; };
 		2F817E8921CE57D600574F08 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -83,6 +89,10 @@
 		2FAF6CF021CF84C800341E90 /* SettingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewModel.swift; sourceTree = "<group>"; };
 		2FC5519221CE8CEA0091547B /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		2FC5519421CE8F0C0091547B /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		2FD6BD1221D0A008001B6C4B /* AlcolRegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlcolRegisterView.swift; sourceTree = "<group>"; };
+		2FE4D3A921D0674A00FDDCC6 /* YellowCardMainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowCardMainViewModel.swift; sourceTree = "<group>"; };
+		2FE4D3AC21D06DBA00FDDCC6 /* AlcolRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlcolRegisterViewController.swift; sourceTree = "<group>"; };
+		2FE4D3AF21D06DD100FDDCC6 /* AlcolRegister.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AlcolRegister.storyboard; sourceTree = "<group>"; };
 		4CF738C021CFC84400244690 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		590F4C23ADE71A623F083DFA /* Pods_yellowCard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_yellowCard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A675AEF7F0E681A668FE205 /* Pods-yellowCard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yellowCard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-yellowCard/Pods-yellowCard.debug.xcconfig"; sourceTree = "<group>"; };
@@ -145,6 +155,7 @@
 		2F817E8621CE544600574F08 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				2FE4D3AB21D06DA400FDDCC6 /* Alcolregister */,
 				2FAF6CEA21CF837B00341E90 /* Setting */,
 				2FAAF21C21CF17BE005DFABC /* ViewModel */,
 				2F817E9921CE5DBF00574F08 /* Info */,
@@ -160,6 +171,7 @@
 		2F817E8721CE545000574F08 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
+				2FE4D3AE21D06DC200FDDCC6 /* AlcolRegister */,
 				2FAF6CED21CF83A300341E90 /* Setting */,
 				2FAAF21E21CF18D3005DFABC /* Main */,
 				2F817E9C21CE5DD100574F08 /* Info */,
@@ -187,6 +199,7 @@
 				2F817E8E21CE5B7D00574F08 /* RootView.swift */,
 				2FAAF22121CF1946005DFABC /* RootNavigationController.swift */,
 				2FAF6CE821CF545F00341E90 /* RootCollectionViewCell.swift */,
+				2F4DF23C21D1D9300089A085 /* RootScrollView.swift */,
 			);
 			path = Root;
 			sourceTree = "<group>";
@@ -262,6 +275,7 @@
 				2FAAF22521CF1A61005DFABC /* YellowCardMainViewController.swift */,
 				2FAF6CE421CF275D00341E90 /* YellowCardMainView.swift */,
 				2FAF6CE621CF298F00341E90 /* YellowCardDetailCell.swift */,
+				2FE4D3A921D0674A00FDDCC6 /* YellowCardMainViewModel.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -289,6 +303,23 @@
 				2FAF6CEE21CF83B100341E90 /* Setting.storyboard */,
 			);
 			path = Setting;
+			sourceTree = "<group>";
+		};
+		2FE4D3AB21D06DA400FDDCC6 /* Alcolregister */ = {
+			isa = PBXGroup;
+			children = (
+				2FE4D3AC21D06DBA00FDDCC6 /* AlcolRegisterViewController.swift */,
+				2FD6BD1221D0A008001B6C4B /* AlcolRegisterView.swift */,
+			);
+			path = Alcolregister;
+			sourceTree = "<group>";
+		};
+		2FE4D3AE21D06DC200FDDCC6 /* AlcolRegister */ = {
+			isa = PBXGroup;
+			children = (
+				2FE4D3AF21D06DD100FDDCC6 /* AlcolRegister.storyboard */,
+			);
+			path = AlcolRegister;
 			sourceTree = "<group>";
 		};
 		6C726979703917AD6D7546CA /* Pods */ = {
@@ -377,6 +408,7 @@
 				2F0B8F3C21CE4BA800FD07F3 /* Assets.xcassets in Resources */,
 				2F817EAD21CE662100574F08 /* SpoqaHanSansThin.ttf in Resources */,
 				2F817EAC21CE662100574F08 /* SpoqaHanSansRegular.ttf in Resources */,
+				2FE4D3B021D06DD100FDDCC6 /* AlcolRegister.storyboard in Resources */,
 				2FAAF22021CF18E3005DFABC /* YellowCardMain.storyboard in Resources */,
 				2F817E9E21CE5DD800574F08 /* Info.storyboard in Resources */,
 				2FAF6CEF21CF83B100341E90 /* Setting.storyboard in Resources */,
@@ -453,12 +485,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F817EA021CE5EF200574F08 /* InfoView.swift in Sources */,
+				2F4DF23D21D1D9300089A085 /* RootScrollView.swift in Sources */,
 				2FAF6CE521CF275D00341E90 /* YellowCardMainView.swift in Sources */,
 				2FAAF22621CF1A61005DFABC /* YellowCardMainViewController.swift in Sources */,
+				2FE4D3AD21D06DBA00FDDCC6 /* AlcolRegisterViewController.swift in Sources */,
 				2F817E8A21CE57D600574F08 /* LoginViewController.swift in Sources */,
 				2F817E9821CE5C9E00574F08 /* NSObjectExtension.swift in Sources */,
 				2FAF6CEC21CF838E00341E90 /* SettingViewController.swift in Sources */,
 				2F0B8F3721CE4BA700FD07F3 /* ViewController.swift in Sources */,
+				2FE4D3AA21D0674A00FDDCC6 /* YellowCardMainViewModel.swift in Sources */,
 				2F817E9B21CE5DCC00574F08 /* InfoViewController.swift in Sources */,
 				2FAF6CE721CF298F00341E90 /* YellowCardDetailCell.swift in Sources */,
 				2F817E8D21CE58B300574F08 /* RootViewController.swift in Sources */,
@@ -471,6 +506,7 @@
 				2FC5519521CE8F0C0091547B /* UserViewModel.swift in Sources */,
 				2F817EA421CE65AE00574F08 /* LoginView.swift in Sources */,
 				2F817E8F21CE5B7D00574F08 /* RootView.swift in Sources */,
+				2FD6BD1321D0A008001B6C4B /* AlcolRegisterView.swift in Sources */,
 				2FAF6CF121CF84C800341E90 /* SettingViewModel.swift in Sources */,
 				2F817EAF21CE66E300574F08 /* UIFontExtension.swift in Sources */,
 				4CF738C121CFC84400244690 /* StringExtension.swift in Sources */,

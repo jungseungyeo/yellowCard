@@ -7,9 +7,9 @@
 //
 
 extension String {
-    static func attributedString(font: UIFont, textColor: UIColor) -> NSMutableAttributedString {
-        self.init()
-
-        return NSMutableAttributedString()
+    func attributedString(font: UIFont, textColor: UIColor) -> NSMutableAttributedString {
+        let attributedString = NSMutableAttributedString(string: self)
+        attributedString.addAttribute(NSAttributedString.Key.font, value: font, range: NSRange(location: 0, length: attributedString.length))
+        return attributedString
     }
 }

@@ -17,7 +17,6 @@ class SettingViewController: RootVC {
     override func setup() {
         super.setup()
         self.navigationItem.title = "설정"
-        self.navigationController?.navigationBar.isHidden = false
     }
 
     override func viewDidLoad() {

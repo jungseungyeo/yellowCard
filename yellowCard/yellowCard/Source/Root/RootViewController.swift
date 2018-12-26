@@ -17,5 +17,16 @@ class RootVC: UIViewController {
     }
 
     /// 상속 받은 VC에서 viewDidLoad가 호출 되기 전에 실행되는 함수
-    func setup() { }
+    func setup() {
+        self.navigationController?.navigationBar.isHidden = false
+        self.navigationController?.interactivePopGestureRecognizer?.delegate = self
+        self.navigationController?.interactivePopGestureRecognizer?.isEnabled = true
+        self.navigationController?.navigationBar.barTintColor = .white
+        UINavigationBar.appearance().shadowImage = UIImage()
+        UINavigationBar.appearance().setBackgroundImage(UIImage(), for: .default)
+    }
+}
+
+extension RootVC: UINavigationBarDelegate, UIGestureRecognizerDelegate {
+
 }

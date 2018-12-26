@@ -10,7 +10,7 @@ import UIKit
 
 class YellowCardMainViewController: RootVC {
 
-    private let yellowCardMainView = YellowCardMianView()
+    private var yellowCardMainView: YellowCardMianView? = nil
 
     static func instance() -> YellowCardMainViewController? {
         return UIStoryboard(name: "YellowCardMain", bundle: nil).instantiateViewController(withIdentifier: classNameToString) as? YellowCardMainViewController
@@ -18,21 +18,22 @@ class YellowCardMainViewController: RootVC {
 
     override func setup() {
         super.setup()
-
+        yellowCardMainView = YellowCardMianView(frame: self.view.frame)
         // DemoData
         UserViewModel.shared.userInfo = DemoModelGet.getUserInfoModel
 
-        self.yellowCardMainView.delegate = self
-        self.yellowCardMainView.cardView.dataSource = self
-        self.yellowCardMainView.cardView.delegate = self
-        self.yellowCardMainView.cardView.register(YellowCardDetailCell.self, forCellWithReuseIdentifier: YellowCardDetailCell.registerId)
+        self.yellowCardMainView?.delegate = self
+        self.yellowCardMainView?.cardView.dataSource = self
+        self.yellowCardMainView?.cardView.delegate = self
+        self.yellowCardMainView?.cardView.register(YellowCardDetailCell.self, forCellWithReuseIdentifier: YellowCardDetailCell.registerId)
 
-        self.yellowCardMainView.bind(cardModel: UserViewModel.shared.userInfo?.cardModel )
+        self.yellowCardMainView?.bind(userInfo: UserViewModel.shared.userInfo)
         self.view = yellowCardMainView
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
     }
 
     override func viewWillAppear(_ animated: Bool) {
@@ -42,8 +43,21 @@ class YellowCardMainViewController: RootVC {
 }
 
 extension YellowCardMainViewController: YellowCarMainViewDelegate {
+
     func settingTapped() {
         self.navigationController?.pushViewController(SettingViewController.instance()!, animated: true)
+    }
+
+    func alcolRegisterTapped() {
+        self.navigationController?.pushViewController(AlcolRegisterViewController.instance()!, animated: true)
+    }
+
+    func calendarTapped() {
+
+    }
+
+    func encyclopediaTapped() {
+        
     }
 }
 
@@ -58,6 +72,9 @@ extension YellowCardMainViewController: UICollectionViewDataSource, UICollection
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: YellowCardDetailCell.registerId, for: indexPath) as! YellowCardDetailCell
+
+        cell.bind(cardModel: UserViewModel.shared.userInfo?.cardModel?[indexPath.row])
+//        cell.bind(cardModel: nil)
         return cell
     }
 
@@ -69,8 +86,8 @@ extension YellowCardMainViewController: UICollectionViewDataSource, UICollection
         let x = targetContentOffset.pointee.x
 
         UIView.animate(withDuration: 0.3, animations: {
-            self.yellowCardMainView.pageCount.currentPage = Int(x / self.view.frame.width)
-            self.yellowCardMainView.layoutIfNeeded()
+            self.yellowCardMainView?.pageCount.currentPage = Int(x / self.view.frame.width)
+            self.yellowCardMainView?.layoutIfNeeded()
         })
     }
 

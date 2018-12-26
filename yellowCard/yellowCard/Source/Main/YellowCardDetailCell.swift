@@ -44,6 +44,7 @@ class YellowCardDetailCell: RootCollectionViewCell {
     private let endTitle = UILabel(frame: .zero).then {
         $0.text = "마실 수 있어요."
         $0.font = .spoqaFont(ofSize: 20, weight: .Light)
+        $0.numberOfLines = 0
     }
 
     private let border = UIView(frame: .zero).then {
@@ -56,6 +57,11 @@ class YellowCardDetailCell: RootCollectionViewCell {
         $0.backgroundColor = UIColor.YellowCardYellow
     }
 
+    private let alcolImg = UIImageView(frame: .zero).then {
+        $0.image = UIImage(named: "beerCopy.png")
+        $0.contentMode = .scaleAspectFill
+    }
+
     override func setup() {
         super.setup()
 
@@ -63,7 +69,8 @@ class YellowCardDetailCell: RootCollectionViewCell {
             ,border
             ,title
             ,mainTitle
-            ,endTitle)
+            ,endTitle
+            ,alcolImg)
     }
 
     override func setupUI() {
@@ -88,33 +95,48 @@ class YellowCardDetailCell: RootCollectionViewCell {
         }
 
         mainTitle.snp.makeConstraints { make -> Void in
-            make.top.equalTo(title.snp.bottom).offset(12)
+            make.top.equalTo(title.snp.bottom).offset(0)
             make.left.equalTo(title.snp.left).offset(0)
         }
 
         endTitle.snp.makeConstraints { make -> Void in
-            make.top.equalTo(mainTitle.snp.bottom).offset(12)
+            make.top.equalTo(mainTitle.snp.bottom).offset(0)
             make.left.equalTo(title.snp.left).offset(0)
+        }
+
+        alcolImg.snp.makeConstraints { make -> Void in
+            make.width.equalTo(border.snp.width).multipliedBy(0.428125)
+            make.height.equalTo(border.snp.height).multipliedBy(0.565625)
+            make.right.equalTo(border.snp.right).offset(-27)
+            make.bottom.equalTo(border.snp.bottom).offset(-18)
         }
     }
 
-    public func bind(cardModel: CardModel) {
-        guard let alcoltype = alcolType(rawValue: cardModel.alcolType!) else {
+    public func bind(cardModel: CardModel?) {
+
+        guard let cardModel = cardModel, let alcoltype = alcolType(rawValue: cardModel.alcolType!) else {
             setWelcome()
             return
         }
+
+        // title
+        let title = String(format: "내가 가장 좋아하는 %@", alcoltype.alcolName)
+        self.title.text = title
+        self.title.attributedText = title.attributedString(font: .spoqaFont(ofSize: 20, weight: .Light), textColor: UIColor.YellowCardBlack)
+
+        self.mainTitle.text = cardModel.mainTitle ?? ""
 
         switch alcoltype {
         case .nonAlcol:
             print()
         case .beer:
-            print()
+            self.background.backgroundColor = UIColor.YellowCardYellow
         case .soju:
-            print()
+            self.background.backgroundColor = UIColor.sojuBackgroundColor
         case .wine:
-            print()
+            self.background.backgroundColor = UIColor.wineBackgroundColor
         case .makgeolli:
-            print()
+            self.background.backgroundColor = UIColor.makgeolliBackgroundColor
         }
     }
 }
@@ -122,6 +144,16 @@ class YellowCardDetailCell: RootCollectionViewCell {
 extension YellowCardDetailCell {
 
     private func setWelcome() {
+        let firstTitle = "반가워요"
+        self.title.attributedText = firstTitle.attributedString(font: .spoqaFont(ofSize: 20, weight: .Light), textColor: UIColor.YellowCardBlack)
+
+        let mainTitle = "주량을 등록하면,"
+        self.mainTitle.attributedText = mainTitle.attributedString(font: .spoqaFont(ofSize: 20, weight: .Light), textColor: UIColor.YellowCardBlack)
+
+        let endTitle = "엘로우 카드를 즐길 수\n있어요!"
+        self.endTitle.attributedText = endTitle.attributedString(font: .spoqaFont(ofSize: 20, weight: .Light), textColor: UIColor.YellowCardBlack)
+
+        self.background.backgroundColor = UIColor.welcomeBackgroundColor
 
     }
 }

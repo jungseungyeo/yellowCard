@@ -42,7 +42,7 @@ class CardModel {
 class DemoModelGet {
 
     static var getUserInfoModel: UserInfo {
-        let userInfo = UserInfo(JSON: ["tokenId": "temo", "name": "lin", "imageUrl": "temo"])
+        let userInfo = UserInfo(JSON: ["tokenId": "temo", "name": "lin", "imageUrl": URL(string: "https://k.kakaocdn.net/dn/bTDccI/btqrgnDtPfC/cRPPxdIXyYJKVujjajVB6K/profile_640x640s.jpg")!])
         userInfo?.cardModel = getCardModel
         return userInfo!
     }
