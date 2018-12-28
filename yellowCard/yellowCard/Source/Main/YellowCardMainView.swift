@@ -32,7 +32,7 @@ class YellowCardMianView: RootView {
         $0.clipsToBounds = true
     }
 
-    private let settingTitle = UIButton(frame: .zero).then {
+    private let settingTitle = UIButton(type: .system).then {
         $0.setTitle("환경 설정", for: .normal)
         $0.setTitleColor(UIColor.YellowCardBorderColor, for: .normal)
         $0.titleLabel?.font = .spoqaFont(ofSize: 12, weight: .Light)

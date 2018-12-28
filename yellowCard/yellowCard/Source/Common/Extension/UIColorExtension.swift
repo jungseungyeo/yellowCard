@@ -19,6 +19,7 @@ extension UIColor {
 
     static let YellowCardGray = UIColor(r: 238, g: 238, b: 238)
     static let YellowLineGray = UIColor(r: 221, g: 221, b: 221)
+    static let YellowLineGray2 = UIColor(r: 244, g: 244, b: 244)
 
     static let makgeolliBackgroundColor = UIColor(r: 117, g: 209, b: 248)
     static let sojuBackgroundColor = UIColor(r: 112, g: 236, b: 80)

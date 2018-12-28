@@ -199,6 +199,7 @@ extension AlcolRegisterViewController: AlcolRegisterPickerDelegate {
             self.navigationController?.viewControllers.last?.view.makeToast("막걸리는 이미 선택되어 있습니다.")
 
         }
+        self.view.endEditing(true)
     }
 
     private func isBeerChecked() -> Bool {

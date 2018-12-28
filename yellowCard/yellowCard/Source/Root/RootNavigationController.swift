@@ -16,4 +16,8 @@ class RootNavigationController: UINavigationController {
     }
 
     func setup() { }
+
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?){
+        
+    }
 }

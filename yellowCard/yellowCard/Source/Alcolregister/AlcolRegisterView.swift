@@ -53,7 +53,7 @@ class AlcolRegisterView: RootView {
         $0.font = .spoqaFont(ofSize: 14, weight: .Bold)
     }
 
-    private let minusButton = UIButton(frame: .zero).then {
+    private let minusButton = UIButton(type: .system).then {
         $0.setTitle("-", for: .normal)
         $0.setTitleColor(UIColor.YellowCardBlack, for: .normal)
         $0.backgroundColor = UIColor.YellowCardGray
@@ -68,7 +68,7 @@ class AlcolRegisterView: RootView {
         $0.font = .spoqaFont(ofSize: 14, weight: .Bold)
     }
 
-    private let plusButton = UIButton(frame: .zero).then {
+    private let plusButton = UIButton(type: .system).then {
         $0.setTitle("+", for: .normal)
         $0.setTitleColor(UIColor.YellowCardBorderColor, for: .normal)
         $0.backgroundColor = UIColor.YellowCardGray
@@ -98,7 +98,7 @@ class AlcolRegisterView: RootView {
         $0.backgroundColor = .black
     }
 
-    public let registerButton = UIButton(frame: .zero).then {
+    public let registerButton = UIButton(type: .system).then {
         $0.setTitle("등록하기", for: .normal)
         $0.setTitleColor( .white, for: .normal)
         $0.backgroundColor = UIColor.YellowLineGray

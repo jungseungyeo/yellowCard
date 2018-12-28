@@ -15,7 +15,8 @@ class ViewController: UIViewController {
         DispatchQueue.main.async {
 //            self.moveInfo()
 //            self.moveLogin()
-            self.moveMain()
+//            self.moveMain()
+            self.mvoeSetting()
         }
     }
 }
@@ -38,6 +39,12 @@ extension ViewController {
     private func moveMain() {
         if let mainNavigationViewController = YellowCardNavigationController.instance() {
             present(mainNavigationViewController, animated: true, completion: nil)
+        }
+    }
+
+    private func mvoeSetting() {
+        if let settingVC = SettingViewController.instance() {
+            present(settingVC, animated: true, completion: nil)
         }
     }
 }
