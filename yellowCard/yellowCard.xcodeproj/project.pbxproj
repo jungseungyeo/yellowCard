@@ -12,7 +12,12 @@
 		2F0B8F3A21CE4BA700FD07F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F0B8F3821CE4BA700FD07F3 /* Main.storyboard */; };
 		2F0B8F3C21CE4BA800FD07F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F0B8F3B21CE4BA800FD07F3 /* Assets.xcassets */; };
 		2F0B8F3F21CE4BA800FD07F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F0B8F3D21CE4BA800FD07F3 /* LaunchScreen.storyboard */; };
+		2F26AA1621D4C9170057B614 /* AlcolRegisterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F26AA1521D4C9170057B614 /* AlcolRegisterTableViewCell.swift */; };
+		2F26AA1A21D4C9890057B614 /* RootTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F26AA1921D4C9890057B614 /* RootTableViewCell.swift */; };
 		2F4DF23D21D1D9300089A085 /* RootScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4DF23C21D1D9300089A085 /* RootScrollView.swift */; };
+		2F5C208A21D5F82200E6F846 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5C208921D5F82200E6F846 /* Toast.swift */; };
+		2F5C208C21D5FDD400E6F846 /* AlcolRegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5C208B21D5FDD400E6F846 /* AlcolRegisterViewModel.swift */; };
+		2F6EFDA621D4ACA0008144A7 /* NVIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6EFDA521D4ACA0008144A7 /* NVIndicatorView.swift */; };
 		2F817E8121CE4D8200574F08 /* KakaoOpenSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F817E8021CE4D8200574F08 /* KakaoOpenSDK.framework */; };
 		2F817E8A21CE57D600574F08 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F817E8921CE57D600574F08 /* LoginViewController.swift */; };
 		2F817E8D21CE58B300574F08 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F817E8C21CE58B300574F08 /* RootViewController.swift */; };
@@ -40,6 +45,7 @@
 		2FAF6CEC21CF838E00341E90 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAF6CEB21CF838E00341E90 /* SettingViewController.swift */; };
 		2FAF6CEF21CF83B100341E90 /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FAF6CEE21CF83B100341E90 /* Setting.storyboard */; };
 		2FAF6CF121CF84C800341E90 /* SettingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAF6CF021CF84C800341E90 /* SettingViewModel.swift */; };
+		2FB49A0B21D45C6300A6C1A0 /* NetWorkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB49A0A21D45C6300A6C1A0 /* NetWorkService.swift */; };
 		2FC5519321CE8CEA0091547B /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC5519221CE8CEA0091547B /* LoginViewModel.swift */; };
 		2FC5519521CE8F0C0091547B /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC5519421CE8F0C0091547B /* UserViewModel.swift */; };
 		2FD6BD1321D0A008001B6C4B /* AlcolRegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD6BD1221D0A008001B6C4B /* AlcolRegisterView.swift */; };
@@ -58,7 +64,12 @@
 		2F0B8F3B21CE4BA800FD07F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2F0B8F3E21CE4BA800FD07F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2F0B8F4021CE4BA800FD07F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F26AA1521D4C9170057B614 /* AlcolRegisterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlcolRegisterTableViewCell.swift; sourceTree = "<group>"; };
+		2F26AA1921D4C9890057B614 /* RootTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTableViewCell.swift; sourceTree = "<group>"; };
 		2F4DF23C21D1D9300089A085 /* RootScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootScrollView.swift; sourceTree = "<group>"; };
+		2F5C208921D5F82200E6F846 /* Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
+		2F5C208B21D5FDD400E6F846 /* AlcolRegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlcolRegisterViewModel.swift; sourceTree = "<group>"; };
+		2F6EFDA521D4ACA0008144A7 /* NVIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NVIndicatorView.swift; sourceTree = "<group>"; };
 		2F817E8021CE4D8200574F08 /* KakaoOpenSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KakaoOpenSDK.framework; sourceTree = "<group>"; };
 		2F817E8221CE4EEA00574F08 /* yellowCard-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "yellowCard-Bridging-Header.h"; sourceTree = "<group>"; };
 		2F817E8921CE57D600574F08 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -87,6 +98,7 @@
 		2FAF6CEB21CF838E00341E90 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		2FAF6CEE21CF83B100341E90 /* Setting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
 		2FAF6CF021CF84C800341E90 /* SettingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewModel.swift; sourceTree = "<group>"; };
+		2FB49A0A21D45C6300A6C1A0 /* NetWorkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWorkService.swift; sourceTree = "<group>"; };
 		2FC5519221CE8CEA0091547B /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		2FC5519421CE8F0C0091547B /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		2FD6BD1221D0A008001B6C4B /* AlcolRegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlcolRegisterView.swift; sourceTree = "<group>"; };
@@ -140,6 +152,14 @@
 				2F817E8521CE543600574F08 /* SupportFile */,
 			);
 			path = yellowCard;
+			sourceTree = "<group>";
+		};
+		2F5C208821D5F81400E6F846 /* openSouce */ = {
+			isa = PBXGroup;
+			children = (
+				2F5C208921D5F82200E6F846 /* Toast.swift */,
+			);
+			path = openSouce;
 			sourceTree = "<group>";
 		};
 		2F817E8521CE543600574F08 /* SupportFile */ = {
@@ -200,6 +220,7 @@
 				2FAAF22121CF1946005DFABC /* RootNavigationController.swift */,
 				2FAF6CE821CF545F00341E90 /* RootCollectionViewCell.swift */,
 				2F4DF23C21D1D9300089A085 /* RootScrollView.swift */,
+				2F26AA1921D4C9890057B614 /* RootTableViewCell.swift */,
 			);
 			path = Root;
 			sourceTree = "<group>";
@@ -215,7 +236,10 @@
 		2F817E9521CE5C8400574F08 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				2F5C208821D5F81400E6F846 /* openSouce */,
 				2F817E9621CE5C8C00574F08 /* Extension */,
+				2FB49A0A21D45C6300A6C1A0 /* NetWorkService.swift */,
+				2F6EFDA521D4ACA0008144A7 /* NVIndicatorView.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -310,6 +334,8 @@
 			children = (
 				2FE4D3AC21D06DBA00FDDCC6 /* AlcolRegisterViewController.swift */,
 				2FD6BD1221D0A008001B6C4B /* AlcolRegisterView.swift */,
+				2F26AA1521D4C9170057B614 /* AlcolRegisterTableViewCell.swift */,
+				2F5C208B21D5FDD400E6F846 /* AlcolRegisterViewModel.swift */,
 			);
 			path = Alcolregister;
 			sourceTree = "<group>";
@@ -452,11 +478,13 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-yellowCard/Pods-yellowCard-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/Then/Then.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -465,11 +493,13 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Then.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -488,6 +518,7 @@
 				2F4DF23D21D1D9300089A085 /* RootScrollView.swift in Sources */,
 				2FAF6CE521CF275D00341E90 /* YellowCardMainView.swift in Sources */,
 				2FAAF22621CF1A61005DFABC /* YellowCardMainViewController.swift in Sources */,
+				2F5C208C21D5FDD400E6F846 /* AlcolRegisterViewModel.swift in Sources */,
 				2FE4D3AD21D06DBA00FDDCC6 /* AlcolRegisterViewController.swift in Sources */,
 				2F817E8A21CE57D600574F08 /* LoginViewController.swift in Sources */,
 				2F817E9821CE5C9E00574F08 /* NSObjectExtension.swift in Sources */,
@@ -498,13 +529,18 @@
 				2FAF6CE721CF298F00341E90 /* YellowCardDetailCell.swift in Sources */,
 				2F817E8D21CE58B300574F08 /* RootViewController.swift in Sources */,
 				2F817EA221CE603900574F08 /* UIViewExtension.swift in Sources */,
+				2FB49A0B21D45C6300A6C1A0 /* NetWorkService.swift in Sources */,
+				2F6EFDA621D4ACA0008144A7 /* NVIndicatorView.swift in Sources */,
 				2F0B8F3521CE4BA700FD07F3 /* AppDelegate.swift in Sources */,
+				2F5C208A21D5F82200E6F846 /* Toast.swift in Sources */,
 				2FAAF22221CF1946005DFABC /* RootNavigationController.swift in Sources */,
 				2FAAF22421CF1998005DFABC /* YellowCardNavigationController.swift in Sources */,
 				2FC5519321CE8CEA0091547B /* LoginViewModel.swift in Sources */,
 				2FAF6CE921CF545F00341E90 /* RootCollectionViewCell.swift in Sources */,
+				2F26AA1A21D4C9890057B614 /* RootTableViewCell.swift in Sources */,
 				2FC5519521CE8F0C0091547B /* UserViewModel.swift in Sources */,
 				2F817EA421CE65AE00574F08 /* LoginView.swift in Sources */,
+				2F26AA1621D4C9170057B614 /* AlcolRegisterTableViewCell.swift in Sources */,
 				2F817E8F21CE5B7D00574F08 /* RootView.swift in Sources */,
 				2FD6BD1321D0A008001B6C4B /* AlcolRegisterView.swift in Sources */,
 				2FAF6CF121CF84C800341E90 /* SettingViewModel.swift in Sources */,

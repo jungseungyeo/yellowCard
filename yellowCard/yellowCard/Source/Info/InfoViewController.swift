@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import NVActivityIndicatorView
 
 class InfoViewController: RootVC {
 
@@ -33,9 +34,14 @@ class InfoViewController: RootVC {
     private func moveNext() {
         timer?.invalidate()
         timer = nil
-        self.dismiss(animated: false, completion: {
-            UIApplication.shared.keyWindow?.rootViewController = LoginViewController.instance()!
-            UIApplication.shared.keyWindow?.makeKeyAndVisible()
-        })
+
+        guard let token = UserDefaults.standard.value(forKey: "token") as? String else {
+            self.dismiss(animated: false, completion: {
+                UIApplication.shared.keyWindow?.rootViewController = LoginViewController.instance()!
+                UIApplication.shared.keyWindow?.makeKeyAndVisible()
+            })
+            return
+        }
+        
     }
 }

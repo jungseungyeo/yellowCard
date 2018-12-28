@@ -9,13 +9,12 @@
 import UIKit
 
 protocol AlcolRegisterViewDelegate {
-    func selectedWhereTitleTapped(sender: UITapGestureRecognizer)
     func datePickerStop(datePicker: UIDatePicker)
     func minusTapped(numberOfPeple: String?)
     func plusTapped(numberOfPele: String?)
 }
 
-class AlcolRegisterView: RootScrollView {
+class AlcolRegisterView: RootView {
 
     var alcolDelegate: AlcolRegisterViewDelegate?
 
@@ -34,7 +33,7 @@ class AlcolRegisterView: RootScrollView {
         $0.font = .spoqaFont(ofSize: 14, weight: .Bold)
     }
 
-    private let selectedWhereTitle = UITextField(frame: .zero).then {
+    public let selectedWhereTitle = UITextField(frame: .zero).then {
         $0.text = "2018년 12월 24일"
         $0.textColor = UIColor.YellowCardBorderColor
         $0.textAlignment = .center
@@ -62,7 +61,7 @@ class AlcolRegisterView: RootScrollView {
         $0.clipsToBounds = true
     }
 
-    private let selectedPepleNumber = UILabel(frame: .zero).then {
+    public let selectedPepleNumber = UILabel(frame: .zero).then {
         $0.text = "1"
         $0.textColor = UIColor.YellowCardBorderColor
         $0.textAlignment = .center
@@ -95,11 +94,20 @@ class AlcolRegisterView: RootScrollView {
         $0.font = .spoqaFont(ofSize: 14, weight: .Bold)
     }
 
-    private let alcolSelectTitle = UILabel(frame: .zero).then {
-        $0.text = "주종을 고르세요."
-        $0.textColor = UIColor.YellowCardBorderColor
-        $0.textAlignment = .center
-        $0.font = .spoqaFont(ofSize: 14, weight: .Regular)
+    private let selectAlcolTableView = UITableView(frame: .zero, style: .plain).then {
+        $0.backgroundColor = .black
+    }
+
+    public let registerButton = UIButton(frame: .zero).then {
+        $0.setTitle("등록하기", for: .normal)
+        $0.setTitleColor( .white, for: .normal)
+        $0.backgroundColor = UIColor.YellowLineGray
+        $0.layer.cornerRadius = 24
+        $0.isEnabled = false
+    }
+
+    public let selectorAlcol = UITableView(frame: .zero, style: .plain).then {
+        $0.backgroundColor = UIColor.black
     }
 
     override init(frame: CGRect) {
@@ -124,7 +132,8 @@ class AlcolRegisterView: RootScrollView {
                     numberOfPepleUint,
                     whotitleLine,
                     howDrinkingTitle,
-                    alcolSelectTitle)
+                    registerButton,
+                    selectorAlcol)
     }
 
     override func setupUI() {
@@ -135,16 +144,15 @@ class AlcolRegisterView: RootScrollView {
             make.left.equalToSuperview().offset(40)
             make.right.equalToSuperview().offset(-61)
         }
-
+        //SE 30 max 61
         whereTitle.snp.makeConstraints { make -> Void in
-            make.top.equalTo(title.snp.bottom).offset(61)
+            make.top.equalTo(title.snp.bottom).offset(30)
             make.left.equalTo(title.snp.left).offset(0)
         }
 
         selectedWhereTitle.snp.makeConstraints { make -> Void in
             make.top.equalTo(whereTitle.snp.bottom).offset(0)
             make.left.equalTo(whereTitle.snp.left).offset(0)
-            make.height.equalTo(46)
             make.width.equalTo(150)
         }
 
@@ -154,11 +162,10 @@ class AlcolRegisterView: RootScrollView {
             make.right.equalTo(selectedWhereTitle.snp.right).offset(0)
             make.height.equalTo(1)
         }
-
+        //se 30 max 49
         whoTitle.snp.makeConstraints { make -> Void in
-            make.top.equalTo(whereLine.snp.bottom).offset(49)
+            make.top.equalTo(whereLine.snp.bottom).offset(30)
             make.left.equalTo(title.snp.left).offset(0)
-            make.height.equalTo(20)
         }
 
         minusButton.snp.makeConstraints { make -> Void in
@@ -189,38 +196,55 @@ class AlcolRegisterView: RootScrollView {
             make.right.equalTo(whereLine.snp.right).offset(0)
             make.height.equalTo(1)
         }
-
+        //se 30 max47
         howDrinkingTitle.snp.makeConstraints { make -> Void in
-            make.top.equalTo(whotitleLine.snp.bottom).offset(47)
+            make.top.equalTo(whotitleLine.snp.bottom).offset(30)
             make.left.equalTo(whotitleLine.snp.left).offset(0)
         }
 
-        alcolSelectTitle.snp.makeConstraints { make -> Void in
-            make.top.equalTo(howDrinkingTitle.snp.bottom).offset(23)
-            make.centerX.equalTo(selectedWhereTitle.snp.centerX).offset(0)
+        registerButton.snp.makeConstraints { make -> Void in
+            make.height.equalTo(48)
+            make.width.equalTo(128)
+            make.centerX.equalToSuperview().offset(0)
+            make.bottom.equalTo(self.safeAreaLayoutGuide).offset(-31)
         }
+
+        selectorAlcol.snp.makeConstraints { make -> Void in
+            make.top.equalTo(howDrinkingTitle.snp.bottom).offset(0)
+            make.left.equalTo(howDrinkingTitle.snp.left).offset(0)
+            make.right.equalToSuperview().offset(-41)
+            make.bottom.equalTo(registerButton.snp.top).offset(-37)
+        }
+
+//        selectorAlcol.register(UITableViewCell.self, forCellReuseIdentifier: "cellID")
+//        selectorAlcol.dataSource = self
+//        selectorAlcol.delegate = self
+        setupKeyboard()
     }
 
     override func setupTapped() {
         super.setupTapped()
 
-//        let selectedWhereTitelTapped = UITapGestureRecognizer(target: self, action: #selector(selectedWhereTitleTapped))
-//        selectedWhereTitle.isUserInteractionEnabled = true
-//        selectedWhereTitle.addGestureRecognizer(selectedWhereTitelTapped)
-
         minusButton.addTarget(self, action: #selector(minusTapped), for: .touchUpInside)
         plusButton.addTarget(self, action: #selector(plusTapped), for: .touchUpInside)
         self.datePickerView.addTarget(self, action: #selector(datePicker(datePicker:)), for: .valueChanged)
+        datePickerView.locale = NSLocale(localeIdentifier: "ko-KR") as Locale
+        datePickerView.datePickerMode = .date
         selectedWhereTitle.inputView = datePickerView
+
+    }
+
+    private func setupKeyboard() {
+        let keyboardToolbar = UIToolbar()
+        keyboardToolbar.sizeToFit()
+        let doneBarButton = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(dismissKeyboard))
+        let flexBarButton = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil)
+        keyboardToolbar.items = [flexBarButton, doneBarButton]
+        self.selectedWhereTitle.inputAccessoryView = keyboardToolbar
     }
 }
 
 extension AlcolRegisterView {
-
-    @objc
-    private func selectedWhereTitleTapped(sender: UITapGestureRecognizer) {
-        alcolDelegate?.selectedWhereTitleTapped(sender: sender)
-    }
 
     @objc
     private func datePicker(datePicker: UIDatePicker) {
@@ -235,5 +259,9 @@ extension AlcolRegisterView {
     @objc
     private func plusTapped() {
         alcolDelegate?.plusTapped(numberOfPele: self.selectedPepleNumber.text)
+    }
+
+    @objc func dismissKeyboard() {
+        self.endEditing(true)
     }
 }

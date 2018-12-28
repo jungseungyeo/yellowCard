@@ -8,12 +8,15 @@
 
 import RxCocoa
 import RxSwift
+import NVActivityIndicatorView
 
 class LoginViewController: RootVC {
 
     private let loginView = LoginView()
 
     private let viewModel = LoginViewModel()
+
+    private var indicator: NVActivityIndicatorView? = nil
 
     static func instance() -> LoginViewController? {
         return UIStoryboard(name: "Login", bundle: nil).instantiateViewController(withIdentifier: classNameToString) as? LoginViewController
@@ -23,7 +26,8 @@ class LoginViewController: RootVC {
         super.setup()
         loginView.delegate = self
         self.view = loginView
-        
+        self.indicator = NVIndicatiorView.instance(self)
+        self.indicator?.stopAnimating()
     }
 
     override func viewDidLoad() {
@@ -40,8 +44,9 @@ extension LoginViewController: LoginViewdelegate {
     func kakaoButtonTapped(sender: UITapGestureRecognizer) {
         viewModel.isKakaoLogin(success: { [weak self] in
             self?.moveMain()
-        }, failure: { error in
+        }, failure: { [weak self] error in
             //로그인 에러
+            self?.indicator?.startAnimating()
         })
     }
 }

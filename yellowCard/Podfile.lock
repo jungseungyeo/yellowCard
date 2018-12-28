@@ -1,6 +1,9 @@
 PODS:
-  - Alamofire (5.0.0.beta.1)
+  - Alamofire (4.8.0)
   - Kingfisher (4.10.1)
+  - NVActivityIndicatorView (4.4.1):
+    - NVActivityIndicatorView/Presenter (= 4.4.1)
+  - NVActivityIndicatorView/Presenter (4.4.1)
   - ObjectMapper (3.4.1)
   - RxAtomic (4.4.0)
   - RxCocoa (4.4.0):
@@ -8,38 +11,45 @@ PODS:
   - RxSwift (4.4.0):
     - RxAtomic (~> 4.4)
   - SnapKit (4.0.1)
+  - SwiftyJSON (4.2.0)
   - Then (2.4.0)
 
 DEPENDENCIES:
-  - Alamofire (~> 5.0.0.beta.1)
+  - Alamofire (~> 4.5)
   - Kingfisher (= 4.10.1)
+  - NVActivityIndicatorView
   - ObjectMapper (~> 3.4)
   - RxCocoa (~> 4.0)
   - RxSwift (~> 4.0)
   - SnapKit (~> 4.0.0)
+  - SwiftyJSON (~> 4.0)
   - Then
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
     - Kingfisher
+    - NVActivityIndicatorView
     - ObjectMapper
     - RxAtomic
     - RxCocoa
     - RxSwift
     - SnapKit
+    - SwiftyJSON
     - Then
 
 SPEC CHECKSUMS:
-  Alamofire: 2ef6d6c984c5d21c366e9b41a9ae7dfee2b67a44
+  Alamofire: 3ec537f71edc9804815215393ae2b1a8ea33a844
   Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
+  NVActivityIndicatorView: f0a6b0ed2973d9544da268f4eb76696f0a9577b0
   ObjectMapper: 5311bd50ca732930959e7ca1a2de43ab823a5ced
   RxAtomic: eacf60db868c96bfd63320e28619fe29c179656f
   RxCocoa: df63ebf7b9a70d6b4eeea407ed5dd4efc8979749
   RxSwift: 5976ecd04fc2fefd648827c23de5e11157faa973
   SnapKit: 0de968a9fec17499afa29683b05d0c775b6d1c29
+  SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
   Then: 71866660c7af35a7343831f7668e7cd2b62ee0f2
 
-PODFILE CHECKSUM: 72732373de69392b2eae950234e29c7f789260ad
+PODFILE CHECKSUM: 4a7aff7882d56f919dd5b04c89a4967453788ead
 
 COCOAPODS: 1.5.3
