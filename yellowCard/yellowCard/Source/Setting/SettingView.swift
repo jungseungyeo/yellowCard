@@ -8,7 +8,13 @@
 
 import UIKit
 
+protocol settingDelegate {
+    func myProfileTapped()
+}
+
 class SettingView: RootView {
+
+    public var delegate: settingDelegate?
 
     public let versionInfo = UILabel(frame: .zero).then {
         $0.text = "버전 정보"
@@ -107,6 +113,16 @@ class SettingView: RootView {
 
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
+    }
+
+    public func bind(currendVersion: String) {
+        self.curruntVesion.text = String(format: "현재 버전 %@", currendVersion)
+    }
+
+    override func setupTapped() {
+        super.setupTapped()
+
+        self.myProfileUpdateBtn.addTarget(self, action: #selector(myProfileTapped), for: .touchUpInside)
     }
 
     override func setup() {
@@ -231,5 +247,12 @@ class SettingView: RootView {
             make.right.equalToSuperview()
             make.height.equalTo(60)
         }
+    }
+}
+
+extension SettingView {
+    @objc
+    private func myProfileTapped() {
+        delegate?.myProfileTapped()
     }
 }

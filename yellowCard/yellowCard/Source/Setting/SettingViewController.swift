@@ -12,6 +12,8 @@ class SettingViewController: RootVC {
 
     private var settingView: SettingView? = nil
 
+    private let viewModel = SettingViewModel()
+
     static func instance() -> SettingViewController? {
         return UIStoryboard(name: "Setting", bundle: nil).instantiateViewController(withIdentifier: classNameToString) as? SettingViewController
     }
@@ -20,6 +22,7 @@ class SettingViewController: RootVC {
         super.setup()
         settingView = SettingView(frame: self.view.frame)
         self.view = settingView
+        settingView?.delegate = self
         let title = "설정"
         self.navigationItem.title = title
         self.navigationController?.navigationBar.titleTextAttributes = [NSMutableAttributedString.Key.font: UIFont.spoqaFont(ofSize: 20, weight: .Bold)]
@@ -37,10 +40,18 @@ class SettingViewController: RootVC {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        self.settingView?.bind(currendVersion: viewModel.currenVersion())
     }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.setup()
+    }
+}
+
+extension SettingViewController: settingDelegate {
+    func myProfileTapped() {
+        self.navigationController?.pushViewController(MyProfileUpdateViewController.instance()!, animated: true)
     }
 }

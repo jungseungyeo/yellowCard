@@ -9,4 +9,7 @@
 import UIKit
 
 class SettingViewModel {
+    func currenVersion() -> String {
+        return Bundle.main.infoDictionary?["CFBundleShortVersionString"] as! String
+    }
 }

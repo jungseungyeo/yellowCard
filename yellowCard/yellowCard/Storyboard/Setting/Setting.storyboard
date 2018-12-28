@@ -25,5 +25,20 @@
             </objects>
             <point key="canvasLocation" x="449" y="219"/>
         </scene>
+        <!--My Profile Update View Controller-->
+        <scene sceneID="hL2-wx-xAZ">
+            <objects>
+                <viewController storyboardIdentifier="MyProfileUpdateViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="qdm-K9-HFK" customClass="MyProfileUpdateViewController" customModule="yellowCard" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="anE-iW-wsr">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="06G-3g-feh"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Tv6-5W-gIR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1108" y="243"/>
+        </scene>
     </scenes>
 </document>

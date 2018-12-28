@@ -19,6 +19,7 @@
 		2F5C208C21D5FDD400E6F846 /* AlcolRegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5C208B21D5FDD400E6F846 /* AlcolRegisterViewModel.swift */; };
 		2F5C208E21D60C7000E6F846 /* RootTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5C208D21D60C7000E6F846 /* RootTableViewController.swift */; };
 		2F5C209021D60EF500E6F846 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5C208F21D60EF500E6F846 /* SettingView.swift */; };
+		2F5C209321D624A700E6F846 /* MyProfilUpdateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5C209221D624A700E6F846 /* MyProfilUpdateViewController.swift */; };
 		2F6EFDA621D4ACA0008144A7 /* NVIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F6EFDA521D4ACA0008144A7 /* NVIndicatorView.swift */; };
 		2F817E8121CE4D8200574F08 /* KakaoOpenSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F817E8021CE4D8200574F08 /* KakaoOpenSDK.framework */; };
 		2F817E8A21CE57D600574F08 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F817E8921CE57D600574F08 /* LoginViewController.swift */; };
@@ -73,6 +74,7 @@
 		2F5C208B21D5FDD400E6F846 /* AlcolRegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlcolRegisterViewModel.swift; sourceTree = "<group>"; };
 		2F5C208D21D60C7000E6F846 /* RootTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTableViewController.swift; sourceTree = "<group>"; };
 		2F5C208F21D60EF500E6F846 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		2F5C209221D624A700E6F846 /* MyProfilUpdateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfilUpdateViewController.swift; sourceTree = "<group>"; };
 		2F6EFDA521D4ACA0008144A7 /* NVIndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NVIndicatorView.swift; sourceTree = "<group>"; };
 		2F817E8021CE4D8200574F08 /* KakaoOpenSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KakaoOpenSDK.framework; sourceTree = "<group>"; };
 		2F817E8221CE4EEA00574F08 /* yellowCard-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "yellowCard-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -164,6 +166,14 @@
 				2F5C208921D5F82200E6F846 /* Toast.swift */,
 			);
 			path = openSouce;
+			sourceTree = "<group>";
+		};
+		2F5C209121D6248600E6F846 /* MyprofileUpdate */ = {
+			isa = PBXGroup;
+			children = (
+				2F5C209221D624A700E6F846 /* MyProfilUpdateViewController.swift */,
+			);
+			path = MyprofileUpdate;
 			sourceTree = "<group>";
 		};
 		2F817E8521CE543600574F08 /* SupportFile */ = {
@@ -320,6 +330,7 @@
 		2FAF6CEA21CF837B00341E90 /* Setting */ = {
 			isa = PBXGroup;
 			children = (
+				2F5C209121D6248600E6F846 /* MyprofileUpdate */,
 				2FAF6CEB21CF838E00341E90 /* SettingViewController.swift */,
 				2FAF6CF021CF84C800341E90 /* SettingViewModel.swift */,
 				2F5C208F21D60EF500E6F846 /* SettingView.swift */,
@@ -533,6 +544,7 @@
 				2FE4D3AA21D0674A00FDDCC6 /* YellowCardMainViewModel.swift in Sources */,
 				2F817E9B21CE5DCC00574F08 /* InfoViewController.swift in Sources */,
 				2FAF6CE721CF298F00341E90 /* YellowCardDetailCell.swift in Sources */,
+				2F5C209321D624A700E6F846 /* MyProfilUpdateViewController.swift in Sources */,
 				2F817E8D21CE58B300574F08 /* RootViewController.swift in Sources */,
 				2F817EA221CE603900574F08 /* UIViewExtension.swift in Sources */,
 				2FB49A0B21D45C6300A6C1A0 /* NetWorkService.swift in Sources */,
