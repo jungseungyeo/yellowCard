@@ -12,6 +12,9 @@
 		2F0B8F3A21CE4BA700FD07F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F0B8F3821CE4BA700FD07F3 /* Main.storyboard */; };
 		2F0B8F3C21CE4BA800FD07F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F0B8F3B21CE4BA800FD07F3 /* Assets.xcassets */; };
 		2F0B8F3F21CE4BA800FD07F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F0B8F3D21CE4BA800FD07F3 /* LaunchScreen.storyboard */; };
+		2F17D2F921D646000080275F /* MyProfileUpdateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F17D2F821D646000080275F /* MyProfileUpdateView.swift */; };
+		2F17D2FB21D6602E0080275F /* RootCollectionviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F17D2FA21D6602E0080275F /* RootCollectionviewController.swift */; };
+		2F17D2FD21D664070080275F /* MyProfileUpdateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F17D2FC21D664070080275F /* MyProfileUpdateCollectionViewCell.swift */; };
 		2F26AA1621D4C9170057B614 /* AlcolRegisterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F26AA1521D4C9170057B614 /* AlcolRegisterTableViewCell.swift */; };
 		2F26AA1A21D4C9890057B614 /* RootTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F26AA1921D4C9890057B614 /* RootTableViewCell.swift */; };
 		2F4DF23D21D1D9300089A085 /* RootScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4DF23C21D1D9300089A085 /* RootScrollView.swift */; };
@@ -67,6 +70,9 @@
 		2F0B8F3B21CE4BA800FD07F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2F0B8F3E21CE4BA800FD07F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2F0B8F4021CE4BA800FD07F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F17D2F821D646000080275F /* MyProfileUpdateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileUpdateView.swift; sourceTree = "<group>"; };
+		2F17D2FA21D6602E0080275F /* RootCollectionviewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootCollectionviewController.swift; sourceTree = "<group>"; };
+		2F17D2FC21D664070080275F /* MyProfileUpdateCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileUpdateCollectionViewCell.swift; sourceTree = "<group>"; };
 		2F26AA1521D4C9170057B614 /* AlcolRegisterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlcolRegisterTableViewCell.swift; sourceTree = "<group>"; };
 		2F26AA1921D4C9890057B614 /* RootTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTableViewCell.swift; sourceTree = "<group>"; };
 		2F4DF23C21D1D9300089A085 /* RootScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootScrollView.swift; sourceTree = "<group>"; };
@@ -172,6 +178,8 @@
 			isa = PBXGroup;
 			children = (
 				2F5C209221D624A700E6F846 /* MyProfilUpdateViewController.swift */,
+				2F17D2F821D646000080275F /* MyProfileUpdateView.swift */,
+				2F17D2FC21D664070080275F /* MyProfileUpdateCollectionViewCell.swift */,
 			);
 			path = MyprofileUpdate;
 			sourceTree = "<group>";
@@ -236,6 +244,7 @@
 				2F4DF23C21D1D9300089A085 /* RootScrollView.swift */,
 				2F26AA1921D4C9890057B614 /* RootTableViewCell.swift */,
 				2F5C208D21D60C7000E6F846 /* RootTableViewController.swift */,
+				2F17D2FA21D6602E0080275F /* RootCollectionviewController.swift */,
 			);
 			path = Root;
 			sourceTree = "<group>";
@@ -531,6 +540,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F17D2F921D646000080275F /* MyProfileUpdateView.swift in Sources */,
 				2F817EA021CE5EF200574F08 /* InfoView.swift in Sources */,
 				2F4DF23D21D1D9300089A085 /* RootScrollView.swift in Sources */,
 				2FAF6CE521CF275D00341E90 /* YellowCardMainView.swift in Sources */,
@@ -548,12 +558,14 @@
 				2F817E8D21CE58B300574F08 /* RootViewController.swift in Sources */,
 				2F817EA221CE603900574F08 /* UIViewExtension.swift in Sources */,
 				2FB49A0B21D45C6300A6C1A0 /* NetWorkService.swift in Sources */,
+				2F17D2FB21D6602E0080275F /* RootCollectionviewController.swift in Sources */,
 				2F6EFDA621D4ACA0008144A7 /* NVIndicatorView.swift in Sources */,
 				2F0B8F3521CE4BA700FD07F3 /* AppDelegate.swift in Sources */,
 				2F5C208A21D5F82200E6F846 /* Toast.swift in Sources */,
 				2FAAF22221CF1946005DFABC /* RootNavigationController.swift in Sources */,
 				2FAAF22421CF1998005DFABC /* YellowCardNavigationController.swift in Sources */,
 				2FC5519321CE8CEA0091547B /* LoginViewModel.swift in Sources */,
+				2F17D2FD21D664070080275F /* MyProfileUpdateCollectionViewCell.swift in Sources */,
 				2FAF6CE921CF545F00341E90 /* RootCollectionViewCell.swift in Sources */,
 				2F26AA1A21D4C9890057B614 /* RootTableViewCell.swift in Sources */,
 				2FC5519521CE8F0C0091547B /* UserViewModel.swift in Sources */,

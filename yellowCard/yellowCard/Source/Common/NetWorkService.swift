@@ -62,6 +62,7 @@ class YellowCardService{
             case 200 ... 299 :
                 handler(JSON(data))
             default:
+                print("status : \(statusCode)")
                 errorHandler(result.error)
             }
         }

@@ -42,11 +42,12 @@ class LoginViewController: RootVC {
 
 extension LoginViewController: LoginViewdelegate {
     func kakaoButtonTapped(sender: UITapGestureRecognizer) {
-        viewModel.isKakaoLogin(success: { [weak self] in
-            self?.moveMain()
-        }, failure: { [weak self] error in
-            //로그인 에러
-            self?.indicator?.startAnimating()
-        })
+//        viewModel.isKakaoLogin(success: { [weak self] in
+//            self?.moveMain()
+//        }, failure: { [weak self] error in
+//            //로그인 에러
+//            self?.indicator?.startAnimating()
+//        })
+        self.moveMain()
     }
 }

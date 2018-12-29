@@ -233,6 +233,8 @@ class YellowCardMianView: RootView {
             make.top.equalTo(alcolRegistrationTitle.snp.top).offset(0)
             make.centerX.equalTo(encyclopediaButton.snp.centerX).offset(0)
         }
+
+        self.alcolMainTitle.text = UserViewModel.shared.userInfo?.myStatusWord!
     }
 
     override func setupTapped() {

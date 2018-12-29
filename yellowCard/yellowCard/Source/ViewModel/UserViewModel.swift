@@ -16,6 +16,7 @@ class UserInfo: Mappable {
     var tokenId: Int?
     var name: String?
     var imageUrl: URL?
+    var myStatusWord: String?
 
     var cardModel: [CardModel]?
 
@@ -25,6 +26,7 @@ class UserInfo: Mappable {
         self.tokenId    <- map["tokenId"]
         self.name       <- map["name"]
         self.imageUrl   <- map["imageUrl"]
+        self.myStatusWord <- map["myStatusWord"]
     }
 }
 
@@ -42,7 +44,7 @@ class CardModel {
 class DemoModelGet {
 
     static var getUserInfoModel: UserInfo {
-        let userInfo = UserInfo(JSON: ["tokenId": "temo", "name": "lin", "imageUrl": URL(string: "https://k.kakaocdn.net/dn/bTDccI/btqrgnDtPfC/cRPPxdIXyYJKVujjajVB6K/profile_640x640s.jpg")!])
+        let userInfo = UserInfo(JSON: ["tokenId": "temo", "name": "lin", "imageUrl": URL(string: "https://k.kakaocdn.net/dn/bTDccI/btqrgnDtPfC/cRPPxdIXyYJKVujjajVB6K/profile_640x640s.jpg")!, "myStatusWord": "맥주는 역시 튀긴감자랑 함께해야지"])
         userInfo?.cardModel = getCardModel
         return userInfo!
     }
