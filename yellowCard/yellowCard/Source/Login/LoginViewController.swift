@@ -26,8 +26,8 @@ class LoginViewController: RootVC {
         super.setup()
         loginView.delegate = self
         self.view = loginView
-        self.indicator = NVIndicatiorView.instance(self)
-        self.indicator?.stopAnimating()
+//        self.indicator = NVIndicatiorView.instance(self)
+//        self.indicator?.stopAnimating()
     }
 
     override func viewDidLoad() {
@@ -42,12 +42,11 @@ class LoginViewController: RootVC {
 
 extension LoginViewController: LoginViewdelegate {
     func kakaoButtonTapped(sender: UITapGestureRecognizer) {
-//        viewModel.isKakaoLogin(success: { [weak self] in
-//            self?.moveMain()
-//        }, failure: { [weak self] error in
-//            //로그인 에러
-//            self?.indicator?.startAnimating()
-//        })
-        self.moveMain()
+        viewModel.isKakaoLogin(success: { [weak self] in
+            self?.moveMain()
+        }, failure: { [weak self] error in
+            //로그인 에러
+            self?.indicator?.startAnimating()
+        })
     }
 }

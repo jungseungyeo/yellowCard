@@ -40,13 +40,12 @@ class SettingViewController: RootVC {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        self.settingView?.bind(currendVersion: viewModel.currenVersion())
     }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.setup()
+        self.settingView?.bind(currendVersion: viewModel.currenVersion())
     }
 }
 

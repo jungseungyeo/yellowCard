@@ -13,9 +13,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 
         DispatchQueue.main.async {
-//            self.moveInfo()
+            self.moveInfo()
 //            self.moveLogin()
-            self.moveMain()
+//            self.moveMain()
 //            self.mvoeSetting()
         }
     }

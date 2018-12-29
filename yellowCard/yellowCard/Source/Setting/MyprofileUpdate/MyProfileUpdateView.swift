@@ -16,7 +16,7 @@ class MyProfileUpdateView: RootView {
         layout.minimumInteritemSpacing = 0
         layout.scrollDirection = .vertical
         let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
-        collectionView.isPagingEnabled = true
+        collectionView.isPagingEnabled = false
         collectionView.showsHorizontalScrollIndicator = true
         collectionView.backgroundColor = .white
         return collectionView

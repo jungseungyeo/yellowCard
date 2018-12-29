@@ -33,7 +33,7 @@ extension LoginViewModel {
             }
 
             func fetch(userInfo: KOUserMe) {
-                UserViewModel.shared.userInfo = Mapper<UserInfo>().map(JSON: ["tokenId": session.token.accessToken, "name": userInfo.nickname!, "imageUrl": userInfo.profileImageURL!])
+                UserViewModel.shared.userInfo = Mapper<UserInfo>().map(JSON: ["tokenId": session.token.accessToken, "name": userInfo.nickname!, "imageUrl": userInfo.profileImageURL!,"myStatusWord": "맥주는 역시 튀긴감자랑 함께해야지"])
                 // 고정값
 //                UserDefaults.standard.set(session.token.accessToken, forKey: "token")
 //                UserDefaults.standard.set(userInfo.nickname!, forKey: "name")
@@ -49,13 +49,13 @@ extension LoginViewModel {
                     return
                 }
 
-                YellowCardService.shared.post(url: .signIn, parameters: ["access_token": session.token.accessToken], handler: { json in
+//                YellowCardService.shared.post(url: .signIn, parameters: ["access_token": session.token.accessToken], handler: { json in
                     //성공
                     fetch(userInfo: userInfo)
-                }, errorHandler: { error in
-                    failure(error)
-                })
-                
+//                }, errorHandler: { error in
+//                    failure(error)
+//                })
+
             })
         })
     }

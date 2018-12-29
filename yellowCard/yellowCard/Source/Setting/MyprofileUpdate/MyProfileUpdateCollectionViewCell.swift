@@ -59,6 +59,20 @@ class MyProfileUpdateCollectionViewCell: RootCollectionViewCell {
         $0.font = .spoqaFont(ofSize: 14, weight: .Bold)
     }
 
+    private let cardDetailTitle = UILabel(frame: .zero).then {
+        $0.text = "주량라벨은 엘로카드만의 기준에 맞추어 보여집니다."
+        $0.textColor = UIColor.black
+        $0.textAlignment = .left
+        $0.font = .spoqaFont(ofSize: 14, weight: .Regular)
+    }
+
+    private let selectedAlcolTitle = UILabel(frame: .zero).then {
+        $0.text = "#주종을 먼저 고르세요."
+        $0.textColor = UIColor.black
+        $0.textAlignment = .left
+        $0.font = .spoqaFont(ofSize: 14, weight: .Light)
+        $0.backgroundColor = UIColor.YellowCardYellow
+    }
     
 
     override init(frame: CGRect) {
@@ -79,7 +93,9 @@ class MyProfileUpdateCollectionViewCell: RootCollectionViewCell {
                     myAlcolStaeWord,
                     myAlcolRegisterButton,
                     myAlcolRegisterLine,
-                    cardTitle)
+                    cardTitle,
+                    cardDetailTitle,
+                    selectedAlcolTitle)
     }
 
     override func setupUI() {
@@ -127,6 +143,16 @@ class MyProfileUpdateCollectionViewCell: RootCollectionViewCell {
         cardTitle.snp.makeConstraints { make -> Void in
             make.top.equalTo(myAlcolRegisterLine.snp.bottom).offset(32)
             make.left.equalTo(myAlcolRegisterLine.snp.left).offset(0)
+        }
+
+        cardDetailTitle.snp.makeConstraints { make -> Void in
+            make.top.equalTo(cardTitle.snp.bottom).offset(6)
+            make.left.equalTo(cardTitle.snp.left).offset(0)
+        }
+
+        selectedAlcolTitle.snp.makeConstraints { make -> Void in
+            make.top.equalTo(cardDetailTitle.snp.bottom).offset(68)
+            make.left.equalTo(cardDetailTitle.snp.left).offset(0)
         }
 
         profileImage.kf.setImage(with: UserViewModel.shared.userInfo?.imageUrl!)
