@@ -117,6 +117,7 @@ class EncyclopediaView: RootView {
         filterTableView.delegate = self
         filterTableView.dataSource = self
         filterTableView.register(EncyclopediaTableCell.self, forCellReuseIdentifier: EncyclopediaTableCell.registerId)
+        filterTableView.separatorStyle = .none
     }
 
     override func setupTapped() {
@@ -185,7 +186,7 @@ extension EncyclopediaView: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: EncyclopediaTableCell.registerId, for: indexPath) as! EncyclopediaTableCell
         cell.filterButton.setTitle(filterList[indexPath.row], for: .normal)
-        cell.selectionStyle = .none
+//        cell.selectionStyle = .none
         return cell
     }
 
