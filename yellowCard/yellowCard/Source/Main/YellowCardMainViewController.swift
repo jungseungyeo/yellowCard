@@ -56,7 +56,7 @@ extension YellowCardMainViewController: YellowCarMainViewDelegate {
     }
 
     func encyclopediaTapped() {
-        
+        self.navigationController?.pushViewController(EncyclopediaViewController.instance()!, animated: true)
     }
 }
 

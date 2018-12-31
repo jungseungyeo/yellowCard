@@ -14,12 +14,14 @@ class RootCollectionViewCell: UICollectionViewCell {
         super.init(frame: frame)
         setup()
         setupUI()
+        setupTapped()
     }
 
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         setup()
         setupUI()
+        setupTapped()
     }
 
     func setup() {
@@ -29,4 +31,6 @@ class RootCollectionViewCell: UICollectionViewCell {
     func setupUI() {
 
     }
+
+    func setupTapped() {}
 }

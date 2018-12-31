@@ -55,6 +55,9 @@ extension MyProfileUpdateViewController: UICollectionViewDataSource, UICollectio
     }
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: collectionView.frame.width, height: 808.0)
+        var height = collectionView.frame.height
+        if height < 886 { height = 823 }
+//        if height < 667 { height = 667 }
+        return CGSize(width: collectionView.frame.width, height: height)
     }
 }

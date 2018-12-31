@@ -30,6 +30,32 @@ class UserInfo: Mappable {
     }
 }
 
+class EncylopediaModel: Mappable {
+
+    var alcolImage: String?
+    var name: String?
+    var description: String?
+    var proof: Int?
+    var price: Int?
+    var drink_id: String?
+    var drink_type: String?
+    var number_of_like: Int?
+
+    required init?(map: Map) { }
+
+    func mapping(map: Map) {
+        self.alcolImage <- map["alcolImage"]
+        self.name <- map["name"]
+        self.description <- map["description"]
+        self.proof <- map["proof"]
+        self.price <- map["price"]
+        self.drink_id <- map["drink_id"]
+        self.drink_type <- map["drink_type"]
+        self.number_of_like <- map["number_of_like"]
+    }
+
+}
+
 /// alcolType: nonalcoholic, beer, soju, wine, makgeolli
 class CardModel {
     var alcolType: String?
@@ -67,6 +93,8 @@ class UserViewModel {
     static let shared = UserViewModel()
 
     public var userInfo: UserInfo?
+
+    public var encylopediaModels: [EncylopediaModel]?
 
     private init() { }
 }

@@ -22,7 +22,10 @@ class SettingViewController: RootVC {
         super.setup()
         settingView = SettingView(frame: self.view.frame)
         self.view = settingView
-        settingView?.delegate = self
+        settingView?.settingCollectionView.delegate = self
+        settingView?.settingCollectionView.dataSource = self
+        self.settingView?.settingCollectionView.register(SettingCollectionViewCell.self, forCellWithReuseIdentifier: SettingCollectionViewCell.registerId)
+//        settingView?.delegate = self
         let title = "설정"
         self.navigationItem.title = title
         self.navigationController?.navigationBar.titleTextAttributes = [NSMutableAttributedString.Key.font: UIFont.spoqaFont(ofSize: 20, weight: .Bold)]
@@ -45,12 +48,39 @@ class SettingViewController: RootVC {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.setup()
-        self.settingView?.bind(currendVersion: viewModel.currenVersion())
+//        self.settingView?.bind(currendVersion: viewModel.currenVersion())
     }
 }
 
 extension SettingViewController: settingDelegate {
+    func myCardSettingTapped() {
+//        self.navigationController?.pushViewController(MyProfileUpdateViewController.instance()!, animated: true)
+    }
+
     func myProfileTapped() {
         self.navigationController?.pushViewController(MyProfileUpdateViewController.instance()!, animated: true)
+    }
+}
+
+extension SettingViewController: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        return 1
+    }
+
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 1
+    }
+
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SettingCollectionViewCell.registerId, for: indexPath) as! SettingCollectionViewCell
+        cell.delegate = self
+        cell.bind(currendVersion: viewModel.currenVersion())
+        return cell
+    }
+
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        var height = collectionView.frame.height
+        if height < 667 { height = 667.0 }
+        return CGSize(width: collectionView.frame.width, height: height)
     }
 }

@@ -17,5 +17,15 @@ class RootTableViewController: UITableViewController {
 
     func setup() {
         self.view.backgroundColor = .white
+        self.navigationController?.navigationBar.isHidden = false
+        self.navigationController?.interactivePopGestureRecognizer?.delegate = self
+        self.navigationController?.interactivePopGestureRecognizer?.isEnabled = true
+        self.navigationController?.navigationBar.barTintColor = .white
+        UINavigationBar.appearance().shadowImage = UIImage()
+        UINavigationBar.appearance().setBackgroundImage(UIImage(), for: .default)
     }
+}
+
+extension RootTableViewController: UINavigationBarDelegate, UIGestureRecognizerDelegate {
+
 }

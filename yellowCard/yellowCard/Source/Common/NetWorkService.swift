@@ -22,6 +22,7 @@ class YellowCardService{
     public enum Api {
         case base
         case signIn
+        case drinks
 
         var path: String {
             switch self {
@@ -29,40 +30,40 @@ class YellowCardService{
                 return "https://yellowcard-api.herokuapp.com/"
             case .signIn:
                 return Api.base.path + "signin"
+            case .drinks:
+                return Api.base.path + "drinks"
             }
         }
     }
 
-    func get(urlPath: String, parameters: [String : Any] = [:], handler: @escaping (JSON) -> Void, errorHandler: @escaping (Error?) -> Void) {
-        Alamofire.request(urlPath, method: .get, parameters: parameters, encoding: URLEncoding.default, headers: headers).responseJSON { respose in
-            switch respose.result {
-            case .success(let value):
-                print("value : \(value)")
-                handler(JSON(respose.data!))
-            case .failure(let error):
-                errorHandler(error)
+    func get(urlPath: Api, parameters: [String : Any] = [:], handler: @escaping (JSON) -> Void, errorHandler: @escaping (Error?) -> Void) {
+        Alamofire.request(urlPath.path, method : .get, parameters: parameters, encoding: URLEncoding.default, headers: headers).responseJSON { result in
+            guard let statusCode = result.response?.statusCode, let data = result.data else {
+                errorHandler(result.error)
+                return
+            }
+            switch statusCode {
+            case 200 ... 299 :
+                print(JSON(data))
+                handler(JSON(data))
+            default:
+                print("error status : \(statusCode)")
+                errorHandler(result.error)
             }
         }
     }
 
     func post(url: Api, parameters: [String: Any] = [:], handler: @escaping (JSON) -> Void, errorHandler: @escaping (Error?) -> Void) {
-        print(type(of: parameters))
-
-
         Alamofire.request( url.path, method: .post, parameters: parameters, encoding: JSONEncoding.default, headers: headers).responseJSON { result in
             guard let statusCode = result.response?.statusCode, let data = result.data else {
                 errorHandler(result.error)
                 return
             }
-            print("url : \(url.path)")
-            print("data : \(data)")
-            print("headers: \(self.headers)")
-
             switch statusCode {
             case 200 ... 299 :
                 handler(JSON(data))
             default:
-                print("status : \(statusCode)")
+                print("error status : \(statusCode)")
                 errorHandler(result.error)
             }
         }

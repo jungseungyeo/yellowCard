@@ -17,6 +17,13 @@
 		2F17D2FD21D664070080275F /* MyProfileUpdateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F17D2FC21D664070080275F /* MyProfileUpdateCollectionViewCell.swift */; };
 		2F26AA1621D4C9170057B614 /* AlcolRegisterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F26AA1521D4C9170057B614 /* AlcolRegisterTableViewCell.swift */; };
 		2F26AA1A21D4C9890057B614 /* RootTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F26AA1921D4C9890057B614 /* RootTableViewCell.swift */; };
+		2F31786021D8C3DC00379B61 /* AlcolDringCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F31785F21D8C3DC00379B61 /* AlcolDringCollectionViewCell.swift */; };
+		2F31786321D8D9FD00379B61 /* MyCardSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F31786221D8D9FD00379B61 /* MyCardSettingViewController.swift */; };
+		2F31786521D8DA6C00379B61 /* MyCardSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F31786421D8DA6C00379B61 /* MyCardSettingView.swift */; };
+		2F31786821D8ED7000379B61 /* EncyclopediaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F31786721D8ED7000379B61 /* EncyclopediaViewController.swift */; };
+		2F31786B21D8EDB800379B61 /* Encyclopedia.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F31786A21D8EDB800379B61 /* Encyclopedia.storyboard */; };
+		2F31786D21D8EF0700379B61 /* EncyclopediaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F31786C21D8EF0700379B61 /* EncyclopediaView.swift */; };
+		2F31786F21D905A700379B61 /* EncyclopediaCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F31786E21D905A700379B61 /* EncyclopediaCollectionViewCell.swift */; };
 		2F4DF23D21D1D9300089A085 /* RootScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F4DF23C21D1D9300089A085 /* RootScrollView.swift */; };
 		2F5C208A21D5F82200E6F846 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5C208921D5F82200E6F846 /* Toast.swift */; };
 		2F5C208C21D5FDD400E6F846 /* AlcolRegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F5C208B21D5FDD400E6F846 /* AlcolRegisterViewModel.swift */; };
@@ -55,9 +62,12 @@
 		2FC5519321CE8CEA0091547B /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC5519221CE8CEA0091547B /* LoginViewModel.swift */; };
 		2FC5519521CE8F0C0091547B /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC5519421CE8F0C0091547B /* UserViewModel.swift */; };
 		2FD6BD1321D0A008001B6C4B /* AlcolRegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD6BD1221D0A008001B6C4B /* AlcolRegisterView.swift */; };
+		2FD9A29721D7260300725C46 /* SettingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD9A29621D7260300725C46 /* SettingCollectionViewCell.swift */; };
 		2FE4D3AA21D0674A00FDDCC6 /* YellowCardMainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE4D3A921D0674A00FDDCC6 /* YellowCardMainViewModel.swift */; };
 		2FE4D3AD21D06DBA00FDDCC6 /* AlcolRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE4D3AC21D06DBA00FDDCC6 /* AlcolRegisterViewController.swift */; };
 		2FE4D3B021D06DD100FDDCC6 /* AlcolRegister.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FE4D3AF21D06DD100FDDCC6 /* AlcolRegister.storyboard */; };
+		2FF785B121D9DA5800C43652 /* EncyclopediaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF785B021D9DA5800C43652 /* EncyclopediaViewModel.swift */; };
+		2FF785B321DA1AF600C43652 /* EncyclopediaTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF785B221DA1AF600C43652 /* EncyclopediaTableCell.swift */; };
 		4CF738C121CFC84400244690 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF738C021CFC84400244690 /* StringExtension.swift */; };
 		FF498DCC8D8F575AA7F6430B /* Pods_yellowCard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 590F4C23ADE71A623F083DFA /* Pods_yellowCard.framework */; };
 /* End PBXBuildFile section */
@@ -75,6 +85,13 @@
 		2F17D2FC21D664070080275F /* MyProfileUpdateCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileUpdateCollectionViewCell.swift; sourceTree = "<group>"; };
 		2F26AA1521D4C9170057B614 /* AlcolRegisterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlcolRegisterTableViewCell.swift; sourceTree = "<group>"; };
 		2F26AA1921D4C9890057B614 /* RootTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTableViewCell.swift; sourceTree = "<group>"; };
+		2F31785F21D8C3DC00379B61 /* AlcolDringCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlcolDringCollectionViewCell.swift; sourceTree = "<group>"; };
+		2F31786221D8D9FD00379B61 /* MyCardSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCardSettingViewController.swift; sourceTree = "<group>"; };
+		2F31786421D8DA6C00379B61 /* MyCardSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCardSettingView.swift; sourceTree = "<group>"; };
+		2F31786721D8ED7000379B61 /* EncyclopediaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncyclopediaViewController.swift; sourceTree = "<group>"; };
+		2F31786A21D8EDB800379B61 /* Encyclopedia.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Encyclopedia.storyboard; sourceTree = "<group>"; };
+		2F31786C21D8EF0700379B61 /* EncyclopediaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncyclopediaView.swift; sourceTree = "<group>"; };
+		2F31786E21D905A700379B61 /* EncyclopediaCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncyclopediaCollectionViewCell.swift; sourceTree = "<group>"; };
 		2F4DF23C21D1D9300089A085 /* RootScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootScrollView.swift; sourceTree = "<group>"; };
 		2F5C208921D5F82200E6F846 /* Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
 		2F5C208B21D5FDD400E6F846 /* AlcolRegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlcolRegisterViewModel.swift; sourceTree = "<group>"; };
@@ -114,9 +131,12 @@
 		2FC5519221CE8CEA0091547B /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		2FC5519421CE8F0C0091547B /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		2FD6BD1221D0A008001B6C4B /* AlcolRegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlcolRegisterView.swift; sourceTree = "<group>"; };
+		2FD9A29621D7260300725C46 /* SettingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingCollectionViewCell.swift; sourceTree = "<group>"; };
 		2FE4D3A921D0674A00FDDCC6 /* YellowCardMainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowCardMainViewModel.swift; sourceTree = "<group>"; };
 		2FE4D3AC21D06DBA00FDDCC6 /* AlcolRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlcolRegisterViewController.swift; sourceTree = "<group>"; };
 		2FE4D3AF21D06DD100FDDCC6 /* AlcolRegister.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AlcolRegister.storyboard; sourceTree = "<group>"; };
+		2FF785B021D9DA5800C43652 /* EncyclopediaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncyclopediaViewModel.swift; sourceTree = "<group>"; };
+		2FF785B221DA1AF600C43652 /* EncyclopediaTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncyclopediaTableCell.swift; sourceTree = "<group>"; };
 		4CF738C021CFC84400244690 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		590F4C23ADE71A623F083DFA /* Pods_yellowCard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_yellowCard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A675AEF7F0E681A668FE205 /* Pods-yellowCard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yellowCard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-yellowCard/Pods-yellowCard.debug.xcconfig"; sourceTree = "<group>"; };
@@ -166,6 +186,35 @@
 			path = yellowCard;
 			sourceTree = "<group>";
 		};
+		2F31786121D8D9E200379B61 /* MyCardUpdate */ = {
+			isa = PBXGroup;
+			children = (
+				2F31786221D8D9FD00379B61 /* MyCardSettingViewController.swift */,
+				2F31786421D8DA6C00379B61 /* MyCardSettingView.swift */,
+			);
+			path = MyCardUpdate;
+			sourceTree = "<group>";
+		};
+		2F31786621D8ED5E00379B61 /* Encyclopedia */ = {
+			isa = PBXGroup;
+			children = (
+				2F31786721D8ED7000379B61 /* EncyclopediaViewController.swift */,
+				2F31786C21D8EF0700379B61 /* EncyclopediaView.swift */,
+				2F31786E21D905A700379B61 /* EncyclopediaCollectionViewCell.swift */,
+				2FF785B021D9DA5800C43652 /* EncyclopediaViewModel.swift */,
+				2FF785B221DA1AF600C43652 /* EncyclopediaTableCell.swift */,
+			);
+			path = Encyclopedia;
+			sourceTree = "<group>";
+		};
+		2F31786921D8EDAC00379B61 /* Encyclopedia */ = {
+			isa = PBXGroup;
+			children = (
+				2F31786A21D8EDB800379B61 /* Encyclopedia.storyboard */,
+			);
+			path = Encyclopedia;
+			sourceTree = "<group>";
+		};
 		2F5C208821D5F81400E6F846 /* openSouce */ = {
 			isa = PBXGroup;
 			children = (
@@ -180,6 +229,7 @@
 				2F5C209221D624A700E6F846 /* MyProfilUpdateViewController.swift */,
 				2F17D2F821D646000080275F /* MyProfileUpdateView.swift */,
 				2F17D2FC21D664070080275F /* MyProfileUpdateCollectionViewCell.swift */,
+				2F31785F21D8C3DC00379B61 /* AlcolDringCollectionViewCell.swift */,
 			);
 			path = MyprofileUpdate;
 			sourceTree = "<group>";
@@ -197,6 +247,7 @@
 		2F817E8621CE544600574F08 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				2F31786621D8ED5E00379B61 /* Encyclopedia */,
 				2FE4D3AB21D06DA400FDDCC6 /* Alcolregister */,
 				2FAF6CEA21CF837B00341E90 /* Setting */,
 				2FAAF21C21CF17BE005DFABC /* ViewModel */,
@@ -213,6 +264,7 @@
 		2F817E8721CE545000574F08 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
+				2F31786921D8EDAC00379B61 /* Encyclopedia */,
 				2FE4D3AE21D06DC200FDDCC6 /* AlcolRegister */,
 				2FAF6CED21CF83A300341E90 /* Setting */,
 				2FAAF21E21CF18D3005DFABC /* Main */,
@@ -339,10 +391,12 @@
 		2FAF6CEA21CF837B00341E90 /* Setting */ = {
 			isa = PBXGroup;
 			children = (
+				2F31786121D8D9E200379B61 /* MyCardUpdate */,
 				2F5C209121D6248600E6F846 /* MyprofileUpdate */,
 				2FAF6CEB21CF838E00341E90 /* SettingViewController.swift */,
 				2FAF6CF021CF84C800341E90 /* SettingViewModel.swift */,
 				2F5C208F21D60EF500E6F846 /* SettingView.swift */,
+				2FD9A29621D7260300725C46 /* SettingCollectionViewCell.swift */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -456,6 +510,7 @@
 				2F817E9421CE5C2B00574F08 /* Login.storyboard in Resources */,
 				2F817EAB21CE662100574F08 /* SpoqaHanSansBold.ttf in Resources */,
 				2F817EAA21CE662100574F08 /* SpoqaHanSansLight.ttf in Resources */,
+				2F31786B21D8EDB800379B61 /* Encyclopedia.storyboard in Resources */,
 				2F0B8F3F21CE4BA800FD07F3 /* LaunchScreen.storyboard in Resources */,
 				2F0B8F3C21CE4BA800FD07F3 /* Assets.xcassets in Resources */,
 				2F817EAD21CE662100574F08 /* SpoqaHanSansThin.ttf in Resources */,
@@ -548,13 +603,17 @@
 				2F5C208C21D5FDD400E6F846 /* AlcolRegisterViewModel.swift in Sources */,
 				2FE4D3AD21D06DBA00FDDCC6 /* AlcolRegisterViewController.swift in Sources */,
 				2F817E8A21CE57D600574F08 /* LoginViewController.swift in Sources */,
+				2F31786521D8DA6C00379B61 /* MyCardSettingView.swift in Sources */,
 				2F817E9821CE5C9E00574F08 /* NSObjectExtension.swift in Sources */,
 				2FAF6CEC21CF838E00341E90 /* SettingViewController.swift in Sources */,
+				2F31786F21D905A700379B61 /* EncyclopediaCollectionViewCell.swift in Sources */,
 				2F0B8F3721CE4BA700FD07F3 /* ViewController.swift in Sources */,
 				2FE4D3AA21D0674A00FDDCC6 /* YellowCardMainViewModel.swift in Sources */,
 				2F817E9B21CE5DCC00574F08 /* InfoViewController.swift in Sources */,
+				2F31786021D8C3DC00379B61 /* AlcolDringCollectionViewCell.swift in Sources */,
 				2FAF6CE721CF298F00341E90 /* YellowCardDetailCell.swift in Sources */,
 				2F5C209321D624A700E6F846 /* MyProfilUpdateViewController.swift in Sources */,
+				2FD9A29721D7260300725C46 /* SettingCollectionViewCell.swift in Sources */,
 				2F817E8D21CE58B300574F08 /* RootViewController.swift in Sources */,
 				2F817EA221CE603900574F08 /* UIViewExtension.swift in Sources */,
 				2FB49A0B21D45C6300A6C1A0 /* NetWorkService.swift in Sources */,
@@ -563,8 +622,12 @@
 				2F0B8F3521CE4BA700FD07F3 /* AppDelegate.swift in Sources */,
 				2F5C208A21D5F82200E6F846 /* Toast.swift in Sources */,
 				2FAAF22221CF1946005DFABC /* RootNavigationController.swift in Sources */,
+				2F31786321D8D9FD00379B61 /* MyCardSettingViewController.swift in Sources */,
+				2F31786821D8ED7000379B61 /* EncyclopediaViewController.swift in Sources */,
 				2FAAF22421CF1998005DFABC /* YellowCardNavigationController.swift in Sources */,
+				2FF785B321DA1AF600C43652 /* EncyclopediaTableCell.swift in Sources */,
 				2FC5519321CE8CEA0091547B /* LoginViewModel.swift in Sources */,
+				2FF785B121D9DA5800C43652 /* EncyclopediaViewModel.swift in Sources */,
 				2F17D2FD21D664070080275F /* MyProfileUpdateCollectionViewCell.swift in Sources */,
 				2FAF6CE921CF545F00341E90 /* RootCollectionViewCell.swift in Sources */,
 				2F26AA1A21D4C9890057B614 /* RootTableViewCell.swift in Sources */,
@@ -575,6 +638,7 @@
 				2F817E8F21CE5B7D00574F08 /* RootView.swift in Sources */,
 				2FD6BD1321D0A008001B6C4B /* AlcolRegisterView.swift in Sources */,
 				2FAF6CF121CF84C800341E90 /* SettingViewModel.swift in Sources */,
+				2F31786D21D8EF0700379B61 /* EncyclopediaView.swift in Sources */,
 				2F5C209021D60EF500E6F846 /* SettingView.swift in Sources */,
 				2F817EAF21CE66E300574F08 /* UIFontExtension.swift in Sources */,
 				4CF738C121CFC84400244690 /* StringExtension.swift in Sources */,
