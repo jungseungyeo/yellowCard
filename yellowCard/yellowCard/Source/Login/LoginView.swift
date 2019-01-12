@@ -42,7 +42,7 @@ class LoginView: RootView {
         $0.contentMode = .scaleAspectFill
     }
 
-    private let kakaoLoginButton = UIImageView(frame: .zero).then {
+    public let kakaoLoginButton = UIImageView(frame: .zero).then {
         $0.image = UIImage(named: "kakaolinkImg.png")
         $0.contentMode = .scaleAspectFill
         $0.layer.cornerRadius = 25

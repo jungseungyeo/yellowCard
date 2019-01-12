@@ -118,6 +118,7 @@ class EncyclopediaView: RootView {
         filterTableView.dataSource = self
         filterTableView.register(EncyclopediaTableCell.self, forCellReuseIdentifier: EncyclopediaTableCell.registerId)
         filterTableView.separatorStyle = .none
+        filterTableView.isScrollEnabled = false
     }
 
     override func setupTapped() {

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F044CFD21E097D4002E9DF3 /* AlertViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F044CFC21E097D4002E9DF3 /* AlertViewController+.swift */; };
 		2F0B8F3521CE4BA700FD07F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0B8F3421CE4BA700FD07F3 /* AppDelegate.swift */; };
 		2F0B8F3721CE4BA700FD07F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F0B8F3621CE4BA700FD07F3 /* ViewController.swift */; };
 		2F0B8F3A21CE4BA700FD07F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F0B8F3821CE4BA700FD07F3 /* Main.storyboard */; };
@@ -59,6 +60,7 @@
 		2FAF6CEF21CF83B100341E90 /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FAF6CEE21CF83B100341E90 /* Setting.storyboard */; };
 		2FAF6CF121CF84C800341E90 /* SettingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAF6CF021CF84C800341E90 /* SettingViewModel.swift */; };
 		2FB49A0B21D45C6300A6C1A0 /* NetWorkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB49A0A21D45C6300A6C1A0 /* NetWorkService.swift */; };
+		2FBBC02821E1CB2800B092A2 /* InfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBBC02721E1CB2800B092A2 /* InfoViewModel.swift */; };
 		2FC5519321CE8CEA0091547B /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC5519221CE8CEA0091547B /* LoginViewModel.swift */; };
 		2FC5519521CE8F0C0091547B /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC5519421CE8F0C0091547B /* UserViewModel.swift */; };
 		2FD6BD1321D0A008001B6C4B /* AlcolRegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD6BD1221D0A008001B6C4B /* AlcolRegisterView.swift */; };
@@ -68,11 +70,13 @@
 		2FE4D3B021D06DD100FDDCC6 /* AlcolRegister.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FE4D3AF21D06DD100FDDCC6 /* AlcolRegister.storyboard */; };
 		2FF785B121D9DA5800C43652 /* EncyclopediaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF785B021D9DA5800C43652 /* EncyclopediaViewModel.swift */; };
 		2FF785B321DA1AF600C43652 /* EncyclopediaTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF785B221DA1AF600C43652 /* EncyclopediaTableCell.swift */; };
+		2FFDE84621E1E64D00FEC22D /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFDE84521E1E64D00FEC22D /* MainModel.swift */; };
 		4CF738C121CFC84400244690 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CF738C021CFC84400244690 /* StringExtension.swift */; };
 		FF498DCC8D8F575AA7F6430B /* Pods_yellowCard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 590F4C23ADE71A623F083DFA /* Pods_yellowCard.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2F044CFC21E097D4002E9DF3 /* AlertViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AlertViewController+.swift"; sourceTree = "<group>"; };
 		2F0B8F3121CE4BA700FD07F3 /* yellowCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = yellowCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F0B8F3421CE4BA700FD07F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2F0B8F3621CE4BA700FD07F3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -128,6 +132,7 @@
 		2FAF6CEE21CF83B100341E90 /* Setting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
 		2FAF6CF021CF84C800341E90 /* SettingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewModel.swift; sourceTree = "<group>"; };
 		2FB49A0A21D45C6300A6C1A0 /* NetWorkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWorkService.swift; sourceTree = "<group>"; };
+		2FBBC02721E1CB2800B092A2 /* InfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewModel.swift; sourceTree = "<group>"; };
 		2FC5519221CE8CEA0091547B /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		2FC5519421CE8F0C0091547B /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		2FD6BD1221D0A008001B6C4B /* AlcolRegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlcolRegisterView.swift; sourceTree = "<group>"; };
@@ -137,6 +142,7 @@
 		2FE4D3AF21D06DD100FDDCC6 /* AlcolRegister.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AlcolRegister.storyboard; sourceTree = "<group>"; };
 		2FF785B021D9DA5800C43652 /* EncyclopediaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncyclopediaViewModel.swift; sourceTree = "<group>"; };
 		2FF785B221DA1AF600C43652 /* EncyclopediaTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncyclopediaTableCell.swift; sourceTree = "<group>"; };
+		2FFDE84521E1E64D00FEC22D /* MainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModel.swift; sourceTree = "<group>"; };
 		4CF738C021CFC84400244690 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		590F4C23ADE71A623F083DFA /* Pods_yellowCard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_yellowCard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A675AEF7F0E681A668FE205 /* Pods-yellowCard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-yellowCard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-yellowCard/Pods-yellowCard.debug.xcconfig"; sourceTree = "<group>"; };
@@ -328,6 +334,7 @@
 				2F817EAE21CE66E300574F08 /* UIFontExtension.swift */,
 				2F817EB021CE671300574F08 /* UIColorExtension.swift */,
 				4CF738C021CFC84400244690 /* StringExtension.swift */,
+				2F044CFC21E097D4002E9DF3 /* AlertViewController+.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -337,6 +344,7 @@
 			children = (
 				2F817E9A21CE5DCC00574F08 /* InfoViewController.swift */,
 				2F817E9F21CE5EF200574F08 /* InfoView.swift */,
+				2FBBC02721E1CB2800B092A2 /* InfoViewModel.swift */,
 			);
 			path = Info;
 			sourceTree = "<group>";
@@ -364,6 +372,7 @@
 			isa = PBXGroup;
 			children = (
 				2FC5519421CE8F0C0091547B /* UserViewModel.swift */,
+				2FFDE84521E1E64D00FEC22D /* MainModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -598,6 +607,7 @@
 				2F17D2F921D646000080275F /* MyProfileUpdateView.swift in Sources */,
 				2F817EA021CE5EF200574F08 /* InfoView.swift in Sources */,
 				2F4DF23D21D1D9300089A085 /* RootScrollView.swift in Sources */,
+				2F044CFD21E097D4002E9DF3 /* AlertViewController+.swift in Sources */,
 				2FAF6CE521CF275D00341E90 /* YellowCardMainView.swift in Sources */,
 				2FAAF22621CF1A61005DFABC /* YellowCardMainViewController.swift in Sources */,
 				2F5C208C21D5FDD400E6F846 /* AlcolRegisterViewModel.swift in Sources */,
@@ -605,6 +615,7 @@
 				2F817E8A21CE57D600574F08 /* LoginViewController.swift in Sources */,
 				2F31786521D8DA6C00379B61 /* MyCardSettingView.swift in Sources */,
 				2F817E9821CE5C9E00574F08 /* NSObjectExtension.swift in Sources */,
+				2FFDE84621E1E64D00FEC22D /* MainModel.swift in Sources */,
 				2FAF6CEC21CF838E00341E90 /* SettingViewController.swift in Sources */,
 				2F31786F21D905A700379B61 /* EncyclopediaCollectionViewCell.swift in Sources */,
 				2F0B8F3721CE4BA700FD07F3 /* ViewController.swift in Sources */,
@@ -624,6 +635,7 @@
 				2FAAF22221CF1946005DFABC /* RootNavigationController.swift in Sources */,
 				2F31786321D8D9FD00379B61 /* MyCardSettingViewController.swift in Sources */,
 				2F31786821D8ED7000379B61 /* EncyclopediaViewController.swift in Sources */,
+				2FBBC02821E1CB2800B092A2 /* InfoViewModel.swift in Sources */,
 				2FAAF22421CF1998005DFABC /* YellowCardNavigationController.swift in Sources */,
 				2FF785B321DA1AF600C43652 /* EncyclopediaTableCell.swift in Sources */,
 				2FC5519321CE8CEA0091547B /* LoginViewModel.swift in Sources */,

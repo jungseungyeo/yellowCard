@@ -51,13 +51,40 @@ extension MyProfileUpdateViewController: UICollectionViewDataSource, UICollectio
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MyProfileUpdateCollectionViewCell.registerId, for: indexPath) as! MyProfileUpdateCollectionViewCell
+        cell.delegate = self
         return cell
     }
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         var height = collectionView.frame.height
-        if height < 886 { height = 823 }
-//        if height < 667 { height = 667 }
+        if height < 667 {
+            height = 667
+        }else {
+            collectionView.isScrollEnabled = false
+        }
         return CGSize(width: collectionView.frame.width, height: height)
+    }
+}
+
+extension MyProfileUpdateViewController: MyProfileUpdateCollectionViewCellDelegate {
+
+    func beerTap() {
+        
+    }
+
+    func sojuTap() {
+
+    }
+
+    func wineTap() {
+
+    }
+
+    func makgeolliTap() {
+
+    }
+
+    func completeBtnTap(stateText: String?) {
+        
     }
 }

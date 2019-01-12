@@ -10,7 +10,5 @@ import Foundation
 
 class YellowCardMainVIewModel {
 
-    static func height(hieght: Int) {
-//        return ""
-    }
+        
 }

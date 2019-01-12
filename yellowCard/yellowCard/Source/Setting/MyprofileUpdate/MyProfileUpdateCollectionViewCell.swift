@@ -8,143 +8,188 @@
 
 import UIKit
 
+protocol MyProfileUpdateCollectionViewCellDelegate {
+    func beerTap()
+    func sojuTap()
+    func wineTap()
+    func makgeolliTap()
+    func completeBtnTap(stateText: String?)
+}
+
 class MyProfileUpdateCollectionViewCell: RootCollectionViewCell {
 
     static let registerId = "MyProfileUpdateCollectionViewCell"
 
-    private let profileImage = UIImageView(frame: .zero).then {
+    public var delegate: MyProfileUpdateCollectionViewCellDelegate?
+
+    public var isBeerTap = false {
+        didSet {
+            self.animation(btn: beerLabelBtn, image: beerPlusWithCancelBtn, flag: !isBeerTap, flagNumber: 1)
+        }
+    }
+
+    public var isSojuTap = false {
+        didSet {
+            self.animation(btn: sojuLableBtn, image: sojuPlusWithCancelBtn, flag: !isSojuTap, flagNumber: 2)
+        }
+    }
+
+    public var isWineTap = false {
+        didSet {
+            self.animation(btn: wineLabelBtn, image: winePlusWithCancelBtn, flag: !isWineTap, flagNumber: 3)
+        }
+    }
+
+    public var isMakgeolliTap = false {
+        didSet {
+            self.animation(btn: makgeolliLabelBtn, image: makgeolliPlusWithCancelBtn, flag: !isMakgeolliTap, flagNumber: 4)
+        }
+    }
+
+    private let profileView = UIImageView(frame: .zero).then {
         $0.layer.cornerRadius = 60
+        $0.backgroundColor = .gray
         $0.clipsToBounds = true
     }
 
-    private let myName = UILabel(frame: .zero).then {
-        $0.text = "YellowCard"
-        $0.textColor = UIColor.black
-        $0.textAlignment = .center
+    private let nickName = UILabel(frame: .zero).then {
+        $0.text = "linsaeng"
+        $0.textColor = .black
         $0.font = .spoqaFont(ofSize: 18, weight: .Regular)
-    }
-
-    private let line = UIView(frame: .zero).then {
-        $0.backgroundColor = UIColor.YellowLineGray2
-    }
-
-    private let myAlcolStateTitle = UILabel(frame: .zero).then {
-        $0.text = "음주 상태말"
-        $0.textColor = UIColor.black
-        $0.textAlignment = .center
-        $0.font = .spoqaFont(ofSize: 14, weight: .Bold)
-    }
-
-    private let myAlcolStaeWord = UITextField(frame: .zero).then {
-        $0.text = ""
-        $0.textColor = UIColor.black
-        $0.textAlignment = .center
-        $0.font = .spoqaFont(ofSize: 14, weight: .Light)
-    }
-
-    private let myAlcolRegisterLine = UIView(frame: .zero).then {
-        $0.backgroundColor = UIColor.YellowLineGray2
-    }
-
-    private let myAlcolRegisterButton = UIButton(type: .system).then {
-        $0.setTitle("완료", for: .normal)
-        $0.setTitleColor(UIColor.black, for: .normal)
-        $0.titleLabel?.font = .spoqaFont(ofSize: 14, weight: .Bold)
-    }
-
-    private let cardTitle = UILabel(frame: .zero).then {
-        $0.text = "음주 상태말"
-        $0.textColor = UIColor.black
-        $0.textAlignment = .left
-        $0.font = .spoqaFont(ofSize: 14, weight: .Bold)
-    }
-
-    private let cardDetailTitle = UILabel(frame: .zero).then {
-        $0.text = "주량라벨은 엘로카드만의 기준에 맞추어 보여집니다."
-        $0.textColor = UIColor.black
-        $0.textAlignment = .left
         $0.numberOfLines = 0
+    }
+
+    private let nickNameLine = UIView(frame: .zero).then {
+        $0.backgroundColor = UIColor(r: 238, g: 238, b: 238)
+    }
+
+    private let sectionLine = UIView(frame: .zero).then {
+        $0.backgroundColor = UIColor(r: 238, g: 238, b: 238)
+    }
+
+    private let alcolSateWord = UITextField(frame: .zero).then {
+        $0.text = "음주 상태말"
+        $0.textColor = .black
+        $0.font = .spoqaFont(ofSize: 14, weight: .Bold)
+    }
+
+    private let completeBtn = UIButton(type: .system)
+
+    private let stateInputText = UITextField(frame: .zero).then {
+        $0.placeholder = "상태메시지를 입력해 주세요."
+        $0.font = .spoqaFont(ofSize: 14, weight: .Regular)
+        $0.textColor = .black
+        $0.textAlignment = .left
+        $0.keyboardType = .default
+    }
+
+    private let stateLine = UIView(frame: .zero).then {
+        $0.backgroundColor = UIColor(r: 238, g: 238, b: 238)
+    }
+
+    private let alcolLabelTitle = UILabel(frame: .zero).then {
+        $0.text = "라벨 지정"
+        $0.textColor = .black
+        $0.font = .spoqaFont(ofSize: 14, weight: .Bold)
+    }
+
+    private let alcollableDetail = UILabel(frame: .zero).then {
+        $0.text = "주량라벨은 엘로카드만의 기준에 맞추어 보여집니다.\n최소 하나의 라벨을 지정해주세요 :)"
+        $0.textColor = .black
+        $0.font = .spoqaFont(ofSize: 12, weight: .Regular)
+        $0.numberOfLines = 0
+    }
+
+    private let beerLabel = UILabel(frame: .zero).then {
+        $0.text = "Beer"
+        $0.textColor = .black
         $0.font = .spoqaFont(ofSize: 14, weight: .Regular)
     }
 
-    private let selectedAlcolTitle = UILabel(frame: .zero).then {
-        $0.text = "#주종을 먼저 고르세요."
-        $0.textColor = UIColor.black
-        $0.textAlignment = .left
-        $0.font = .spoqaFont(ofSize: 14, weight: .Light)
-        $0.backgroundColor = UIColor.YellowCardYellow
+    private let beerLevelTitle = UILabel(frame: .zero).then {
+        $0.text = "3.0"
+        $0.textColor = .black
+        $0.font = .spoqaFont(ofSize: 14, weight: .Regular)
     }
 
-    private let beerButton = UIButton(type: .system).then {
-        $0.setTitle("맥주", for: .normal)
-        $0.setTitleColor(.black, for: .normal)
-        $0.titleLabel?.font = .spoqaFont(ofSize: 14, weight: .Light)
-        $0.layer.cornerRadius = 14
-        $0.layer.borderColor = UIColor.YellowCardBorderColor.cgColor
-        $0.layer.borderWidth = 1
+    private let beerPlusWithCancelBtn = UIImageView(frame: .zero).then {
+        $0.image = UIImage(named: "kakaolinkImg")
     }
 
-    private let sojuButton = UIButton(type: .system).then {
-        $0.setTitle("소주", for: .normal)
-        $0.setTitleColor(.black, for: .normal)
-        $0.titleLabel?.font = .spoqaFont(ofSize: 14, weight: .Light)
-        $0.layer.cornerRadius = 14
-        $0.layer.borderColor = UIColor.YellowCardBorderColor.cgColor
-        $0.layer.borderWidth = 1
+    private let beerLabelBtn = UIButton(type: .system).then {
+        $0.backgroundColor = .white
+        $0.layer.cornerRadius = 28
+        $0.layer.borderWidth = 0.1
+        $0.layer.borderColor = UIColor.black.cgColor
     }
 
-    private let wineButton = UIButton(type: .system).then {
-        $0.setTitle("와인", for: .normal)
-        $0.setTitleColor(.black, for: .normal)
-        $0.titleLabel?.font = .spoqaFont(ofSize: 14, weight: .Light)
-        $0.layer.cornerRadius = 14
-        $0.layer.borderColor = UIColor.YellowCardBorderColor.cgColor
-        $0.layer.borderWidth = 1
+    private let sojuLabel = UILabel(frame: .zero).then {
+        $0.text = "Soju"
+        $0.textColor = .black
+        $0.font = .spoqaFont(ofSize: 14, weight: .Regular)
     }
 
-    private let makgeolliButton = UIButton(type: .system).then {
-        $0.setTitle("막걸리", for: .normal)
-        $0.setTitleColor(.black, for: .normal)
-        $0.titleLabel?.font = .spoqaFont(ofSize: 14, weight: .Light)
-        $0.layer.cornerRadius = 14
-        $0.layer.borderColor = UIColor.YellowCardBorderColor.cgColor
-        $0.layer.borderWidth = 1
+    private let sojuLebelTitle = UILabel(frame: .zero).then {
+        $0.text = "3.0"
+        $0.textColor = .black
+        $0.font = .spoqaFont(ofSize: 14, weight: .Regular)
     }
 
-    private let alcoleLine = UIView(frame: .zero).then {
-        $0.backgroundColor = UIColor.YellowCardBlack2
+    public let sojuPlusWithCancelBtn = UIImageView(frame: .zero).then {
+        $0.image = UIImage(named: "kakaolinkImg")
     }
 
-    private let drinkingTitle = UILabel(frame: .zero).then {
-        $0.text = "#주량을 선택하세요."
-        $0.textColor = UIColor.black
-        $0.textAlignment = .left
-        $0.font = .spoqaFont(ofSize: 14, weight: .Light)
-        $0.backgroundColor = UIColor.YellowCardYellow
+    private let sojuLableBtn = UIButton(type: .system).then {
+        $0.backgroundColor = .white
+        $0.layer.cornerRadius = 28
+        $0.layer.borderWidth = 0.1
+        $0.layer.borderColor = UIColor.black.cgColor
     }
 
-    public var alcolDringCollectionView: UICollectionView = {
-        let layout = UICollectionViewFlowLayout()
-        layout.minimumLineSpacing = 8
-        layout.minimumInteritemSpacing = 0
-        layout.scrollDirection = .vertical
-        let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
-        collectionView.isPagingEnabled = false
-        collectionView.showsHorizontalScrollIndicator = true
-        collectionView.backgroundColor = .white
-        collectionView.isScrollEnabled = false
-        return collectionView
-    }()
+    private let wineLabel = UILabel(frame: .zero).then {
+        $0.text = "Wine"
+        $0.textColor = .black
+        $0.font = .spoqaFont(ofSize: 14, weight: .Regular)
+    }
 
-    private let registerButton = UIButton(type: .system).then {
-        $0.setTitle("등록완료", for: .normal)
-        $0.setTitleColor(UIColor.white, for: .normal)
-        $0.backgroundColor = UIColor.black
-        $0.titleLabel?.font = .spoqaFont(ofSize: 14, weight: .Light)
-        $0.layer.cornerRadius = 24
-        $0.layer.borderColor = UIColor.YellowCardBorderColor.cgColor
-        $0.layer.borderWidth = 1
+    private let wineLebelTitle = UILabel(frame: .zero).then {
+        $0.text = "3.0"
+        $0.textColor = .black
+        $0.font = .spoqaFont(ofSize: 14, weight: .Regular)
+    }
 
+    public let winePlusWithCancelBtn = UIImageView(frame: .zero).then {
+        $0.image = UIImage(named: "kakaolinkImg")
+    }
+
+    private let wineLabelBtn = UIButton(type: .system).then {
+        $0.backgroundColor = .white
+        $0.layer.cornerRadius = 28
+        $0.layer.borderWidth = 0.1
+        $0.layer.borderColor = UIColor.black.cgColor
+    }
+
+    private let makgeolliLabel = UILabel(frame: .zero).then {
+        $0.text = "makgeolli"
+        $0.textColor = .black
+        $0.font = .spoqaFont(ofSize: 14, weight: .Regular)
+    }
+
+    private let makgeolliLebelTitle = UILabel(frame: .zero).then {
+        $0.text = "3.0"
+        $0.textColor = .black
+        $0.font = .spoqaFont(ofSize: 14, weight: .Regular)
+    }
+
+    private let makgeolliPlusWithCancelBtn = UIImageView(frame: .zero).then {
+        $0.image = UIImage(named: "kakaolinkImg")
+    }
+
+    private let makgeolliLabelBtn = UIButton(type: .system).then {
+        $0.backgroundColor = .white
+        $0.layer.cornerRadius = 28
+        $0.layer.borderWidth = 0.1
+        $0.layer.borderColor = UIColor.black.cgColor
     }
 
     override init(frame: CGRect) {
@@ -158,165 +203,335 @@ class MyProfileUpdateCollectionViewCell: RootCollectionViewCell {
     override func setup() {
         super.setup()
 
-        addSubviews(profileImage,
-                    myName,
-                    line,
-                    myAlcolStateTitle,
-                    myAlcolStaeWord,
-                    myAlcolRegisterButton,
-                    myAlcolRegisterLine,
-                    cardTitle,
-                    cardDetailTitle,
-                    selectedAlcolTitle,
-                    beerButton,
-                    sojuButton,
-                    wineButton,
-                    makgeolliButton,
-                    alcoleLine,
-                    drinkingTitle,
-                    alcolDringCollectionView,
-                    registerButton
+        addSubviews(
+            profileView,
+            nickName,
+            nickNameLine,
+            sectionLine,
+            alcolSateWord,
+            completeBtn,
+            stateInputText,
+            stateLine,
+            alcolLabelTitle,
+            alcollableDetail,
+            beerLabelBtn,
+            sojuLableBtn,
+            wineLabelBtn,
+            makgeolliLabelBtn
         )
+
+        beerLabelBtn.addSubviews(beerLabel,
+                                 beerLevelTitle,
+                                 beerPlusWithCancelBtn)
+
+        sojuLableBtn.addSubviews(sojuLabel,
+                                 sojuLebelTitle,
+                                 sojuPlusWithCancelBtn)
+
+        wineLabelBtn.addSubviews(wineLabel,
+                                 wineLebelTitle,
+                                 winePlusWithCancelBtn)
+
+        makgeolliLabelBtn.addSubviews(makgeolliLabel,
+                                      makgeolliLebelTitle,
+                                      makgeolliPlusWithCancelBtn)
     }
 
     override func setupUI() {
         super.setupUI()
 
-        profileImage.snp.makeConstraints { make -> Void in
-            make.centerX.equalToSuperview()
-            make.top.equalTo(self.safeAreaLayoutGuide).offset(10)
+        profileView.snp.makeConstraints { make -> Void in
+            make.top.equalTo(10)
+            make.centerX.equalToSuperview().offset(0)
             make.size.equalTo(120)
         }
 
-        myName.snp.makeConstraints { make -> Void in
+        nickName.snp.makeConstraints { make -> Void in
+            make.top.equalTo(profileView.snp.bottom).offset(15)
             make.centerX.equalToSuperview()
-            make.top.equalTo(profileImage.snp.bottom).offset(15)
         }
 
-        line.snp.makeConstraints { make -> Void in
-            make.top.equalTo(myName.snp.bottom).offset(16)
-            make.width.equalToSuperview()
+        nickNameLine.snp.makeConstraints { make -> Void in
+            make.top.equalTo(nickName.snp.bottom).offset(0)
+            make.left.equalTo(nickName.snp.left).offset(-6)
+            make.right.equalTo(nickName.snp.right).offset(6)
+            make.height.equalTo(2)
+        }
+
+        sectionLine.snp.makeConstraints { make -> Void in
+            make.top.equalTo(nickNameLine.snp.bottom).offset(23)
+            make.left.equalToSuperview()
+            make.right.equalToSuperview()
             make.height.equalTo(10)
         }
 
-        myAlcolStateTitle.snp.makeConstraints { make -> Void in
-            make.top.equalTo(line.snp.bottom).offset(30)
-            make.left.equalToSuperview().offset(20)
+        alcolSateWord.snp.makeConstraints { make -> Void in
+            make.top.equalTo(sectionLine.snp.bottom).offset(21)
+            make.left.equalToSuperview().offset(28)
         }
 
-        myAlcolStaeWord.snp.makeConstraints { make -> Void in
-            make.top.equalTo(myAlcolStateTitle.snp.bottom).offset(10)
-            make.left.equalTo(myAlcolStateTitle.snp.left).offset(0)
+        completeBtn.snp.makeConstraints { make -> Void in
+            make.top.equalTo(alcolSateWord.snp.bottom).offset(9)
+            make.right.equalToSuperview().offset(-34)
+            make.width.equalTo(26)
+            make.height.equalTo(20)
         }
 
-        myAlcolRegisterButton.snp.makeConstraints { make -> Void in
-            make.centerY.equalTo(myAlcolStaeWord.snp.centerY).offset(0)
-            make.right.equalToSuperview().offset(-32)
+        stateInputText.snp.makeConstraints { make -> Void in
+            make.top.equalTo(alcolSateWord.snp.bottom).offset(9)
+            make.left.equalTo(alcolSateWord.snp.left).offset(0)
+            make.right.equalTo(completeBtn.snp.left).offset(-10)
+            make.height.equalTo(completeBtn.snp.height).offset(0)
         }
 
-        myAlcolRegisterLine.snp.makeConstraints { make -> Void in
-            make.top.equalTo(myAlcolStaeWord.snp.bottom).offset(7)
-            make.left.equalTo(myAlcolStaeWord.snp.left).offset(0)
-            make.right.equalTo(myAlcolRegisterButton.snp.right).offset(0)
+        stateLine.snp.makeConstraints { make -> Void in
+            make.top.equalTo(stateInputText.snp.bottom).offset(7)
+            make.left.equalTo(stateInputText.snp.left).offset(0)
+            make.right.equalTo(completeBtn.snp.right).offset(0)
             make.height.equalTo(2)
         }
 
-        cardTitle.snp.makeConstraints { make -> Void in
-            make.top.equalTo(myAlcolRegisterLine.snp.bottom).offset(32)
-            make.left.equalTo(myAlcolRegisterLine.snp.left).offset(0)
+        alcolLabelTitle.snp.makeConstraints { make -> Void in
+            make.top.equalTo(stateLine.snp.bottom).offset(30)
+            make.left.equalTo(alcolSateWord.snp.left).offset(0)
         }
 
-        cardDetailTitle.snp.makeConstraints { make -> Void in
-            make.top.equalTo(cardTitle.snp.bottom).offset(6)
-            make.left.equalTo(cardTitle.snp.left).offset(0)
-            make.right.equalToSuperview().offset(-30)
+        alcollableDetail.snp.makeConstraints { make -> Void in
+            make.top.equalTo(alcolLabelTitle.snp.bottom).offset(7)
+            make.left.equalTo(alcolLabelTitle.snp.left).offset(0)
         }
 
-        selectedAlcolTitle.snp.makeConstraints { make -> Void in
-            make.top.equalTo(cardDetailTitle.snp.bottom).offset(68)
-            make.left.equalTo(cardDetailTitle.snp.left).offset(0)
+        beerLabelBtn.snp.makeConstraints { make -> Void in
+            make.top.equalTo(alcollableDetail.snp.bottom).offset(28)
+            make.right.equalTo(self.snp.centerX).offset(-7)
+            make.height.equalTo(56)
+            make.width.equalTo(120)
         }
 
-        beerButton.snp.makeConstraints { make -> Void in
-            make.top.equalTo(selectedAlcolTitle.snp.bottom).offset(17)
-            make.left.equalTo(selectedAlcolTitle.snp.left).offset(0)
-            make.width.equalTo(70)
-            make.height.equalTo(28)
+        beerLabel.snp.makeConstraints { make -> Void in
+            make.top.equalToSuperview().offset(8)
+            make.left.equalToSuperview().offset(22)
         }
 
-        sojuButton.snp.makeConstraints { make -> Void in
-            make.top.equalTo(selectedAlcolTitle.snp.bottom).offset(17)
-            make.left.equalTo(beerButton.snp.right).offset(10)
-            make.size.equalTo(beerButton.snp.size).offset(0)
+        beerLevelTitle.snp.makeConstraints { make -> Void in
+            make.top.equalTo(beerLabel.snp.bottom).offset(0)
+            make.left.equalTo(beerLabel.snp.left).offset(0)
         }
 
-        wineButton.snp.makeConstraints { make -> Void in
-            make.top.equalTo(selectedAlcolTitle.snp.bottom).offset(17)
-            make.left.equalTo(sojuButton.snp.right).offset(10)
-            make.size.equalTo(beerButton.snp.size).offset(0)
+        beerPlusWithCancelBtn.snp.makeConstraints { make -> Void in
+            make.centerY.equalToSuperview()
+            make.right.equalToSuperview().offset(-14)
         }
 
-        makgeolliButton.snp.makeConstraints { make -> Void in
-            make.top.equalTo(selectedAlcolTitle.snp.bottom).offset(17)
-            make.left.equalTo(wineButton.snp.right).offset(10)
-            make.size.equalTo(beerButton.snp.size).offset(0)
-            make.right.equalToSuperview().offset(-30)
+        sojuLableBtn.snp.makeConstraints { make -> Void in
+            make.top.equalTo(beerLabelBtn.snp.top).offset(0)
+            make.left.equalTo(self.snp.centerX).offset(7)
+            make.height.equalTo(56)
+            make.width.equalTo(120)
         }
 
-        alcoleLine.snp.makeConstraints { make -> Void in
-            make.top.equalTo(beerButton.snp.bottom).offset(16)
-            make.left.equalTo(beerButton.snp.left).offset(0)
-            make.right.equalTo(makgeolliButton.snp.right).offset(0)
-            make.height.equalTo(2)
+        sojuLabel.snp.makeConstraints { make -> Void in
+            make.top.equalToSuperview().offset(8)
+            make.left.equalToSuperview().offset(22)
         }
 
-        drinkingTitle.snp.makeConstraints { make -> Void in
-            make.top.equalTo(alcoleLine.snp.bottom).offset(27)
-            make.left.equalTo(selectedAlcolTitle.snp.left).offset(0)
+        sojuLebelTitle.snp.makeConstraints { make -> Void in
+            make.top.equalTo(sojuLabel.snp.bottom).offset(0)
+            make.left.equalTo(sojuLabel.snp.left).offset(0)
         }
 
-        alcolDringCollectionView.snp.makeConstraints { make -> Void in
-            make.top.equalTo(drinkingTitle.snp.bottom).offset(17)
-            make.left.equalTo(drinkingTitle.snp.left).offset(0)
-            make.right.equalTo(makgeolliButton.snp.right).offset(0)
-            make.height.equalTo(64)
+        sojuPlusWithCancelBtn.snp.makeConstraints { make -> Void in
+            make.centerY.equalToSuperview()
+            make.right.equalToSuperview().offset(-14)
         }
 
-        registerButton.snp.makeConstraints { make -> Void in
-            make.centerX.equalToSuperview()
-            make.top.equalTo(alcolDringCollectionView.snp.bottom).offset(47)
-            make.height.equalTo(48)
-            make.width.equalTo(128)
-            make.bottom.equalTo(-37)
+        wineLabelBtn.snp.makeConstraints { make -> Void in
+            make.top.equalTo(beerLabelBtn.snp.bottom).offset(16)
+            make.left.equalTo(beerLabelBtn.snp.left).offset(0)
+            make.height.equalTo(56)
+            make.width.equalTo(120)
         }
 
-        profileImage.kf.setImage(with: UserViewModel.shared.userInfo?.imageUrl!)
-        myName.text = UserViewModel.shared.userInfo?.name!
-        myAlcolStaeWord.text = UserViewModel.shared.userInfo?.myStatusWord!
+        wineLabel.snp.makeConstraints { make -> Void in
+            make.top.equalToSuperview().offset(8)
+            make.left.equalToSuperview().offset(22)
+        }
 
-        alcolDringCollectionView.register(AlcolDringCollectionViewCell.self, forCellWithReuseIdentifier: AlcolDringCollectionViewCell.registerId)
-        alcolDringCollectionView.delegate = self
-        alcolDringCollectionView.dataSource = self
+        wineLebelTitle.snp.makeConstraints { make -> Void in
+            make.top.equalTo(wineLabel.snp.bottom).offset(0)
+            make.left.equalTo(wineLabel.snp.left).offset(0)
+        }
+
+        winePlusWithCancelBtn.snp.makeConstraints { make -> Void in
+            make.centerY.equalToSuperview()
+            make.right.equalToSuperview().offset(-14)
+        }
+
+        makgeolliLabelBtn.snp.makeConstraints { make -> Void in
+            make.top.equalTo(sojuLableBtn.snp.bottom).offset(16)
+            make.left.equalTo(self.snp.centerX).offset(7)
+            make.height.equalTo(56)
+            make.width.equalTo(120)
+        }
+
+        makgeolliLabel.snp.makeConstraints { make -> Void in
+            make.top.equalToSuperview().offset(8)
+            make.left.equalToSuperview().offset(22)
+        }
+
+        makgeolliLebelTitle.snp.makeConstraints { make -> Void in
+            make.top.equalTo(makgeolliLabel.snp.bottom).offset(0)
+            make.left.equalTo(makgeolliLabel.snp.left).offset(0)
+        }
+
+       makgeolliPlusWithCancelBtn.snp.makeConstraints { make -> Void in
+            make.centerY.equalToSuperview()
+            make.right.equalToSuperview().offset(-14)
+        }
+        
+        completeBtn.setTitle("완료", for: .normal)
+        completeBtn.setTitleColor(.gray, for: .normal)
+        completeBtn.addTarget(self, action: #selector(completeBtnTap), for: .touchUpInside)
+
+        profileView.kf.setImage(with: UserViewModel.shared.userInfo?.imageUrl!)
+        nickName.text = UserViewModel.shared.userInfo?.name
+        stateInputText.text = UserViewModel.shared.mainModel?.status_message
     }
 
+    override func setupTapped() {
+        super.setupTapped()
+
+        setupBeerTap()
+        setupSojuTap()
+        setupWineTap()
+        setupMakgeolliTap()
+
+    }
+
+    private func setupBeerTap() {
+        let beerTap = UITapGestureRecognizer(target: self, action: #selector(beerBtnTapped))
+        self.beerLabelBtn.addTarget(self, action: #selector(beerBtnTapped), for: .touchUpInside)
+
+        self.beerLabel.isUserInteractionEnabled = true
+        self.beerLabel.addGestureRecognizer(beerTap)
+
+        self.beerLevelTitle.isUserInteractionEnabled = true
+        self.beerLevelTitle.addGestureRecognizer(beerTap)
+
+        self.beerPlusWithCancelBtn.isUserInteractionEnabled = true
+        self.beerPlusWithCancelBtn.addGestureRecognizer(beerTap)
+    }
+
+    private func setupSojuTap() {
+        let sojuTap = UITapGestureRecognizer(target: self, action: #selector(sojuBtnTapped))
+        self.sojuLableBtn.addTarget(self, action: #selector(sojuBtnTapped), for: .touchUpInside)
+
+        self.sojuLabel.isUserInteractionEnabled = true
+        self.sojuLabel.addGestureRecognizer(sojuTap)
+
+        self.sojuLebelTitle.isUserInteractionEnabled = true
+        self.sojuLebelTitle.addGestureRecognizer(sojuTap)
+
+        self.sojuPlusWithCancelBtn.isUserInteractionEnabled = true
+        self.sojuPlusWithCancelBtn.addGestureRecognizer(sojuTap)
+    }
+
+    private func setupWineTap() {
+        let wineTap = UITapGestureRecognizer(target: self, action: #selector(wineBtnTapped))
+        self.wineLabelBtn.addTarget(self, action: #selector(wineBtnTapped), for: .touchUpInside)
+
+        self.wineLabel.isUserInteractionEnabled = true
+        self.wineLabel.addGestureRecognizer(wineTap)
+
+        self.wineLebelTitle.isUserInteractionEnabled = true
+        self.wineLebelTitle.addGestureRecognizer(wineTap)
+
+        self.winePlusWithCancelBtn.isUserInteractionEnabled = true
+        self.winePlusWithCancelBtn.addGestureRecognizer(wineTap)
+    }
+
+    private func setupMakgeolliTap() {
+        let makgeolliTap = UITapGestureRecognizer(target: self, action: #selector(makgeolliTapped))
+        self.makgeolliLabelBtn.addTarget(self, action: #selector(makgeolliTapped), for: .touchUpInside)
+
+        self.makgeolliLabel.isUserInteractionEnabled = true
+        self.makgeolliLabel.addGestureRecognizer(makgeolliTap)
+
+        self.makgeolliLebelTitle.isUserInteractionEnabled = true
+        self.makgeolliLebelTitle.addGestureRecognizer(makgeolliTap)
+
+        self.makgeolliPlusWithCancelBtn.isUserInteractionEnabled = true
+        self.makgeolliPlusWithCancelBtn.addGestureRecognizer(makgeolliTap)
+    }
 }
 
-extension MyProfileUpdateCollectionViewCell: UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
-    func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 1
+extension MyProfileUpdateCollectionViewCell {
+
+    @objc
+    private func beerBtnTapped() {
+        if isBeerTap {
+            isBeerTap = false
+        } else {
+            isBeerTap = true
+        }
+        delegate?.beerTap()
     }
 
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 8
+    @objc
+    private func sojuBtnTapped() {
+        if isSojuTap {
+            isSojuTap = false
+        } else {
+            isSojuTap = true
+        }
+        delegate?.sojuTap()
     }
 
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: AlcolDringCollectionViewCell.registerId, for: indexPath) as! AlcolDringCollectionViewCell
-        cell.dringAlcolButton.setTitle("\(indexPath.row)", for: .normal)
-        return cell
+    @objc
+    private func wineBtnTapped() {
+        if isWineTap {
+            isWineTap = false
+        } else {
+            isWineTap = true
+        }
+        delegate?.wineTap()
     }
 
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: makgeolliButton.frame.width, height: 28)
+    @objc
+    private func makgeolliTapped() {
+        if isMakgeolliTap {
+            isMakgeolliTap = false
+        } else {
+            isMakgeolliTap = true
+        }
+        delegate?.makgeolliTap()
+    }
+
+    private func animation(btn: UIButton, image: UIImageView, flag: Bool, flagNumber: Int) {
+        if flag {
+            UIView.animate(withDuration: 0.3, animations: {
+                btn.backgroundColor = UIColor.white
+                btn.layer.borderColor = UIColor.black.cgColor
+                image.transform = CGAffineTransform(rotationAngle: CGFloat(0))
+            })
+        } else {
+            UIView.animate(withDuration: 0.3, animations: {
+                switch flagNumber {
+                case 1: btn.backgroundColor = UIColor.YellowCardYellow
+                case 2: btn.backgroundColor = UIColor.sojuBackgroundColor
+                case 3: btn.backgroundColor = UIColor.wineBackgroundColor
+                case 4: btn.backgroundColor = UIColor.makgeolliBackgroundColor
+                default:
+                    print()
+                }
+                btn.layer.borderColor = UIColor.clear.cgColor
+                image.transform = CGAffineTransform(rotationAngle: CGFloat(Double.pi / 2))
+            })
+        }
+    }
+
+    @objc
+    private func completeBtnTap() {
+        delegate?.completeBtnTap(stateText: self.stateInputText.text)
     }
 }

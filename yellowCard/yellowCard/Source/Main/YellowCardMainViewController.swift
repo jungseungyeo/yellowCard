@@ -18,7 +18,7 @@ class YellowCardMainViewController: RootVC {
 
     override func setup() {
         super.setup()
-        UserViewModel.shared.userInfo = DemoModelGet.getUserInfoModel
+//        UserViewModel.shared.userInfo = DemoModelGet.getUserInfoModel
         yellowCardMainView = YellowCardMianView(frame: self.view.frame)
 
         self.yellowCardMainView?.delegate = self

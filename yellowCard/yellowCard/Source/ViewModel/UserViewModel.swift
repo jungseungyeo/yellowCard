@@ -16,7 +16,6 @@ class UserInfo: Mappable {
     var tokenId: Int?
     var name: String?
     var imageUrl: URL?
-    var myStatusWord: String?
 
     var cardModel: [CardModel]?
 
@@ -26,7 +25,6 @@ class UserInfo: Mappable {
         self.tokenId    <- map["tokenId"]
         self.name       <- map["name"]
         self.imageUrl   <- map["imageUrl"]
-        self.myStatusWord <- map["myStatusWord"]
     }
 }
 
@@ -95,6 +93,8 @@ class UserViewModel {
     public var userInfo: UserInfo?
 
     public var encylopediaModels: [EncylopediaModel]?
+
+    public var mainModel: MainModel?
 
     private init() { }
 }

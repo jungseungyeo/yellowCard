@@ -13,7 +13,11 @@ class InfoViewController: RootVC {
 
     private let infoView = InfoView()
 
+    private let viewModel = InfoViewModel()
+
     private var timer: Timer? = nil
+
+    public var indicator: NVActivityIndicatorView? = nil
 
     static func instance() -> InfoViewController? {
         return  UIStoryboard(name: "Info", bundle: nil).instantiateViewController(withIdentifier: classNameToString) as? InfoViewController
@@ -22,6 +26,7 @@ class InfoViewController: RootVC {
     override func setup() {
         super.setup()
         self.view = infoView
+        indicator = NVIndicatiorView.instance(self)
     }
 
     override func viewDidLoad() {
@@ -42,6 +47,20 @@ class InfoViewController: RootVC {
             })
             return
         }
-        
+        requestMainData(token: token)
+    }
+
+    private func requestMainData(token: String) {
+        viewModel.requestMain(view: self, token: token, success: {
+            self.dismiss(animated: false, completion: {
+                UIApplication.shared.keyWindow?.rootViewController = YellowCardNavigationController.instance()!
+                UIApplication.shared.keyWindow?.makeKeyAndVisible()
+            })
+        }, failure: { error in
+            self.dismiss(animated: false, completion: {
+                UIApplication.shared.keyWindow?.rootViewController = LoginViewController.instance()!
+                UIApplication.shared.keyWindow?.makeKeyAndVisible()
+            })
+        })
     }
 }

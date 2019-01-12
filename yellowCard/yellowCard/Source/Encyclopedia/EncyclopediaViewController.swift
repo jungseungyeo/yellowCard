@@ -74,24 +74,24 @@ extension EncyclopediaViewController: EncyclopediaViewDelegate {
     func filterTapped() {
 
 //        let height = 30 * 5
-        let x = self.encyclopediaView.filterTableView.frame.minX
-        let y = self.encyclopediaView.filterTableView.frame.minY
+        let x = self.encyclopediaView.filterTableView.frame.origin.x
+        let y = self.encyclopediaView.filterTableView.frame.origin.y
         let width = self.encyclopediaView.filterTableView.frame.width
 
         if isFilterOpen == false {
             isFilterOpen = true
             UIView.animate(withDuration: 0.3, animations: {
                 self.encyclopediaView.filterTableView.frame = CGRect(x: x, y: y, width: width, height: 150)
-                self.encyclopediaView.filterTableView.layoutIfNeeded()
+                self.view.layoutIfNeeded()
             })
-            return
-        } else {
+        }
+        else {
             isFilterOpen = false
             UIView.animate(withDuration: 0.3, animations: {
                 self.encyclopediaView.filterTableView.frame = CGRect(x: x, y: y, width: width, height: 0)
-                self.encyclopediaView.layoutIfNeeded()
+                self.view.layoutIfNeeded()
             })
-            return
+//            return
         }
     }
 

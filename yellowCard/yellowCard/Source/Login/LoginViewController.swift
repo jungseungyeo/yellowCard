@@ -16,7 +16,7 @@ class LoginViewController: RootVC {
 
     private let viewModel = LoginViewModel()
 
-    private var indicator: NVActivityIndicatorView? = nil
+    public var indicator: NVActivityIndicatorView? = nil
 
     static func instance() -> LoginViewController? {
         return UIStoryboard(name: "Login", bundle: nil).instantiateViewController(withIdentifier: classNameToString) as? LoginViewController
@@ -26,15 +26,14 @@ class LoginViewController: RootVC {
         super.setup()
         loginView.delegate = self
         self.view = loginView
-//        self.indicator = NVIndicatiorView.instance(self)
-//        self.indicator?.stopAnimating()
+        indicator = NVIndicatiorView.instance(self)
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
     }
 
-    private func moveMain() {
+    public func moveMain() {
         present(YellowCardNavigationController.instance()!, animated: true, completion: nil)
     }
 
@@ -42,11 +41,15 @@ class LoginViewController: RootVC {
 
 extension LoginViewController: LoginViewdelegate {
     func kakaoButtonTapped(sender: UITapGestureRecognizer) {
-        viewModel.isKakaoLogin(success: { [weak self] in
-            self?.moveMain()
+        self.loginView.kakaoLoginButton.isUserInteractionEnabled = false
+        viewModel.isKakaoLogin(view: self, success: { [weak self] in
+            self?.nextApi()
         }, failure: { [weak self] error in
-            //로그인 에러
-            self?.indicator?.startAnimating()
+            self?.loginView.kakaoLoginButton.isUserInteractionEnabled = true
         })
+    }
+
+    private func nextApi() {
+        
     }
 }
