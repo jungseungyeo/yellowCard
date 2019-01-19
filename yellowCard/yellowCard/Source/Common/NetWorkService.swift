@@ -71,6 +71,8 @@ class YellowCardService{
             }
             switch statusCode {
             case 200 ... 299 :
+                print("path: \(url.path)")
+                print(JSON(data))
                 handler(JSON(data))
             default:
                 print("error status : \(statusCode)")

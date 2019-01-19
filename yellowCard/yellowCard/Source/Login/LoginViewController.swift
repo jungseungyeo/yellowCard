@@ -33,8 +33,9 @@ class LoginViewController: RootVC {
         super.viewDidLoad()
     }
 
-    public func moveMain() {
-        present(YellowCardNavigationController.instance()!, animated: true, completion: nil)
+    public func moveColdStart() {
+//        present(YellowCardNavigationController.instance()!, animated: true, completion: nil)
+        present(ColdStartVC.instance()!, animated: true, completion: nil)
     }
 
 }
@@ -42,14 +43,20 @@ class LoginViewController: RootVC {
 extension LoginViewController: LoginViewdelegate {
     func kakaoButtonTapped(sender: UITapGestureRecognizer) {
         self.loginView.kakaoLoginButton.isUserInteractionEnabled = false
-        viewModel.isKakaoLogin(view: self, success: { [weak self] in
-            self?.nextApi()
-        }, failure: { [weak self] error in
-            self?.loginView.kakaoLoginButton.isUserInteractionEnabled = true
+//        viewModel.isKakaoLogin(view: self, success: { [weak self] in
+//
+//        }, failure: { [weak self] error in
+//            self?.loginView.kakaoLoginButton.isUserInteractionEnabled = true
+//        })
+        viewModel.isKakaoLogin(view: self, success: { session, userInfo in
+            UserViewModel.shared.session = session
+            UserViewModel.shared.demoInfo = userInfo
+            self.moveColdStart()
+        }, failure: { error in
+            self.loginView.kakaoLoginButton.isUserInteractionEnabled = true
+            print("error")
         })
     }
 
-    private func nextApi() {
-        
-    }
+
 }

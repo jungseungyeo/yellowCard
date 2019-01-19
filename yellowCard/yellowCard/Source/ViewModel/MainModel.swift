@@ -10,7 +10,7 @@ import ObjectMapper
 
 class MainModel: Mappable {
 
-    var dink_cards: [dink_cards]?
+    var dink_cards: [drink_card]?
 
     var profile_image_url: String?
     var status_message: String?
@@ -26,9 +26,9 @@ class MainModel: Mappable {
     }
 }
 
-class dink_cards: Mappable {
+class drink_card: Mappable {
 
-    var dink_type: String?
+    var drink_type: String?
     var message: String?
 
     required init?(map: Map) { }

@@ -90,6 +90,10 @@ class UserViewModel {
 
     static let shared = UserViewModel()
 
+    public var session: String?
+
+    public var demoInfo: KOUserMe?
+
     public var userInfo: UserInfo?
 
     public var encylopediaModels: [EncylopediaModel]?

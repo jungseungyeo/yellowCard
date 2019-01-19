@@ -13,6 +13,9 @@
 		2F0B8F3A21CE4BA700FD07F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F0B8F3821CE4BA700FD07F3 /* Main.storyboard */; };
 		2F0B8F3C21CE4BA800FD07F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F0B8F3B21CE4BA800FD07F3 /* Assets.xcassets */; };
 		2F0B8F3F21CE4BA800FD07F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F0B8F3D21CE4BA800FD07F3 /* LaunchScreen.storyboard */; };
+		2F14726F21E9CE2F009604F5 /* ColdStartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F14726E21E9CE2F009604F5 /* ColdStartVC.swift */; };
+		2F14727121E9CE81009604F5 /* ColdStartVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2F14727021E9CE81009604F5 /* ColdStartVC.xib */; };
+		2F14727321E9DF42009604F5 /* ColdStartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F14727221E9DF42009604F5 /* ColdStartViewModel.swift */; };
 		2F17D2F921D646000080275F /* MyProfileUpdateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F17D2F821D646000080275F /* MyProfileUpdateView.swift */; };
 		2F17D2FB21D6602E0080275F /* RootCollectionviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F17D2FA21D6602E0080275F /* RootCollectionviewController.swift */; };
 		2F17D2FD21D664070080275F /* MyProfileUpdateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F17D2FC21D664070080275F /* MyProfileUpdateCollectionViewCell.swift */; };
@@ -20,7 +23,6 @@
 		2F26AA1A21D4C9890057B614 /* RootTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F26AA1921D4C9890057B614 /* RootTableViewCell.swift */; };
 		2F31786021D8C3DC00379B61 /* AlcolDringCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F31785F21D8C3DC00379B61 /* AlcolDringCollectionViewCell.swift */; };
 		2F31786321D8D9FD00379B61 /* MyCardSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F31786221D8D9FD00379B61 /* MyCardSettingViewController.swift */; };
-		2F31786521D8DA6C00379B61 /* MyCardSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F31786421D8DA6C00379B61 /* MyCardSettingView.swift */; };
 		2F31786821D8ED7000379B61 /* EncyclopediaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F31786721D8ED7000379B61 /* EncyclopediaViewController.swift */; };
 		2F31786B21D8EDB800379B61 /* Encyclopedia.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F31786A21D8EDB800379B61 /* Encyclopedia.storyboard */; };
 		2F31786D21D8EF0700379B61 /* EncyclopediaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F31786C21D8EF0700379B61 /* EncyclopediaView.swift */; };
@@ -49,6 +51,8 @@
 		2F817EAD21CE662100574F08 /* SpoqaHanSansThin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2F817EA921CE662100574F08 /* SpoqaHanSansThin.ttf */; };
 		2F817EAF21CE66E300574F08 /* UIFontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F817EAE21CE66E300574F08 /* UIFontExtension.swift */; };
 		2F817EB121CE671300574F08 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F817EB021CE671300574F08 /* UIColorExtension.swift */; };
+		2F8BFC9021EB4B8600D787F0 /* MyCardSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8BFC8F21EB4B8600D787F0 /* MyCardSettingView.swift */; };
+		2F8BFC9221EB4E1800D787F0 /* MyCardSettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F8BFC9121EB4E1800D787F0 /* MyCardSettingCell.swift */; };
 		2FAAF22021CF18E3005DFABC /* YellowCardMain.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FAAF21F21CF18E3005DFABC /* YellowCardMain.storyboard */; };
 		2FAAF22221CF1946005DFABC /* RootNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAAF22121CF1946005DFABC /* RootNavigationController.swift */; };
 		2FAAF22421CF1998005DFABC /* YellowCardNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAAF22321CF1998005DFABC /* YellowCardNavigationController.swift */; };
@@ -59,6 +63,7 @@
 		2FAF6CEC21CF838E00341E90 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAF6CEB21CF838E00341E90 /* SettingViewController.swift */; };
 		2FAF6CEF21CF83B100341E90 /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FAF6CEE21CF83B100341E90 /* Setting.storyboard */; };
 		2FAF6CF121CF84C800341E90 /* SettingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAF6CF021CF84C800341E90 /* SettingViewModel.swift */; };
+		2FB23A8621F2F05100420B90 /* MainCardManagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB23A8521F2F05100420B90 /* MainCardManagerView.swift */; };
 		2FB49A0B21D45C6300A6C1A0 /* NetWorkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB49A0A21D45C6300A6C1A0 /* NetWorkService.swift */; };
 		2FBBC02821E1CB2800B092A2 /* InfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBBC02721E1CB2800B092A2 /* InfoViewModel.swift */; };
 		2FC5519321CE8CEA0091547B /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FC5519221CE8CEA0091547B /* LoginViewModel.swift */; };
@@ -68,6 +73,8 @@
 		2FE4D3AA21D0674A00FDDCC6 /* YellowCardMainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE4D3A921D0674A00FDDCC6 /* YellowCardMainViewModel.swift */; };
 		2FE4D3AD21D06DBA00FDDCC6 /* AlcolRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FE4D3AC21D06DBA00FDDCC6 /* AlcolRegisterViewController.swift */; };
 		2FE4D3B021D06DD100FDDCC6 /* AlcolRegister.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FE4D3AF21D06DD100FDDCC6 /* AlcolRegister.storyboard */; };
+		2FEDD37F21ECC90D00CC2D6A /* MainCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEDD37E21ECC90D00CC2D6A /* MainCardView.swift */; };
+		2FEDD38421ECCBC000CC2D6A /* AlcolSelectedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FEDD38321ECCBC000CC2D6A /* AlcolSelectedCollectionViewCell.swift */; };
 		2FF785B121D9DA5800C43652 /* EncyclopediaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF785B021D9DA5800C43652 /* EncyclopediaViewModel.swift */; };
 		2FF785B321DA1AF600C43652 /* EncyclopediaTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF785B221DA1AF600C43652 /* EncyclopediaTableCell.swift */; };
 		2FFDE84621E1E64D00FEC22D /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FFDE84521E1E64D00FEC22D /* MainModel.swift */; };
@@ -84,6 +91,9 @@
 		2F0B8F3B21CE4BA800FD07F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2F0B8F3E21CE4BA800FD07F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2F0B8F4021CE4BA800FD07F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F14726E21E9CE2F009604F5 /* ColdStartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColdStartVC.swift; sourceTree = "<group>"; };
+		2F14727021E9CE81009604F5 /* ColdStartVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ColdStartVC.xib; sourceTree = "<group>"; };
+		2F14727221E9DF42009604F5 /* ColdStartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColdStartViewModel.swift; sourceTree = "<group>"; };
 		2F17D2F821D646000080275F /* MyProfileUpdateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileUpdateView.swift; sourceTree = "<group>"; };
 		2F17D2FA21D6602E0080275F /* RootCollectionviewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootCollectionviewController.swift; sourceTree = "<group>"; };
 		2F17D2FC21D664070080275F /* MyProfileUpdateCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileUpdateCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -91,7 +101,6 @@
 		2F26AA1921D4C9890057B614 /* RootTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTableViewCell.swift; sourceTree = "<group>"; };
 		2F31785F21D8C3DC00379B61 /* AlcolDringCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlcolDringCollectionViewCell.swift; sourceTree = "<group>"; };
 		2F31786221D8D9FD00379B61 /* MyCardSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCardSettingViewController.swift; sourceTree = "<group>"; };
-		2F31786421D8DA6C00379B61 /* MyCardSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCardSettingView.swift; sourceTree = "<group>"; };
 		2F31786721D8ED7000379B61 /* EncyclopediaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncyclopediaViewController.swift; sourceTree = "<group>"; };
 		2F31786A21D8EDB800379B61 /* Encyclopedia.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Encyclopedia.storyboard; sourceTree = "<group>"; };
 		2F31786C21D8EF0700379B61 /* EncyclopediaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncyclopediaView.swift; sourceTree = "<group>"; };
@@ -121,6 +130,8 @@
 		2F817EA921CE662100574F08 /* SpoqaHanSansThin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = SpoqaHanSansThin.ttf; sourceTree = "<group>"; };
 		2F817EAE21CE66E300574F08 /* UIFontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIFontExtension.swift; sourceTree = "<group>"; };
 		2F817EB021CE671300574F08 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		2F8BFC8F21EB4B8600D787F0 /* MyCardSettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCardSettingView.swift; sourceTree = "<group>"; };
+		2F8BFC9121EB4E1800D787F0 /* MyCardSettingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCardSettingCell.swift; sourceTree = "<group>"; };
 		2FAAF21F21CF18E3005DFABC /* YellowCardMain.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = YellowCardMain.storyboard; sourceTree = "<group>"; };
 		2FAAF22121CF1946005DFABC /* RootNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootNavigationController.swift; sourceTree = "<group>"; };
 		2FAAF22321CF1998005DFABC /* YellowCardNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowCardNavigationController.swift; sourceTree = "<group>"; };
@@ -131,6 +142,7 @@
 		2FAF6CEB21CF838E00341E90 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		2FAF6CEE21CF83B100341E90 /* Setting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
 		2FAF6CF021CF84C800341E90 /* SettingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewModel.swift; sourceTree = "<group>"; };
+		2FB23A8521F2F05100420B90 /* MainCardManagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCardManagerView.swift; sourceTree = "<group>"; };
 		2FB49A0A21D45C6300A6C1A0 /* NetWorkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWorkService.swift; sourceTree = "<group>"; };
 		2FBBC02721E1CB2800B092A2 /* InfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewModel.swift; sourceTree = "<group>"; };
 		2FC5519221CE8CEA0091547B /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
@@ -140,6 +152,8 @@
 		2FE4D3A921D0674A00FDDCC6 /* YellowCardMainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowCardMainViewModel.swift; sourceTree = "<group>"; };
 		2FE4D3AC21D06DBA00FDDCC6 /* AlcolRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlcolRegisterViewController.swift; sourceTree = "<group>"; };
 		2FE4D3AF21D06DD100FDDCC6 /* AlcolRegister.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AlcolRegister.storyboard; sourceTree = "<group>"; };
+		2FEDD37E21ECC90D00CC2D6A /* MainCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCardView.swift; sourceTree = "<group>"; };
+		2FEDD38321ECCBC000CC2D6A /* AlcolSelectedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlcolSelectedCollectionViewCell.swift; sourceTree = "<group>"; };
 		2FF785B021D9DA5800C43652 /* EncyclopediaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncyclopediaViewModel.swift; sourceTree = "<group>"; };
 		2FF785B221DA1AF600C43652 /* EncyclopediaTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncyclopediaTableCell.swift; sourceTree = "<group>"; };
 		2FFDE84521E1E64D00FEC22D /* MainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModel.swift; sourceTree = "<group>"; };
@@ -192,11 +206,24 @@
 			path = yellowCard;
 			sourceTree = "<group>";
 		};
+		2F14726D21E9CE0D009604F5 /* ColdStart */ = {
+			isa = PBXGroup;
+			children = (
+				2F14726E21E9CE2F009604F5 /* ColdStartVC.swift */,
+				2F14727021E9CE81009604F5 /* ColdStartVC.xib */,
+				2F14727221E9DF42009604F5 /* ColdStartViewModel.swift */,
+			);
+			path = ColdStart;
+			sourceTree = "<group>";
+		};
 		2F31786121D8D9E200379B61 /* MyCardUpdate */ = {
 			isa = PBXGroup;
 			children = (
+				2FB23A8421F2F03900420B90 /* MyCardManager */,
+				2FEDD38221ECCB9900CC2D6A /* MyCardView */,
 				2F31786221D8D9FD00379B61 /* MyCardSettingViewController.swift */,
-				2F31786421D8DA6C00379B61 /* MyCardSettingView.swift */,
+				2F8BFC8F21EB4B8600D787F0 /* MyCardSettingView.swift */,
+				2F8BFC9121EB4E1800D787F0 /* MyCardSettingCell.swift */,
 			);
 			path = MyCardUpdate;
 			sourceTree = "<group>";
@@ -285,6 +312,7 @@
 		2F817E8821CE57C800574F08 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				2F14726D21E9CE0D009604F5 /* ColdStart */,
 				2F817E8921CE57D600574F08 /* LoginViewController.swift */,
 				2F817EA321CE65AE00574F08 /* LoginView.swift */,
 				2FC5519221CE8CEA0091547B /* LoginViewModel.swift */,
@@ -418,6 +446,14 @@
 			path = Setting;
 			sourceTree = "<group>";
 		};
+		2FB23A8421F2F03900420B90 /* MyCardManager */ = {
+			isa = PBXGroup;
+			children = (
+				2FB23A8521F2F05100420B90 /* MainCardManagerView.swift */,
+			);
+			path = MyCardManager;
+			sourceTree = "<group>";
+		};
 		2FE4D3AB21D06DA400FDDCC6 /* Alcolregister */ = {
 			isa = PBXGroup;
 			children = (
@@ -435,6 +471,15 @@
 				2FE4D3AF21D06DD100FDDCC6 /* AlcolRegister.storyboard */,
 			);
 			path = AlcolRegister;
+			sourceTree = "<group>";
+		};
+		2FEDD38221ECCB9900CC2D6A /* MyCardView */ = {
+			isa = PBXGroup;
+			children = (
+				2FEDD37E21ECC90D00CC2D6A /* MainCardView.swift */,
+				2FEDD38321ECCBC000CC2D6A /* AlcolSelectedCollectionViewCell.swift */,
+			);
+			path = MyCardView;
 			sourceTree = "<group>";
 		};
 		6C726979703917AD6D7546CA /* Pods */ = {
@@ -529,6 +574,7 @@
 				2F817E9E21CE5DD800574F08 /* Info.storyboard in Resources */,
 				2FAF6CEF21CF83B100341E90 /* Setting.storyboard in Resources */,
 				2F0B8F3A21CE4BA700FD07F3 /* Main.storyboard in Resources */,
+				2F14727121E9CE81009604F5 /* ColdStartVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -613,7 +659,7 @@
 				2F5C208C21D5FDD400E6F846 /* AlcolRegisterViewModel.swift in Sources */,
 				2FE4D3AD21D06DBA00FDDCC6 /* AlcolRegisterViewController.swift in Sources */,
 				2F817E8A21CE57D600574F08 /* LoginViewController.swift in Sources */,
-				2F31786521D8DA6C00379B61 /* MyCardSettingView.swift in Sources */,
+				2F14726F21E9CE2F009604F5 /* ColdStartVC.swift in Sources */,
 				2F817E9821CE5C9E00574F08 /* NSObjectExtension.swift in Sources */,
 				2FFDE84621E1E64D00FEC22D /* MainModel.swift in Sources */,
 				2FAF6CEC21CF838E00341E90 /* SettingViewController.swift in Sources */,
@@ -628,6 +674,7 @@
 				2F817E8D21CE58B300574F08 /* RootViewController.swift in Sources */,
 				2F817EA221CE603900574F08 /* UIViewExtension.swift in Sources */,
 				2FB49A0B21D45C6300A6C1A0 /* NetWorkService.swift in Sources */,
+				2F8BFC9221EB4E1800D787F0 /* MyCardSettingCell.swift in Sources */,
 				2F17D2FB21D6602E0080275F /* RootCollectionviewController.swift in Sources */,
 				2F6EFDA621D4ACA0008144A7 /* NVIndicatorView.swift in Sources */,
 				2F0B8F3521CE4BA700FD07F3 /* AppDelegate.swift in Sources */,
@@ -635,19 +682,24 @@
 				2FAAF22221CF1946005DFABC /* RootNavigationController.swift in Sources */,
 				2F31786321D8D9FD00379B61 /* MyCardSettingViewController.swift in Sources */,
 				2F31786821D8ED7000379B61 /* EncyclopediaViewController.swift in Sources */,
+				2F14727321E9DF42009604F5 /* ColdStartViewModel.swift in Sources */,
 				2FBBC02821E1CB2800B092A2 /* InfoViewModel.swift in Sources */,
 				2FAAF22421CF1998005DFABC /* YellowCardNavigationController.swift in Sources */,
 				2FF785B321DA1AF600C43652 /* EncyclopediaTableCell.swift in Sources */,
 				2FC5519321CE8CEA0091547B /* LoginViewModel.swift in Sources */,
 				2FF785B121D9DA5800C43652 /* EncyclopediaViewModel.swift in Sources */,
 				2F17D2FD21D664070080275F /* MyProfileUpdateCollectionViewCell.swift in Sources */,
+				2FB23A8621F2F05100420B90 /* MainCardManagerView.swift in Sources */,
 				2FAF6CE921CF545F00341E90 /* RootCollectionViewCell.swift in Sources */,
 				2F26AA1A21D4C9890057B614 /* RootTableViewCell.swift in Sources */,
 				2FC5519521CE8F0C0091547B /* UserViewModel.swift in Sources */,
+				2FEDD38421ECCBC000CC2D6A /* AlcolSelectedCollectionViewCell.swift in Sources */,
 				2F817EA421CE65AE00574F08 /* LoginView.swift in Sources */,
 				2F26AA1621D4C9170057B614 /* AlcolRegisterTableViewCell.swift in Sources */,
+				2FEDD37F21ECC90D00CC2D6A /* MainCardView.swift in Sources */,
 				2F5C208E21D60C7000E6F846 /* RootTableViewController.swift in Sources */,
 				2F817E8F21CE5B7D00574F08 /* RootView.swift in Sources */,
+				2F8BFC9021EB4B8600D787F0 /* MyCardSettingView.swift in Sources */,
 				2FD6BD1321D0A008001B6C4B /* AlcolRegisterView.swift in Sources */,
 				2FAF6CF121CF84C800341E90 /* SettingViewModel.swift in Sources */,
 				2F31786D21D8EF0700379B61 /* EncyclopediaView.swift in Sources */,

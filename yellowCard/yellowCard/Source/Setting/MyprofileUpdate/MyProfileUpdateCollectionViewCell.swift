@@ -113,7 +113,7 @@ class MyProfileUpdateCollectionViewCell: RootCollectionViewCell {
     }
 
     private let beerPlusWithCancelBtn = UIImageView(frame: .zero).then {
-        $0.image = UIImage(named: "kakaolinkImg")
+        $0.image = UIImage(named: "roundClear24Px")
     }
 
     private let beerLabelBtn = UIButton(type: .system).then {
@@ -136,7 +136,7 @@ class MyProfileUpdateCollectionViewCell: RootCollectionViewCell {
     }
 
     public let sojuPlusWithCancelBtn = UIImageView(frame: .zero).then {
-        $0.image = UIImage(named: "kakaolinkImg")
+        $0.image = UIImage(named: "roundClear24Px")
     }
 
     private let sojuLableBtn = UIButton(type: .system).then {
@@ -159,7 +159,7 @@ class MyProfileUpdateCollectionViewCell: RootCollectionViewCell {
     }
 
     public let winePlusWithCancelBtn = UIImageView(frame: .zero).then {
-        $0.image = UIImage(named: "kakaolinkImg")
+        $0.image = UIImage(named: "roundClear24Px")
     }
 
     private let wineLabelBtn = UIButton(type: .system).then {
@@ -182,7 +182,7 @@ class MyProfileUpdateCollectionViewCell: RootCollectionViewCell {
     }
 
     private let makgeolliPlusWithCancelBtn = UIImageView(frame: .zero).then {
-        $0.image = UIImage(named: "kakaolinkImg")
+        $0.image = UIImage(named: "roundClear24Px")
     }
 
     private let makgeolliLabelBtn = UIButton(type: .system).then {
@@ -525,7 +525,7 @@ extension MyProfileUpdateCollectionViewCell {
                     print()
                 }
                 btn.layer.borderColor = UIColor.clear.cgColor
-                image.transform = CGAffineTransform(rotationAngle: CGFloat(Double.pi / 2))
+                image.transform = CGAffineTransform(rotationAngle: CGFloat(Double.pi / 4))
             })
         }
     }

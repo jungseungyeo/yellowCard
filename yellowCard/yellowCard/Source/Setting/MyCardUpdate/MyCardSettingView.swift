@@ -2,31 +2,41 @@
 //  MyCardSettingView.swift
 //  yellowCard
 //
-//  Created by 여정승 on 30/12/2018.
-//  Copyright © 2018 linsaeng. All rights reserved.
+//  Created by 여정승 on 13/01/2019.
+//  Copyright © 2019 linsaeng. All rights reserved.
 //
 
 import Foundation
 
 class MyCardSettingView: RootView {
 
+    public var myCardCollectionView: UICollectionView = {
+        let layout = UICollectionViewFlowLayout()
+        layout.minimumLineSpacing = 0
+        layout.minimumInteritemSpacing = 0
+        layout.scrollDirection = .vertical
+        let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        collectionView.isPagingEnabled = false
+        collectionView.showsHorizontalScrollIndicator = true
+        collectionView.backgroundColor = .white
+        collectionView.tag = 1
+        return collectionView
+    }()
+
     override func setup() {
         super.setup()
+
+        addSubviews(myCardCollectionView)
     }
 
     override func setupUI() {
         super.setupUI()
-    }
 
-    override func setupTapped() {
-        super.setupTapped()
-    }
-
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-    }
-
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
+        myCardCollectionView.snp.makeConstraints { make -> Void in
+            make.top.equalTo(self.safeAreaLayoutGuide).offset(0)
+            make.left.equalToSuperview()
+            make.right.equalToSuperview()
+            make.bottom.equalToSuperview()
+        }
     }
 }

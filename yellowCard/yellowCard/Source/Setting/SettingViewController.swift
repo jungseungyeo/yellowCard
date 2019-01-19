@@ -54,7 +54,7 @@ class SettingViewController: RootVC {
 
 extension SettingViewController: settingDelegate {
     func myCardSettingTapped() {
-//        self.navigationController?.pushViewController(MyProfileUpdateViewController.instance()!, animated: true)
+        self.navigationController?.pushViewController(MyCardSettingViewController.instance()!, animated: true)
     }
 
     func myProfileTapped() {

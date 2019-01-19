@@ -19,10 +19,16 @@ class InfoViewModel {
         YellowCardService.shared.makeHeaders(token: token)
         YellowCardService.shared.get(urlPath: .main, handler: { json in
             view.indicator?.stopAnimating()
-            let image = UserDefaults.standard.value(forKey: "imageUrl") as? String ?? ""
-            let name = UserDefaults.standard.value(forKey: "name") as? String ?? ""
-            let imageUrl = URL(string: image)
-            UserViewModel.shared.userInfo = Mapper<UserInfo>().map(JSON: ["tokenId": token, "name": name, "imageUrl": imageUrl ?? ""])
+            let profile_image_url = json["profile_image_url"].stringValue
+            let status_message = json["status_message"].stringValue
+            let user_name = json["user_name"].stringValue
+            var drink_cards: [drink_card] = [drink_card]()
+            let jsonArray = json["drink_cards"].arrayValue
+            for jsonObject in jsonArray {
+                drink_cards.append(Mapper<drink_card>().map(JSON: jsonObject.dictionaryObject!)!)
+            }
+            UserViewModel.shared.mainModel?.dink_cards = drink_cards
+            UserViewModel.shared.mainModel = Mapper<MainModel>().map(JSON: ["profile_image_url":profile_image_url, "status_message": status_message, "user_name":user_name])
             success()
         }, errorHandler: { error in
             view.indicator?.stopAnimating()

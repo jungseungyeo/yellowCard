@@ -12,12 +12,13 @@ import ObjectMapper
 import SwiftyJSON
 
 class LoginViewModel {
+    typealias snsSuccess = (String?, KOUserMe) -> Void
     typealias isSuccess = () -> Void
     typealias isFailure = (Error?) -> Void
 }
 
 extension LoginViewModel {
-    func isKakaoLogin(view: LoginViewController, success: @escaping isSuccess, failure: @escaping isFailure) {
+    func isKakaoLogin(view: LoginViewController, success: @escaping snsSuccess, failure: @escaping isFailure) {
 
         guard let session = KOSession.shared() else {
             failure(nil)
@@ -41,19 +42,19 @@ extension LoginViewModel {
             }
 
             func fetch(userInfo: KOUserMe, token: String) {
-                UserViewModel.shared.userInfo = Mapper<UserInfo>().map(JSON: ["tokenId": token, "name": userInfo.nickname!, "imageUrl": userInfo.profileImageURL!,"myStatusWord": "맥주는 역시 튀긴감자랑 함께해야지"])
-                // 고정값
-                let imageUrlString = userInfo.profileImageURL!.absoluteString
-                UserDefaults.standard.set(token, forKey: "token")
-                UserDefaults.standard.set(userInfo.nickname!, forKey: "name")
-                UserDefaults.standard.set(imageUrlString, forKey: "imageUrl")
+//                UserViewModel.shared.userInfo = Mapper<UserInfo>().map(JSON: ["tokenId": token, "name": userInfo.nickname!, "imageUrl": userInfo.profileImageURL!,"myStatusWord": "맥주는 역시 튀긴감자랑 함께해야지"])
+//                 고정값
+//                let imageUrlString = userInfo.profileImageURL!.absoluteString
+//                UserDefaults.standard.set(token, forKey: "token")
+//                UserDefaults.standard.set(userInfo.nickname!, forKey: "name")
+//                UserDefaults.standard.set(imageUrlString, forKey: "imageUrl")
                 YellowCardService.shared.makeHeaders(token: UserDefaults.standard.value(forKey: "token") as? String ?? "")
                 view.indicator?.stopAnimating()
-                success()
+//                success()
             }
 
             KOSessionTask.userMeTask(completion: { (error, userInfo) in
-                view.indicator?.startAnimating()
+//                view.indicator?.startAnimating()
                 guard error == nil, let userInfo = userInfo else {
                     print("kakao Login error : \(String(describing: error))")
                     view.indicator?.stopAnimating()
@@ -61,16 +62,19 @@ extension LoginViewModel {
                     failure(error)
                     return
                 }
+                success(session.token.accessToken, userInfo)
 
-                YellowCardService.shared.post(url: .signIn, parameters: ["access_token": session.token.accessToken], handler: { json in
+
+
+//                YellowCardService.shared.post(url: .signIn, parameters: ["access_token": session.token.accessToken], handler: { json in
                     //성공
 
-                    fetch(userInfo: userInfo, token: json["token"].stringValue)
-                }, errorHandler: { error in
-                    view.indicator?.stopAnimating()
-                    errorAler()
-                    failure(error)
-                })
+//                    fetch(userInfo: userInfo, token: json["token"].stringValue)
+//                }, errorHandler: { error in
+//                    view.indicator?.stopAnimating()
+//                    errorAler()
+//                    failure(error)
+//                })
 
             })
         })
@@ -99,7 +103,7 @@ extension LoginViewModel {
 
     private func setupMainValue(json: JSON) {
         let drink_cards = json["drink_cards"].dictionaryValue
-        let dink_cards = Mapper<dink_cards>().map(JSON: ["drink_type": ""])
+//        let dink_cards = Mapper<drink_cards>().map(JSON: ["drink_type": ""])
 
     }
 }
